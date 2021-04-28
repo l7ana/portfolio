@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Natura Insects Museum Exhibit Brochure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="UPDATE LATER">
+    <meta keywords="UPDATE LATER">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tng1tlh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qhr2qwu.css">
+</head>
+
+<body>
+    <header class="site-header" id="top">
+        <div class="container">
+            <nav class="site-nav">
+                <div class="site-identity">
+                    <h1><a href="index.html">Liana Young</a></h1>
+                    <a href="index.html"><img src="img/wordmark_1.svg" alt="Liana Young"> </a>
+                </div>
+                <ul>
+                    <li id="navlink1"><a href="index.html">Work</a></li>
+                    <li id="navlink2"><a href="">About</a></li>
+                    <li id="navlink3"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-top natura" data-inview="no">
+        <div class="container">
+            <h1 data-inview="no">Natura Insects Museum <br>Exhibit Brochure</h1>
+            <p class="subhead" data-inview="no">Bringing the art of Raku Inoue to life.</p>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="column three-fourths" data-inview="no">
+                    <h2>Introduction</h2>
+                    <p>For this student project, I was tasked to create a museum exhibit brochure for a topic or artist
+                        of my selection. At the time, I had recently discovered the work of Raku Inoue who is a Canadian
+                        based artist originally born in Tokyo. Because of my interest in flora, animals, and insects, I
+                        was very attracted to his arrangements for his Natura Insects series. Each piece of his has a
+                        life-like quality to me despite being constructed of inanimate pieces of nature. I hoped to
+                        bring that life-like quality to this printed project.</p>
+                </div>
+                <div class="column one-eigth" data-inview="no">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Print Design</li>
+                        <li>Typesetting</li>
+                    </ul>
+                </div>
+                <div class="column one-eigth" data-inview="no">
+                    <h3>Software</h3>
+                    <ul>
+                        <li>InDesign</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="case-study to-white">
+        <div class="container">
+            <div class="row">
+                <div class="column one-whole text-centered">
+                    <h2>Typographic Details</h2>
+                </div>
+            </div>
+            <div class="img-row">
+                <div class="row-reverse">
+                    <div class="three-fourths column" data-inview="no">
+                        <img src="img/natura/details_1_3x2.jpg" alt="typography">
+                    </div>
+                    <div class="one-fourth column" data-inview="no">
+                        <p>The font families I used were Proxima Nova and Adobe Garamond. The serifs of Garamond are
+                            delicate and feel light like the legs of an insect. Garamond also features beautiful
+                            ligatures sprinkled throughout the brochure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img-row">
+                <div class="row">
+                    <div class="three-fourths column" data-inview="no">
+                        <img src="img/natura/details_2_3x2.jpg" alt="typography">
+                    </div>
+                    <div class="one-fourth column" data-inview="no">
+                        <p> To contrast Garamond, I used Proxima
+                            Nova which is a geometric sans-serif family that I chose for its clean and open feeling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study" id="natura-swiper">
+        <div class="container">
+            <div class="row">
+                <div class="column one-whole text-centered" data-inview="no">
+                    <h2>Execution</h2>
+                    <p class="caption">Swipe through to view.</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide dark"><img src="img/natura/1panel_4x2.jpg" alt=""></div>
+                <div class="swiper-slide dark"><img src="img/natura/2panel_4x2.jpg" alt=""></div>
+                <div class="swiper-slide dark"><img src="img/natura/full_4x2.jpg" alt=""></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+
+    <section id="natura-bottom">
+        <img src="img/natura/naturamockup_full_4x2.jpg" alt="">
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3 class="sectionhead">Let me introduce myself.</h3>
+            <h2>I'm Liana. I'm a designer and a pet-lover.</h2>
+            <h4>Want to know more?</h4>
+            <a href="" class="button-white">About Me</a> <a href="" class="button-white">Contact</a>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            effect: 'slide',
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            // on init set light / dark
+            on: {
+                init: function () {
+                    console.log('swiper initialized');
+                    const initialswiper = document.querySelector('.swiper-container');
+                    const initialslide = document.querySelector('.swiper-slide-active');
+                    const initialheader = document.querySelector('.site-header');
+                    if (initialslide.classList.contains('dark')) {
+                        initialswiper.setAttribute('data-slidecolor', 'dark');
+                    } else {
+                        initialswiper.setAttribute('data-slidecolor', 'light');
+                    }
+                },
+            },
+        });
+
+        const myswiper = document.querySelector('.swiper-container');
+        const myheader = document.querySelector('.site-header');
+
+        swiper.on('transitionEnd', function () {
+            console.log('slide changed');
+            const activeslide = document.querySelector('.swiper-slide-active');
+            if (activeslide.classList.contains('dark')) {
+                console.log('this slide is dark');
+                myswiper.setAttribute('data-slidecolor', 'dark');
+            } else {
+                console.log('this slide is light');
+                myswiper.setAttribute('data-slidecolor', 'light');
+            }
+        });
+
+    </script>
+    <script>
+        let options = {
+            rootMargin: "-100px 0px -10px 0px"
+        };
+        // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
+        const myobserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.setAttribute('data-inview', 'yes');
+                }
+                else {
+                    entry.target.setAttribute('data-inview', 'no');
+                }
+            });
+        }, options);
+        document.querySelectorAll('[data-inview]').forEach((item) => {
+            myobserver.observe(item);
+        });
+    </script>
+</body>
+
+</html>

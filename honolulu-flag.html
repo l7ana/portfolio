@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Honolulu City Flag Redesign</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="UPDATE LATER">
+    <meta keywords="UPDATE LATER">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tng1tlh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qhr2qwu.css">
+</head>
+
+<body>
+    <header class="site-header" id="top">
+        <div class="container">
+            <nav class="site-nav">
+                <div class="site-identity">
+                    <h1><a href="index.html">Liana Young</a></h1>
+                    <a href="index.html"><img src="img/wordmark_1.svg" alt="Liana Young"></a>
+                </div>
+                <ul>
+                    <li id="navlink1"><a href="index.html">Work</a></li>
+                    <li id="navlink2"><a href="">About</a></li>
+                    <li id="navlink3"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-top city-flag" data-inview="no">
+        <div class="container">
+            <h1 data-inview="no">Honolulu City Flag Redesign</h1>
+            <p class="subhead" data-inview="no">A City Flag for O&#8216;ahu's Gathering Place&mdash;the City of
+                Honolulu.</p>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <div class="row no-margin">
+                <div class="column one-whole">
+                    <h2>Introduction</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column three-fourths" data-inview="no">
+                    <p>In my research, I found that Honolulu is called many things such as: “The
+                        Gathering Place,” “Heart Beat of Hawai’i,” and “Protected Bay.” As a citizen of
+                        Honolulu, I think that all of these phrases ring true for Honolulu. Honolulu is
+                        the capital of Hawai’i. It’s also very rich in history. Honolulu is where whalers
+                        and missionaries traveled, the overthrow took place, and where Iolani Palace is.
+                        Currently, it is the largest city in Hawai’i with millions of visitors coming in from
+                        the Daniel K. Inouye Airport.</p>
+                </div>
+                <div class="column one-eigth" data-inview="no">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study" id="city-flag">
+        <img src="img/cityflag/honolulu_flag_mockup.jpg" alt="">
+        <div class="container">
+            <div class="row no-margin">
+                <div class="column one-whole" data-inview="no">
+                    <h2>Rationale</h2>
+                </div>
+            </div>
+            <div class="row no-margin">
+                <div class="column one-quarter" data-inview="no">
+                    <p> The themes I wanted to capture in my flag is:
+                    </p>
+                    <ul class="bulleted">
+                        <li>Unity</li>
+                        <li>New Beginnings</li>
+                        <li>Peace</li>
+                        <li>Marriage of the past and future</li>
+                    </ul>
+                    <p></p>
+                </div>
+                <div class="column three-fourths" data-inview="no">
+                    <p> The imagery I used is of
+                        a Kalo leaf. Kalo represents an “interdependency of the past,
+                        present, future, procreation, and regeneration.” (<a
+                            href="https://www.capitol.hawaii.gov/session2010/Bills/HCR339_.HTM">source</a>) My
+                        depiction of the
+                        Kalo leaf is also an image of the mountains, waterfalls, and the rising sun. The
+                        rising sun signifies new beginnings since sunrise happens every morning on
+                        every new day. Honolulu is surrounded by the windward mountains which can
+                        be seen from anywhere in the city. The waterfall is also a reference to water.
+                        Water was a major resource for ancient Hawaiians. They needed it for
+                        voyaging to the islands, drinking, fishing, and making salt. Water signifies a
+                        connection to the land and resources.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3 class="sectionhead">Let me introduce myself.</h3>
+            <h2>I'm Liana. I'm a designer and a pet-lover.</h2>
+            <h4>Want to know more?</h4>
+            <a href="" class="button-white">About Me</a> <a href="" class="button-white">Contact</a>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            effect: 'slide',
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            // on init set light / dark
+            on: {
+                init: function () {
+                    console.log('swiper initialized');
+                    const initialswiper = document.querySelector('.swiper-container');
+                    const initialslide = document.querySelector('.swiper-slide-active');
+                    const initialheader = document.querySelector('.site-header');
+                    if (initialslide.classList.contains('dark')) {
+                        initialswiper.setAttribute('data-slidecolor', 'dark');
+                        initialheader.setAttribute('data-slidecolor', 'dark');
+                    } else {
+                        initialswiper.setAttribute('data-slidecolor', 'light');
+                        initialheader.setAttribute('data-slidecolor', 'light');
+                    }
+                },
+            },
+        });
+
+        const myswiper = document.querySelector('.swiper-container');
+        const myheader = document.querySelector('.site-header');
+
+        swiper.on('transitionEnd', function () {
+            console.log('slide changed');
+            const activeslide = document.querySelector('.swiper-slide-active');
+            if (activeslide.classList.contains('dark')) {
+                console.log('this slide is dark');
+                myswiper.setAttribute('data-slidecolor', 'dark');
+                myheader.setAttribute('data-slidecolor', 'dark');
+            } else {
+                console.log('this slide is light');
+                myswiper.setAttribute('data-slidecolor', 'light');
+                myheader.setAttribute('data-slidecolor', 'light');
+            }
+        });
+
+    </script>
+    <script>
+        let options = {
+            rootMargin: "-100px 0px -100px 0px"
+        };
+        // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
+        const myobserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.setAttribute('data-inview', 'yes');
+                }
+                else {
+                    entry.target.setAttribute('data-inview', 'no');
+                }
+            });
+        }, options);
+        document.querySelectorAll('[data-inview]').forEach((item) => {
+            myobserver.observe(item);
+        });
+    </script>
+</body>
+
+</html>

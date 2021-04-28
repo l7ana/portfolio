@@ -1,0 +1,86 @@
+// Responsive Images
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-identity {
+    h1 {
+        font-size: 2.5em;
+        visibility: hidden;
+        margin-top: -.25em;
+    }
+}
+
+
+.video-bg {
+    background-image: none;
+}
+
+.video-bg-top {
+    z-index: 20;
+    position: relative;
+}
+    
+video.video-bg {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0; left:0;
+    z-index: 10;
+}
+
+lottie-player.video-bg {
+    object-fit: cover;
+    position: absolute;
+    top:10%; left:45%;
+    z-index: 10;
+}
+
+#kpc-ani {
+    img {
+        height: auto;
+        // border: 1px solid blue;
+    }
+}
+
+#kpc-intro {
+    position: relative;
+    .kpc-video video {
+        width: 70%;
+        position: absolute;
+        z-index: -2;
+        bottom: -10%; left: 12%;
+    }
+}
+
+
+.imac-mockup {
+    background-image: url(../img/imac.png);
+    background-repeat: no-repeat;
+    width: 915px;
+    height: 743px;
+    margin: 0 auto;
+    .imac-container {
+        width: 843px;
+        height: 480px;
+        margin: 0 auto;
+        padding-top: 35px;
+        // border: 1px solid red;
+        overflow: hidden;
+        position: relative;
+        .imac-content {
+            position: absolute;
+            left: -25px;
+        }
+    }
+}
+
+#fohr-prototype {
+    .imac-container {
+        padding-top: 26px;
+        width: 847px;
+        height: 491px;
+    }
+}

@@ -1,0 +1,359 @@
+/* Swiper */
+#home-swiper {
+  &.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    /* background: rgb(175, 175, 175); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: $white-1;
+  }
+  
+  .swiper-image {
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    // border: 2px solid blue;
+  }
+  .swiper-button-prev {
+    font-size: 1.5em;
+    top: auto;
+    bottom: 55%;
+    left: auto;
+    right: 95%;
+    animation: swiper-prev 2s cubic-bezier(0.25,0.46,0.45,0.94) forwards infinite;
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+    &.prev-1 {
+      right: 94%;
+      font-size: 1.2em;
+      opacity: .7;
+      animation: swiper-prev 2s cubic-bezier(0.25,0.46,0.45,0.94) forwards infinite;
+      animation-delay: .5s;
+    }
+  }
+  .swiper-button-next {
+    font-size: 1.5em;
+    top: auto;
+    bottom: 55%;
+    left: 95%;
+    right: auto;
+    animation: swiper-next 2s cubic-bezier(0.25,0.46,0.45,0.94) forwards infinite;
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+    &.next-1 {
+      left: 94%;
+      font-size: 1.2em;
+      opacity: .7;
+      animation: swiper-next 2s cubic-bezier(0.25,0.46,0.45,0.94) forwards infinite;
+      animation-delay: .5s;
+    }
+  }
+
+  @keyframes swiper-prev {
+    0% {
+      opacity: 0;
+      transform: translateX(15px) scale(.9);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+    70% {
+      opacity: 0;
+      transform: translateX(0px) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(0px) scale(1);
+    }
+  }
+  @keyframes swiper-next {
+    0% {
+      opacity: 0;
+      transform: translateX(-15px) scale(.9);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+    70% {
+      opacity: 0;
+      transform: translateX(0px) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  // HERO TYPOGRAPHY
+  #show-me {
+    position: absolute;
+    // bottom: 68%;
+    width: 80%;
+    bottom: 68%;
+    left: 9.5%;
+    z-index: 2;
+    // margin-top: -6em;
+    // border: 1px solid green;
+    p {
+      font-family: $type-body;
+      font-size: clamp(1em, 3vw, 2em);
+      font-weight: 300;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      strong {
+        font-family: $type-subhead;
+        font-style: italic;
+        font-weight: 500;
+        font-size: clamp(1em, 2.2vw, 2em);
+      }
+    }
+    p::after {
+      content: '';
+      margin-top: 4vh;
+      height: 6.5vw;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      max-height: 2.3em;
+      // background-color: pink;
+      border-bottom: 2px solid;
+      @media (max-width: 388px){
+        border: none;
+      } 
+    }
+  }
+  .swiper-textbox {
+    position: relative;
+    top: 34%;
+    // border: 1px solid red;
+    margin: 0;
+    left: 9.5%;
+    width: 80%;
+    // overflow: hidden;
+    z-index: 11;
+    h1 { 
+      font-size: clamp(1.5em, 7vw, 7em); 
+      white-space: nowrap;
+      margin: 0;
+      padding: 0;
+    }
+    .subhead {
+      margin-top: 1em;
+      font-size: clamp(1em,2vw,2em);
+    }
+    .button {
+      // width: 100%;
+      text-align: center;
+      // margin: 25% auto;
+      background-color: rgba(white,.3);
+      border: 1px solid;
+      outline-offset: 10px;
+      outline-color: rgba(black,.3);
+      animation: blink 1s ease-in-out both infinite;
+      transition: transform .5s ease-in-out;
+    }
+    .button-white { 
+      background-color: rgba(black,.1);
+      text-align: center;
+      border: 1px solid;
+      outline-offset: 10px;
+      outline-color: rgba(white,.3);
+      animation: blink-white 1s ease-in-out both infinite;
+      transition: transform .5s ease-in-out;
+    }
+    @keyframes blink {
+      from {
+        outline-offset: 0;
+        outline-color: rgba(black,0);
+      }
+    }
+    @keyframes blink-white {
+      from {
+        outline-offset: 0;
+        outline-color: rgba(white,0);
+      }
+    }
+  }
+    .dark .swiper-image h1,
+    .dark .swiper-image,
+    .dark  {
+      color: white;
+    }
+    
+    .dark .swiper-image .button {
+      color: white;
+      border-color: white;
+    }
+}
+
+  // Slider Hero Light/Dark
+
+  header[data-slidecolor="light"] a,
+  header[data-slidecolor="light"] svg,
+  header[data-slidecolor="light"] .site-identity a svg
+  {color: rgba(0,0,0,1); }
+
+  header[data-slidecolor="dark"] a,
+  header[data-slidecolor="dark"] svg,
+  header[data-slidecolor="dark"] .site-identity a svg
+   {color: rgb(255,255,255);}
+
+  [data-slidecolor="light"] .swiper-button-prev,
+  [data-slidecolor="light"] .swiper-button-next, 
+  [data-slidecolor="light"] #show-me,
+  [data-slidecolor="light"] .arrow-down a {
+    color: rgba(0,0,0,1);
+  }
+  
+  [data-slidecolor="dark"] .swiper-button-prev,
+  [data-slidecolor="dark"] .swiper-button-next, 
+  [data-slidecolor="dark"] #show-me,
+  [data-slidecolor="dark"] .arrow-down a {
+    color: rgb(255,255,255);
+  }
+
+  [data-slidecolor="light"] .arrow-down svg path {stroke: rgba(0,0,0,1);}
+  [data-slidecolor="dark"] .arrow-down svg path {stroke: rgb(255, 255, 255);}
+  
+  [data-slidecolor="light"] #show-me p::after {border-color: rgba(0,0,0,1);}
+  [data-slidecolor="dark"] #show-me p::after {border-color: rgb(255, 255, 255);}
+
+
+// Side Scroll Swiper Cards
+  #swiper-two.swiper-two {
+    @media (max-width: 768px) {
+      width: 100%; height: 100px;
+      .swiper-slide {height: 100px;}
+      .swiper-info {height: 15%;}
+    }
+    width: 100%; height: 250px;
+    margin: 2em 0 0 0;
+    a {text-decoration: none;}
+    .swiper-slide {
+      width: 100%; height: 250px;
+      background: $grey-1;
+      display: relative;
+      overflow: hidden;
+      .swiper-image {
+        transform: scale(1);
+        transition: all .5s ease-in-out;
+      }
+      .swiper-info {
+        background-color: rgba($navy-2, .8);
+        height: 15%; width: 100%;
+        padding: 1em;
+        display: absolute;
+        bottom: 0; right: 0; 
+        z-index: 3;
+        transform:translateY(0%);
+        transition: all .5s ease-in-out;
+        h3 {
+          font-family: $type-subhead;
+          font-size: 2em;
+          font-weight: 600;
+          color: white;
+          &::after {
+            content: '\27F6';
+            padding-left: -2em;
+            opacity: .2;
+            color: white;
+            transition: all .7s .2s ease-in-out;
+          }
+        }
+      }
+      &:hover {
+        .swiper-image { transform: scale(1.01); }
+        .swiper-info {
+          transform:translateY(-100%);
+          h3::after {
+            opacity: 1;
+            padding-left: .2em;
+            color: $turq;
+          }
+        }
+      }
+    }
+  }
+
+  // Case study swiper
+  .swiper-pagination-bullet-active {background-color: $turq;}
+
+  /* Swiper Buttons */
+  .swiper-button-prev {
+    color: rgba(255,255,255,1);
+    top: 56%;
+    left: auto;
+    right: 17%;
+}
+
+.swiper-button-next {
+  color: rgba(255,255,255,1);
+  top: 56%;
+  left: auto;
+  right: 12%;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 1.5em;
+}
+
+.case-study {
+  .swiper-button-prev {
+    color: $turq;
+    top: auto;
+    bottom: 5%;
+    left: auto;
+    right: 15%;
+}
+.swiper-button-next {
+  color: $turq;
+  top: auto;
+  bottom: 5%;
+  left: auto;
+  right: 10%;
+  }
+}
+
+#natura-swiper {
+  .swiper-button-prev {
+    top: auto;
+    bottom: 50%;
+    left: auto;
+    right: 95%;
+}
+.swiper-button-next {
+  top: auto;
+  bottom: 50%;
+  left: 95%;
+  right: auto;
+  }
+}
+
+#prime-swiper {
+  .swiper-button-prev {
+    top: auto;
+    bottom: 45%;
+    left: auto;
+    right: 95%;
+}
+.swiper-button-next {
+  top: auto;
+  bottom: 45%;
+  left: 95%;
+  right: auto;
+  }
+}
