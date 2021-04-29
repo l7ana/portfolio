@@ -1711,3 +1711,8 @@ header[data-slidecolor=dark] .site-identity a svg {
 #kpc-ani :nth-child(6) {
   transition-delay: 1.2s;
 }
+
+/*TABS*/
+.tab-section {
+  padding: 5em 0;
+}
