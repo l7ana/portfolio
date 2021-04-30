@@ -78,7 +78,8 @@ a.button {
     }
   }
 
-  .button-gold.blink:hover {
+  .button-gold.blink:hover,
+  .button-white.blink:hover {
     transform: scale(1.05);
   }
   

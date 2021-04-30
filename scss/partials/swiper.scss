@@ -266,9 +266,8 @@
   // Case study swiper
   .swiper-pagination-bullet-active {background-color: $turq;}
 
-  #to-prime-swiper {
-    background-image: linear-gradient(white, #FCFCFC);
-    margin: 10em 0 0 0; padding: 0;
+
+  #prime-swiper {
     .swiper-button-prev {
       top: auto;
       bottom: 45%;
@@ -281,6 +280,7 @@
     left: 95%;
     right: auto;
     }
+    .swiper-pagination { bottom: 10%; }
   }
 
   #to-twoladies-swiper {

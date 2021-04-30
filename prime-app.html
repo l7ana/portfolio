@@ -120,7 +120,7 @@
             <div class="img-row">
                 <div class="row-reverse">
                     <div class="one-half column" data-inview="no">
-                        <img src="img/prime/menu_designpatterns.svg" alt="kpc typography">
+                        <video src="img/prime/video/prime_menus.mp4" loop autoplay width="100%"></video>
                     </div>
                     <div class="one-half column" data-inview="no">
                         <h3>Laying out &#8220;Your Menu&#8221;</h3>
@@ -181,7 +181,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <section class="case-study demo">
@@ -268,16 +268,52 @@
     <section id="prime-bottom">
         <div class="container">
             <h3>Check it!</h3>
-            <a href="https://l7ana.github.io/kalihipet/index.html" class="button-white">View the Prototype</a>
+            <a href="https://l7ana.github.io/kalihipet/index.html" class="button-white blink">View the Prototype</a>
         </div>
     </section>
 
+    <section id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="column one-third"><img src="img/LianaYoung.jpg" alt=""></div>
+                <div class="column two-thirds">
+                    <h2 class="sectionhead">Hi There!</h2>
+                    <h1>I'm Liana.</h1>
+                    <h3>Graphic Designer, type-enthusiast, occasional illustrator, and copy-writer. I'm a grid-abider
+                        <i>and</i> grid-breaker.
+                    </h3>
+                    <h4>Oh, the duality.</h4>
+                    <a href="work.html" class="button-white">My Portfolio</a><a href="about.html"
+                        class="button-white">Learn About Me</a><a href="contact.html" class="button-white">Let's
+                        Chat!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="cta-link-to" data-inview="no">
+        <div class="container">
+            <a href="https://l7ana.github.io/kalihipet/index.html" target="_blank">
+                <h3>View all projects</h3>
+            </a>
+        </div>
+    </section> -->
+
     <footer>
         <div class="container">
-            <h3 class="sectionhead">Let me introduce myself.</h3>
-            <h2>I'm Liana. I'm a designer and a pet-lover.</h2>
-            <h4>Want to know more?</h4>
-            <a href="" class="button-white">About Me</a> <a href="" class="button-white">Contact</a>
+            <nav class="footer-nav">
+                <div class="scroll-top">
+                    <a href="#top" class="scroll">
+                        <svg width="26" height="13">
+                            <path d="M0,13 L13,0 L26,13" />
+                        </svg></a>
+                    <a href="#top" class="scroll scroll-text">Back to Top</a>
+                </div>
+                <ul>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 
@@ -312,40 +348,6 @@
             scrollbar: {
                 el: '.swiper-scrollbar',
             },
-
-            // on init set light / dark
-            on: {
-                init: function () {
-                    console.log('swiper initialized');
-                    const initialswiper = document.querySelector('.swiper-container');
-                    const initialslide = document.querySelector('.swiper-slide-active');
-                    const initialheader = document.querySelector('.site-header');
-                    if (initialslide.classList.contains('dark')) {
-                        initialswiper.setAttribute('data-slidecolor', 'dark');
-                        initialheader.setAttribute('data-slidecolor', 'dark');
-                    } else {
-                        initialswiper.setAttribute('data-slidecolor', 'light');
-                        initialheader.setAttribute('data-slidecolor', 'light');
-                    }
-                },
-            },
-        });
-
-        const myswiper = document.querySelector('.swiper-container');
-        const myheader = document.querySelector('.site-header');
-
-        swiper.on('transitionEnd', function () {
-            console.log('slide changed');
-            const activeslide = document.querySelector('.swiper-slide-active');
-            if (activeslide.classList.contains('dark')) {
-                console.log('this slide is dark');
-                myswiper.setAttribute('data-slidecolor', 'dark');
-                myheader.setAttribute('data-slidecolor', 'dark');
-            } else {
-                console.log('this slide is light');
-                myswiper.setAttribute('data-slidecolor', 'light');
-                myheader.setAttribute('data-slidecolor', 'light');
-            }
         });
 
     </script>
@@ -353,7 +355,7 @@
     <script>
         // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
         let options = {
-            rootMargin: "-100px 0px -100px 0px"
+            rootMargin: "-10px 0px"
         };
         // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
         const myobserver = new IntersectionObserver(entries => {

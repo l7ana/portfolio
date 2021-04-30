@@ -465,6 +465,11 @@ footer {background-color: $navy-2;}
   height: auto;
   margin-bottom: 8em;
 }
+
+#to-prime-swiper {
+  background-image: linear-gradient(white, #FCFCFC);
+  margin: 8em 0 0 0; padding: 0;
+}
 #prime-quote {
   // background-color: rgba(#c39d4d, .07);
   background-image: linear-gradient(rgba(#c39d4d, .08), white);
