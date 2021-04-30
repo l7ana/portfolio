@@ -469,14 +469,15 @@ footer {background-color: $navy-2;}
   // background-color: rgba(#c39d4d, .07);
   background-image: linear-gradient(rgba(#c39d4d, .08), white);
   width: 100%;
-  // margin-bottom: 8em;
+  height: auto;
+  margin: 5em 0;
   display: flex;
   align-items: center;
   .quote-box {
     // margin: 0 0 0 11.25%;
     p.pull-quote {
-      margin-top: 3em;
-      color: #2d0043;
+      color: #2d0043;      
+      font-size: clamp(1.5em, 4vw, 4em); 
     } 
     .pull-quote::before {
       color: rgba(#c39d4d, .1);
