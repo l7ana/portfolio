@@ -1334,6 +1334,9 @@ a.button-white:hover {
   margin-top: 1em;
   font-size: clamp(1em,2vw,2em);
 }
+#home-swiper .swiper-textbox p.custom-pagination {
+  text-shadow: white;
+}
 #home-swiper .swiper-textbox .button {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
@@ -1360,6 +1363,16 @@ a.button-white:hover {
 #home-swiper .dark .swiper-image .button {
   color: white;
   border-color: white;
+}
+#home-swiper .swiper-pagination-fraction {
+  font-family: "hero-new", sans-serif;
+  font-size: 1.5em;
+  text-align: right;
+  font-weight: 500;
+  width: 100%;
+  right: 12%;
+  left: auto;
+  bottom: 5%;
 }
 
 header[data-slidecolor=light] a,
@@ -1420,6 +1433,9 @@ header[data-slidecolor=dark] .site-identity a svg {
   #swiper-two.swiper-two .swiper-info {
     height: 15%;
   }
+}
+#swiper-two.swiper-two .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #1D7D77;
 }
 #swiper-two.swiper-two a {
   text-decoration: none;

@@ -118,6 +118,10 @@
       margin-top: 1em;
       font-size: clamp(1em,2vw,2em);
     }
+    p.custom-pagination {
+      // text-align: right;
+      text-shadow: white;
+    }
     .button {
       // width: 100%;
       text-align: center;
@@ -148,6 +152,15 @@
     .dark .swiper-image .button {
       color: white;
       border-color: white;
+    }
+
+    .swiper-pagination-fraction {
+      font-family: $type-body;
+      font-size: 1.5em;
+      text-align: right;
+      font-weight: 500;
+      width: 100%;
+      right: 12%; left: auto; bottom: 5%;
     }
 }
 
@@ -191,6 +204,7 @@
       .swiper-slide {height: 100px;}
       .swiper-info {height: 15%;}
     }
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {background: $turq;}
     width: 100%; height: 250px;
     margin: 2em 0 0 0;
     a {text-decoration: none;}
