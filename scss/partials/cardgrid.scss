@@ -96,7 +96,7 @@
     .card-img {
       overflow: hidden;
       position: relative;
-      img {
+      img, lottie-player {
         transform: scale(1.02);
         transition: transform 1s cubic-bezier(.32,0,.77,1);
         z-index: 2;
@@ -113,7 +113,7 @@
       color: $turq;
     }
     .card-img {
-      img {
+      img, lottie-player {
         transform: scale(1.05);
         transform-origin:center;
       }
