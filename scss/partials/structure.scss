@@ -413,11 +413,8 @@ footer {background-color: $navy-2;}
   overflow-x: hidden;
 }
 // #twoladies-divider {
-//   background-image: url(../img/2ladies/daifuku_3.jpg);
-//   background-size: cover;
-//   height: 40vh;
-//   background-position-y: 70%;
-//   margin: 7em 0;
+//   height: auto;
+//   margin: 0 0 5em 0;
 // }
 #twoladies-sketch {
   h2 {margin-top: 2em;}
@@ -446,6 +443,7 @@ footer {background-color: $navy-2;}
     p.pull-quote {
       color: white;
       margin-top: 3em;
+      font-size: clamp(1.5em, 4vw, 4em); 
     } 
     .pull-quote::before {
       color: rgba(white,.2);
