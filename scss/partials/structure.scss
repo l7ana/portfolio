@@ -399,16 +399,6 @@ footer {background-color: $navy-2;}
   // box-shadow: inset 0 0 0 2000px rgba($color: #F5F6F6, $alpha: .4);
 }
 
-#natura-swiper {
-  .swiper-container {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    // border: 1px solid green;
-  }
-  padding-bottom: 0; margin-bottom: 0;
-}
-
 #natura-bottom {
   img {width: 100%;}
   margin: -1em 0 2em 0;
@@ -464,10 +454,6 @@ footer {background-color: $navy-2;}
     }
   }
 }
-#to-twoladies-swiper {
-  background-image:linear-gradient(white, #f5f4f4);
-  margin: 0;
-}
 
 // Prime
 .project-top.prime {
@@ -477,7 +463,8 @@ footer {background-color: $navy-2;}
   background-position: 90% 50%;
   overflow-x: hidden;
 }
-#prime-video {
+#prime-video,
+#book-video {
   height: auto;
   margin-bottom: 8em;
 }
@@ -506,10 +493,6 @@ footer {background-color: $navy-2;}
   }
   p {margin-top: 2em;}
 }
-#to-prime-swiper {
-  background-image: linear-gradient(white, #FCFCFC);
-  margin: 10em 0 0 0; padding: 0;
-}
 #prime-bottom {
   height: auto;
   padding: 2em 0 1em 0;
@@ -520,5 +503,14 @@ footer {background-color: $navy-2;}
   h3 {
     margin: 0 .5em 0 0;
     color: white;
+  }
+}
+
+// Book Covers
+#book-rationale {
+  margin: 0;
+  h2 {margin-top: 1em;}
+  .arrow-down {
+    position: static;
   }
 }

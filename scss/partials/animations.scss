@@ -25,7 +25,7 @@
   transform: translate(0, 0) scale(1);
 }
 
-// Home hero
+/*Home Hero Typorgaphy*/
 .swiper-image h1 {
     transition: all .5s ease-out .25s;
     opacity: 0;
@@ -57,6 +57,58 @@
    .swiper-slide-active .swiper-image .button-white {
     opacity: 1;
    }
+
+/*Home Swiper Button Blinks*/
+  @keyframes blink {
+    from {
+      outline-offset: 0;
+      outline-color: rgba(black,0);
+    }
+  }
+  @keyframes blink-white {
+    from {
+      outline-offset: 0;
+      outline-color: rgba(white,0);
+    }
+  }
+
+/*Home Swiper Arrows*/
+@keyframes swiper-prev {
+  0% {
+    opacity: 0;
+    transform: translateX(15px) scale(.9);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(0px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes swiper-next {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px) scale(.9);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(0px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px) scale(1);
+  }
+}
 
 // Nav
 

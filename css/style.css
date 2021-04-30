@@ -27,6 +27,7 @@ h1 {
   line-height: 0.9em;
   margin: 0.5em 0 0 0;
   font-variant-ligatures: common-ligatures;
+  hanging-punctuation: first;
 }
 
 h2 {
@@ -661,16 +662,6 @@ footer {
   overflow-x: hidden;
 }
 
-#natura-swiper {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-#natura-swiper .swiper-container {
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 #natura-bottom {
   margin: -1em 0 2em 0;
 }
@@ -728,11 +719,6 @@ footer {
   margin-bottom: -18%;
 }
 
-#to-twoladies-swiper {
-  background-image: linear-gradient(white, #f5f4f4);
-  margin: 0;
-}
-
 .project-top.prime {
   background-image: url(../img/prime/primelogo.svg);
   background-size: 20%;
@@ -741,7 +727,8 @@ footer {
   overflow-x: hidden;
 }
 
-#prime-video {
+#prime-video,
+#book-video {
   height: auto;
   margin-bottom: 8em;
 }
@@ -769,12 +756,6 @@ footer {
   margin-top: 2em;
 }
 
-#to-prime-swiper {
-  background-image: linear-gradient(white, #FCFCFC);
-  margin: 10em 0 0 0;
-  padding: 0;
-}
-
 #prime-bottom {
   height: auto;
   padding: 2em 0 1em 0;
@@ -786,6 +767,16 @@ footer {
 #prime-bottom h3 {
   margin: 0 0.5em 0 0;
   color: white;
+}
+
+#book-rationale {
+  margin: 0;
+}
+#book-rationale h2 {
+  margin-top: 1em;
+}
+#book-rationale .arrow-down {
+  position: static;
 }
 
 /* Work Grid */
@@ -1282,42 +1273,6 @@ a.button-white:hover {
   animation: swiper-next 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards infinite;
   animation-delay: 0.5s;
 }
-@keyframes swiper-prev {
-  0% {
-    opacity: 0;
-    transform: translateX(15px) scale(0.9);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(0px) scale(1);
-  }
-  70% {
-    opacity: 0;
-    transform: translateX(0px) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(0px) scale(1);
-  }
-}
-@keyframes swiper-next {
-  0% {
-    opacity: 0;
-    transform: translateX(-15px) scale(0.9);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(0px) scale(1);
-  }
-  70% {
-    opacity: 0;
-    transform: translateX(0px) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(0px) scale(1);
-  }
-}
 #home-swiper #show-me {
   position: absolute;
   width: 80%;
@@ -1391,18 +1346,6 @@ a.button-white:hover {
   outline-color: rgba(255, 255, 255, 0.3);
   animation: blink-white 1s ease-in-out both infinite;
   transition: transform 0.5s ease-in-out;
-}
-@keyframes blink {
-  from {
-    outline-offset: 0;
-    outline-color: rgba(0, 0, 0, 0);
-  }
-}
-@keyframes blink-white {
-  from {
-    outline-offset: 0;
-    outline-color: rgba(255, 255, 255, 0);
-  }
 }
 #home-swiper .dark .swiper-image h1,
 #home-swiper .dark .swiper-image,
@@ -1528,23 +1471,83 @@ header[data-slidecolor=dark] .site-identity a svg {
   background-color: #1D7D77;
 }
 
-/* Swiper Buttons */
-.swiper-button-prev {
-  color: white;
-  top: 56%;
+#to-prime-swiper {
+  background-image: linear-gradient(white, #FCFCFC);
+  margin: 10em 0 0 0;
+  padding: 0;
+}
+#to-prime-swiper .swiper-button-prev {
+  top: auto;
+  bottom: 45%;
   left: auto;
-  right: 17%;
+  right: 95%;
+}
+#to-prime-swiper .swiper-button-next {
+  top: auto;
+  bottom: 45%;
+  left: 95%;
+  right: auto;
 }
 
-.swiper-button-next {
-  color: white;
-  top: 56%;
-  left: auto;
-  right: 12%;
+#to-twoladies-swiper {
+  background-image: linear-gradient(white, #f5f4f4);
+  margin: 0;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 1.5em;
+#natura-swiper {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#natura-swiper .swiper-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#natura-swiper .swiper-button-prev {
+  top: auto;
+  bottom: 50%;
+  left: auto;
+  right: 95%;
+}
+#natura-swiper .swiper-button-next {
+  top: auto;
+  bottom: 50%;
+  left: 95%;
+  right: auto;
+}
+
+#book-swiper {
+  margin: 0;
+}
+#book-swiper .swiper-slide {
+  text-align: center;
+}
+#book-swiper .swiper-slide img {
+  height: 120vh;
+  width: auto;
+}
+#book-swiper .swiper-button-prev {
+  top: auto;
+  bottom: 50%;
+  left: auto;
+  right: 93%;
+  font-size: 2em;
+}
+#book-swiper .swiper-button-next {
+  top: auto;
+  bottom: 50%;
+  left: 93%;
+  right: auto;
+  font-size: 2em;
+}
+#book-swiper .swiper-pagination {
+  bottom: 7%;
+}
+#book-swiper .swiper-pagination-bullet-active {
+  background-color: #1D7D77;
+}
+#book-swiper .swiper-pagination-bullet {
+  background-color: white;
 }
 
 .case-study .swiper-button-prev {
@@ -1562,30 +1565,23 @@ header[data-slidecolor=dark] .site-identity a svg {
   right: 10%;
 }
 
-#natura-swiper .swiper-button-prev {
-  top: auto;
-  bottom: 50%;
+/* Swiper Buttons */
+.swiper-button-prev {
+  color: white;
+  top: 56%;
   left: auto;
-  right: 95%;
-}
-#natura-swiper .swiper-button-next {
-  top: auto;
-  bottom: 50%;
-  left: 95%;
-  right: auto;
+  right: 17%;
 }
 
-#prime-swiper .swiper-button-prev {
-  top: auto;
-  bottom: 45%;
+.swiper-button-next {
+  color: white;
+  top: 56%;
   left: auto;
-  right: 95%;
+  right: 12%;
 }
-#prime-swiper .swiper-button-next {
-  top: auto;
-  bottom: 45%;
-  left: 95%;
-  right: auto;
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 1.5em;
 }
 
 .card:nth-child(1) {
@@ -1610,6 +1606,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   transform: translate(0, 0) scale(1);
 }
 
+/*Home Hero Typorgaphy*/
 .swiper-image h1 {
   transition: all 0.5s ease-out 0.25s;
   opacity: 0;
@@ -1645,6 +1642,56 @@ header[data-slidecolor=dark] .site-identity a svg {
   opacity: 1;
 }
 
+/*Home Swiper Button Blinks*/
+@keyframes blink {
+  from {
+    outline-offset: 0;
+    outline-color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes blink-white {
+  from {
+    outline-offset: 0;
+    outline-color: rgba(255, 255, 255, 0);
+  }
+}
+/*Home Swiper Arrows*/
+@keyframes swiper-prev {
+  0% {
+    opacity: 0;
+    transform: translateX(15px) scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(0px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes swiper-next {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px) scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(0px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px) scale(1);
+  }
+}
 .project-top {
   transition: all 0.5s ease;
 }

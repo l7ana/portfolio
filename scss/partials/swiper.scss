@@ -58,43 +58,6 @@
     }
   }
 
-  @keyframes swiper-prev {
-    0% {
-      opacity: 0;
-      transform: translateX(15px) scale(.9);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0px) scale(1);
-    }
-    70% {
-      opacity: 0;
-      transform: translateX(0px) scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(0px) scale(1);
-    }
-  }
-  @keyframes swiper-next {
-    0% {
-      opacity: 0;
-      transform: translateX(-15px) scale(.9);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0px) scale(1);
-    }
-    70% {
-      opacity: 0;
-      transform: translateX(0px) scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(0px) scale(1);
-    }
-  }
-
   // HERO TYPOGRAPHY
   #show-me {
     position: absolute;
@@ -174,18 +137,6 @@
       outline-color: rgba(white,.3);
       animation: blink-white 1s ease-in-out both infinite;
       transition: transform .5s ease-in-out;
-    }
-    @keyframes blink {
-      from {
-        outline-offset: 0;
-        outline-color: rgba(black,0);
-      }
-    }
-    @keyframes blink-white {
-      from {
-        outline-offset: 0;
-        outline-color: rgba(white,0);
-      }
     }
   }
     .dark .swiper-image h1,
@@ -292,13 +243,102 @@
   // Case study swiper
   .swiper-pagination-bullet-active {background-color: $turq;}
 
+  #to-prime-swiper {
+    background-image: linear-gradient(white, #FCFCFC);
+    margin: 10em 0 0 0; padding: 0;
+    .swiper-button-prev {
+      top: auto;
+      bottom: 45%;
+      left: auto;
+      right: 95%;
+    }
+   .swiper-button-next {
+    top: auto;
+    bottom: 45%;
+    left: 95%;
+    right: auto;
+    }
+  }
+
+  #to-twoladies-swiper {
+    background-image:linear-gradient(white, #f5f4f4);
+    margin: 0;
+  }
+
+  #natura-swiper {
+    padding-bottom: 0; margin-bottom: 0;
+    .swiper-container {
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      // border: 1px solid green;
+    }
+    
+    .swiper-button-prev {
+      top: auto;
+      bottom: 50%;
+      left: auto;
+      right: 95%;
+    }
+    .swiper-button-next {
+      top: auto;
+      bottom: 50%;
+      left: 95%;
+      right: auto;
+    }
+  }
+
+  #book-swiper {
+    margin: 0;
+    .swiper-slide {
+      img {height: 120vh; width: auto;}
+      text-align: center;
+    }
+    .swiper-button-prev {
+      top: auto;
+      bottom: 50%;
+      left: auto;
+      right: 93%;
+      font-size: 2em;
+    }
+    .swiper-button-next {
+      top: auto;
+      bottom: 50%;
+      left: 93%;
+      right: auto;
+      font-size: 2em;
+    }
+    .swiper-pagination {
+      bottom: 7%;
+    }
+    .swiper-pagination-bullet-active {background-color: $turq;}
+    .swiper-pagination-bullet {background-color: white;}
+  }
+
+  .case-study {
+    .swiper-button-prev {
+      color: $turq;
+      top: auto;
+      bottom: 5%;
+      left: auto;
+      right: 15%;
+  }
+  .swiper-button-next {
+    color: $turq;
+    top: auto;
+    bottom: 5%;
+    left: auto;
+    right: 10%;
+    }
+  }
+  
   /* Swiper Buttons */
   .swiper-button-prev {
     color: rgba(255,255,255,1);
     top: 56%;
     left: auto;
     right: 17%;
-}
+  }
 
 .swiper-button-next {
   color: rgba(255,255,255,1);
@@ -311,49 +351,3 @@
   font-size: 1.5em;
 }
 
-.case-study {
-  .swiper-button-prev {
-    color: $turq;
-    top: auto;
-    bottom: 5%;
-    left: auto;
-    right: 15%;
-}
-.swiper-button-next {
-  color: $turq;
-  top: auto;
-  bottom: 5%;
-  left: auto;
-  right: 10%;
-  }
-}
-
-#natura-swiper {
-  .swiper-button-prev {
-    top: auto;
-    bottom: 50%;
-    left: auto;
-    right: 95%;
-}
-.swiper-button-next {
-  top: auto;
-  bottom: 50%;
-  left: 95%;
-  right: auto;
-  }
-}
-
-#prime-swiper {
-  .swiper-button-prev {
-    top: auto;
-    bottom: 45%;
-    left: auto;
-    right: 95%;
-}
-.swiper-button-next {
-  top: auto;
-  bottom: 45%;
-  left: 95%;
-  right: auto;
-  }
-}
