@@ -1148,6 +1148,16 @@ a.button-white:hover {
     outline-color: rgba(168, 143, 30, 0);
   }
 }
+.button-white.blink {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid;
+  outline-offset: 10px;
+  outline-color: rgba(255, 255, 255, 0.3);
+  animation: blink-white 1s ease-in-out both infinite;
+  transition: transform 0.5s ease-in-out;
+}
+
 .button-gold.blink:hover,
 .button-white.blink:hover {
   transform: scale(1.05);
@@ -1509,6 +1519,26 @@ header[data-slidecolor=dark] .site-identity a svg {
   color: #1D7D77;
 }
 
+/* Swiper Buttons */
+.swiper-button-prev {
+  color: white;
+  top: 56%;
+  left: auto;
+  right: 17%;
+}
+
+.swiper-button-next {
+  color: white;
+  top: 56%;
+  left: auto;
+  right: 12%;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 1.5em;
+}
+
+/* Case study swiper*/
 .swiper-pagination-bullet-active {
   background-color: #1D7D77;
 }
@@ -1527,6 +1557,41 @@ header[data-slidecolor=dark] .site-identity a svg {
 }
 #prime-swiper .swiper-pagination {
   bottom: 10%;
+}
+
+#prime-swiper-two {
+  height: 80vh;
+}
+#prime-swiper-two .swiper-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#prime-swiper-two .swiper-slide .swiper-image {
+  width: 70%;
+  height: auto;
+  overflow: hidden;
+}
+#prime-swiper-two .swiper-slide .swiper-image video {
+  height: 100vh;
+}
+#prime-swiper-two .swiper-slide .swiper-info {
+  background-color: white;
+  width: 50%;
+}
+#prime-swiper-two .swiper-button-next {
+  top: auto;
+  bottom: 45%;
+  left: 95%;
+  right: auto;
+  animation: swiper-next 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards infinite;
+  opacity: 1;
+}
+#prime-swiper-two .swiper-button-next.next-1 {
+  left: 94%;
+  font-size: 1.2em;
+  opacity: 0.7;
+  animation-delay: 0.25s;
 }
 
 #to-twoladies-swiper {
@@ -1617,25 +1682,6 @@ header[data-slidecolor=dark] .site-identity a svg {
   bottom: 5%;
   left: auto;
   right: 10%;
-}
-
-/* Swiper Buttons */
-.swiper-button-prev {
-  color: white;
-  top: 56%;
-  left: auto;
-  right: 17%;
-}
-
-.swiper-button-next {
-  color: white;
-  top: 56%;
-  left: auto;
-  right: 12%;
-}
-
-.swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 1.5em;
 }
 
 .card:nth-child(1) {

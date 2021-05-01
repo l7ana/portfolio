@@ -263,7 +263,28 @@
     }
   }
 
-  // Case study swiper
+    /* Swiper Buttons */
+    .swiper-button-prev {
+      color: rgba(255,255,255,1);
+      top: 56%;
+      left: auto;
+      right: 17%;
+    }
+  
+  .swiper-button-next {
+    color: rgba(255,255,255,1);
+    top: 56%;
+    left: auto;
+    right: 12%;
+  }
+  
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 1.5em;
+  }
+  
+  
+
+  /* Case study swiper*/
   .swiper-pagination-bullet-active {background-color: $turq;}
 
 
@@ -281,6 +302,40 @@
     right: auto;
     }
     .swiper-pagination { bottom: 10%; }
+  }
+
+  #prime-swiper-two {
+    height: 80vh;
+    .swiper-slide {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .swiper-image {
+        width: 70%; height: auto;
+        overflow: hidden;
+        video { 
+          height: 100vh;
+        }
+      }
+      .swiper-info {
+        background-color: white;
+        width: 50%;
+      }
+    }
+    .swiper-button-next {
+      top: auto;
+      bottom: 45%;
+      left: 95%;
+      right: auto;
+      animation: swiper-next 1.5s cubic-bezier(0.25,0.46,0.45,0.94) forwards infinite;
+      opacity: 1;
+      &.next-1 {
+        left: 94%;
+        font-size: 1.2em;
+        opacity: .7;
+        animation-delay: .25s;
+       }
+      }
   }
 
   #to-twoladies-swiper {
@@ -359,23 +414,3 @@
     right: 10%;
     }
   }
-  
-  /* Swiper Buttons */
-  .swiper-button-prev {
-    color: rgba(255,255,255,1);
-    top: 56%;
-    left: auto;
-    right: 17%;
-  }
-
-.swiper-button-next {
-  color: rgba(255,255,255,1);
-  top: 56%;
-  left: auto;
-  right: 12%;
-}
-
-.swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 1.5em;
-}
-

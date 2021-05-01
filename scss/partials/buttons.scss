@@ -78,6 +78,16 @@ a.button {
     }
   }
 
+  .button-white.blink { 
+    background-color: rgba(black,.1);
+    text-align: center;
+    border: 1px solid;
+    outline-offset: 10px;
+    outline-color: rgba(white,.3);
+    animation: blink-white 1s ease-in-out both infinite;
+    transition: transform .5s ease-in-out;
+  }
+
   .button-gold.blink:hover,
   .button-white.blink:hover {
     transform: scale(1.05);
