@@ -764,19 +764,6 @@ footer {
   margin-top: 2em;
 }
 
-#prime-bottom {
-  height: auto;
-  padding: 2em 0 1em 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background-color: #0E6390;
-}
-#prime-bottom h3 {
-  margin: 0 0.5em 0 0;
-  color: white;
-}
-
 #book-rationale {
   margin: 0;
 }
