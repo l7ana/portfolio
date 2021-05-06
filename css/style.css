@@ -934,7 +934,7 @@ footer {
   overflow: hidden;
   position: relative;
 }
-.card .card-img img {
+.card .card-img img, .card .card-img lottie-player {
   transform: scale(1.05);
   transition: transform 1s cubic-bezier(0.32, 0, 0.77, 1);
   z-index: 2;
@@ -1356,20 +1356,10 @@ a.button-white:hover {
 #home-swiper .swiper-textbox .button {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
-  border: 1px solid;
-  outline-offset: 10px;
-  outline-color: rgba(0, 0, 0, 0.3);
-  animation: blink 1s ease-in-out both infinite;
-  transition: transform 0.5s ease-in-out;
 }
 #home-swiper .swiper-textbox .button-white {
   background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
-  border: 1px solid;
-  outline-offset: 10px;
-  outline-color: rgba(255, 255, 255, 0.3);
-  animation: blink-white 1s ease-in-out both infinite;
-  transition: transform 0.5s ease-in-out;
 }
 #home-swiper .dark .swiper-image h1,
 #home-swiper .dark .swiper-image,
@@ -1849,4 +1839,46 @@ header[data-slidecolor=dark] .site-identity a svg {
 /*TABS*/
 .tab-section {
   padding: 5em 0;
+  height: auto;
+}
+.tab-section [data-tabstate=active] {
+  color: white;
+}
+.tab-section [data-contentstate=inactive] {
+  display: none;
+}
+.tab-section [data-contentstate=active] {
+  display: block;
+}
+.tab-section .tab-buttons {
+  display: flex;
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+}
+.tab-section .tab-buttons li {
+  margin-right: 2em;
+}
+.tab-section .tab-buttons button {
+  color: white;
+  border: none;
+  font: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+.tab-section .tab-buttons button[data-id=featured-tab] {
+  background-color: #173753;
+}
+.tab-section .tab-buttons button[data-id=print-tab] {
+  background-color: #A88F1E;
+}
+.tab-section .tab-buttons button[data-id=digital-tab] {
+  background-color: #1D7D77;
+}
+.tab-section .tab-buttons button[data-id=identity-tab] {
+  background-color: #543220;
 }

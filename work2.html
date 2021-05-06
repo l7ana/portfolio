@@ -33,192 +33,290 @@
         </div>
     </header>
 
-    <section class="tab-section">
+    <section class="tab-section work">
         <div class="container">
             <nav>
-                <ul class="tab-buttons">
-                    <li><button data-id="featured-tab" data-tabstate="active">Featured</button></li>
-                    <li><button data-id="print-tab">Print</button></li>
-                    <li><button data-id="digital-tab">Digital</button></li>
-                    <li><button data-id="identity-tab">Identity</button></li>
+                <ul class="tab-buttons" role="tablist">
+                    <li><button data-id="featured-tab" data-tabstate="active" role="tab"
+                            aria-controls="featured-tab">Featured</button></li>
+                    <li><button data-id="print-tab" role="tab" aria-controls="print-tab">Print</button></li>
+                    <li><button data-id="digital-tab" role="tab" aria-controls="digital-tab">Digital</button></li>
+                    <li><button data-id="identity-tab" role="tab" aria-controls="identity-tab">Identity</button></li>
                 </ul>
             </nav>
             <div class="content-wrapper">
-                <div class="content" id="featured-tab" data-contentstate="active">
-                    <h2>Featured</h2>
-                    <p>This will be featured projects</p>
-                </div>
-                <div class="content" id="print-tab">
-                    <h2>Print</h2>
-                    <p>This will be featured projects</p>
-                </div>
-                <div class="content" id="digital-tab">
-                    <h2>Digital</h2>
-                    <p>This will be featured projects</p>
-                </div>
-                <div class="content" id="identity-tab">
-                    <h2>Identity</h2>
-                    <p>This will be featured projects</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SIDE SCROLLING -->
-
-    <section class="work" id="digital">
-        <div class="container">
-            <div class="row no-margin">
-                <div class="column one-whole text-centered">
-                    <h2 class="sectionhead">Digital Projects</h2>
-                </div>
-            </div>
-            <div class="card-row">
-                <div class="card" data-inview="no">
-                    <a href="kpc.html">
-                        <div class="card-img"><img src="./img/1x1/kpc-mockup_1x1.jpg" id="card-gems" alt="gem stamps">
+                <div class="content" id="featured-tab" data-contentstate="active" role="tabpanel"
+                    aria-labelledby="featured-tab">
+                    <div class="row big-card">
+                        <div class="column one-half card-info" data-inview="no">
+                            <a href="kpc.html">
+                                <h1>Kalihi Pet Center Website Redesign</h1>
+                            </a>
+                            <p class="subhead">A multi-page website for a cute local pet shop.</p>
+                            <!-- <a href="kpc.html" class="button-gold">View Project</a> -->
                         </div>
-                        <div class="card-info">
-                            <h3>Kalihi Pet Center Website</h3>
-                            <p>A series of postal stamps showing off dazzling gemstones.</p>
+                        <div class="column one-half" data-inview="no"><small class="meta-label digital">
+                                Digital
+                            </small>
+                            <div class="card-img"><img src="./img/1x1/kpc-mockup_1x1.jpg" alt="Kahili Pet Center"></div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="card-row">
+                        <div class="card" data-inview="no">
+                            <a href="shabp.html">
+                                <div class="card-img"><img src="./img/1x1/shabpenamel_1x1.jpg" alt=""><small
+                                        class="meta-label identity">
+                                        Identity
+                                    </small></div>
+                                <div class="card-info">
+                                    <h3>Small Hands Against Big Phones</h3>
+                                    <p>An identity curated for a club whose size should not be underestimated.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card" data-inview="no">
+                            <a href="triology-bookcovers.html">
+                                <div class="card-img"><img src="./img/1x1/bookcovers_1x1.jpg" alt=""><small
+                                        class="meta-label printed">
+                                        Print
+                                    </small></div>
+                                <div class="card-info">
+                                    <h3>This is Love Triology Book Covers</h3>
+                                    <p>An unusual book triology for Radiotopia's "This is Love" Podcast.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card" data-inview="no">
+                            <a href="prime-app.html">
+                                <div class="card-img"><img src="./img/1x1/prime_1x1.svg" alt=""><small
+                                        class="meta-label digital">
+                                        Digital
+                                    </small></div>
+                                <div class="card-info">
+                                    <h3>Prime Mobile App</h3>
+                                    <p>A habit-busting mobile app designed to help you refine your time.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card" data-inview="no">
+                            <a href="haven-solus.html">
+                                <div class="card-img">
+                                    <lottie-player
+                                        src="https://assets9.lottiefiles.com/private_files/lf30_4nqq6e1q.json"
+                                        background="transparent" speed="1" style="width: 100%; height: 100%;" loop
+                                        autoplay class="card-img"></lottie-player>
+                                    <small class="meta-label identity">
+                                        Identity
+                                    </small>
+                                </div>
+                                <div class="card-info">
+                                    <h3>Haven Solus Resort</h3>
+                                    <p>Haven Solus is a refuge for those seeking serenity from the commotion of their
+                                        day-to-day
+                                        lives and careers.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card" data-inview="no">
-                    <a href="fohr.html">
-                        <div class="card-img"><img src="./img/fohr/fohr_mockup_2.jpg" alt=""></div>
-                        <div class="card-info">
-                            <h3>Friends of Hawai&#8216;i Robotics UI</h3>
-                            <p>Designing for a local non-profit whose impact reaches 8,000 Hawai&#8216;i students
-                                yearly.
+                <div class="content" id="print-tab" role="tabpanel" aria-labelledby="print-tab">
+                    <div class="row big-card">
+                        <div class="column one-half card-info" data-inview="no">
+                            <a href="triology-bookcovers.html">
+                                <h1>This is Love Triology Book Covers</h1>
+                            </a>
+                            <p class="subhead">An unusual book triology for Radiotopia's "This is Love" Podcast.</p>
+                            <!-- <a href="kpc.html" class="button-gold">View Project</a> -->
+                        </div>
+                        <div class="column one-half" data-inview="no">
+                            <small class="meta-label printed">
+                                Print
+                            </small>
+                            <div class="card-img"><img src="./img/1x1/bookcovers_1x1.jpg"
+                                    alt="This is Love Triology Book Covers"></div>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card" data-inview="no">
+                            <a href="natura-brochure.html">
+                                <div class="card-img"><img src="./img/1x1/natura_1x1.jpg" alt=""><small
+                                        class="meta-label printed">
+                                        Print
+                                    </small></div>
+                                <div class="card-info">
+                                    <h3>Natura Insects Exhibit Brochure</h3>
+                                    <p>The work of Raku Inoue jumps off the page from this museum exhbition brochure.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card" data-inview="no">
+                            <a href="honolulu-flag.html">
+                                <div class="card-img"><img src="./img/1x1/honoluluflag_1x1.jpg" alt=""><small
+                                        class="meta-label printed">
+                                        Print
+                                    </small></div>
+                                <div class="card-info">
+                                    <h3>Honolulu City Flag</h3>
+                                    <p>Representing the island of O&#8216;ahu's Gathering Place&mdash;the city of
+                                        Honolulu.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-reverse big-card">
+                        <div class="column one-half card-info" data-inview="no">
+                            <h2 class="sectionhead">Featured Project:</h2>
+                            <a href="triology-bookcovers.html">
+                                <h1>USPS Gemstone Stamps</h1>
+                            </a>
+                            <p class="subhead">A series of postal stamps showing off dazzling gemstones.</p>
+                            <!-- <a href="kpc.html" class="button-gold">View Project</a> -->
+                        </div>
+                        <div class="column one-half" data-inview="no">
+                            <small class="meta-label printed">
+                                Print
+                            </small>
+                            <div class="card-img"><img src="./img/1x1/gems_v1.gif" id="card-gems" alt="USPS Gem Stamps">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" id="digital-tab" role="tabpanel" aria-labelledby="digital-tab">
+                    <div class="row big-card">
+                        <div class="column one-half card-info" data-inview="no">
+                            <a href="kpc.html">
+                                <h1>Kalihi Pet Center Website Redesign</h1>
+                            </a>
+                            <p class="subhead">A multi-page website for a cute local pet shop.</p>
+                            <!-- <a href="kpc.html" class="button-gold">View Project</a> -->
+                        </div>
+                        <div class="column one-half" data-inview="no"><small class="meta-label digital">
+                                Digital
+                            </small>
+                            <div class="card-img"><img src="./img/1x1/kpc-mockup_1x1.jpg" alt="Kahili Pet Center"></div>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card" data-inview="no">
+                            <a href="fohr.html">
+                                <div class="card-img"><img src="./img/fohr/fohr_mockup_2.jpg" alt=""><small
+                                        class="meta-label digital">
+                                        Digital
+                                    </small>
+                                </div>
+                                <div class="card-info">
+                                    <h3>Friends of Hawai&#8216;i Robotics UI</h3>
+                                    <p>Designing for a local non-profit whose impact reaches 8,000 Hawai&#8216;i
+                                        students
+                                        yearly.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card" data-inview="no">
+                            <div class="card-img"><img src="./img/1x1/kinetic_1x1.jpg" alt="">
+                                <small class="meta-label digital">
+                                    Digital
+                                </small>
+                            </div>
+                            <div class="card-info">
+                                <h3>Kinetic Typography</h3>
+                                <p>A motion graphics exercise with your favorite zany blue tang.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-reverse big-card">
+                        <div class="column one-half card-info" data-inview="no">
+                            <a href="prime-app.html">
+                                <h1>Prime Mobile App</h1>
+                            </a>
+                            <p class="subhead">A habit-busting mobile app designed to help you refine your time.</p>
+                            <!-- <a href="kpc.html" class="button-gold">View Project</a> -->
+                        </div>
+                        <div class="column one-half" data-inview="no">
+                            <small class="meta-label digital">
+                                Digital
+                            </small>
+                            <div class="card-img"><img src="./img/1x1/prime_1x1.svg" alt="Prime Mobile App"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" id="identity-tab" role="tabpanel" aria-labelledby="identity-tab">
+                    <div class="row big-card">
+                        <div class="column one-half card-info" data-inview="no">
+                            <h2 class="sectionhead">Featured Project:</h2>
+                            <a href="shabp.html">
+                                <h1>Small Hands Against Big Phones</h1>
+                            </a>
+                            <p class="subhead">An identity curated for a club whose size should not be underestimated.
                             </p>
+                            <!-- <a href="kpc.html" class="button-gold">View Project</a> -->
                         </div>
-                    </a>
-                </div>
-                <div class="card" data-inview="no">
-                    <div class="card-img"><img src="./img/1x1/kinetic_1x1.jpg" alt=""></div>
-                    <div class="card-info">
-                        <h3>Kinetic Typography</h3>
-                        <p>A motion graphics exercise with your favorite zany blue tang.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-row">
-                <a href="prime-app.htm">
-                    <div class="card horizontal" data-inview="no">
-                        <div class="card-img"><img src="./img/2x1/prime_2x1.svg" alt=""></div>
-                        <div class="card-info">
-                            <h3>Prime Mobile App</h3>
-                            <p>A habit-busting mobile app designed to help you refine your time.</p>
+                        <div class="column one-half" data-inview="no">
+                            <small class="meta-label identity">
+                                Identity
+                            </small>
+                            <div class="card-img"><img src="./img/1x1/shabpenamel_1x1.jpg" alt="Prime Mobile App"></div>
                         </div>
                     </div>
-                </a>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section class="work" id="branding">
-        <div class="container">
-            <div class="row no-margin">
-                <div class="column one-whole text-centered">
-                    <h2 class="sectionhead">Branding Projects</h2>
-                </div>
-            </div>
-            <div class="card-row">
-                <div class="card" data-inview="no">
-                    <a href="shabp.html">
-                        <div class="card-img"><img src="./img/1x1/2ladies_1x1.jpg" alt=""></div>
-                        <div class="card-info">
-                            <h3>Small Hands Against Big Phones</h3>
-                            <p>A logo for Big Island's timlessly ono confectionary.</p>
+                    <div class="card-row">
+                        <div class="card" data-inview="no">
+                            <a href="twoladies.html">
+                                <div class="card-img"><img src="./img/1x1/2ladies_1x1.jpg" alt=""><small
+                                        class="meta-label identity">
+                                        Identity
+                                    </small></div>
+                                <div class="card-info">
+                                    <h3>Two Ladies Kitchen Logo</h3>
+                                    <p>A logo for Big Island's timlessly ono confectionary.</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="card" data-inview="no">
-                    <a href="haven-solus.html">
-                        <div class="card-img"><img src="./img/1x1/havensolus_1x1.jpg" alt=""></div>
-                        <div class="card-info">
-                            <h3>Haven Solus Resort</h3>
-                            <p>Haven Solus is a refuge for those seeking serenity from the commotion of their day-to-day
+                        <div class="card" data-inview="no">
+                            <a href="copenhagen-logo.html">
+                                <div class="card-img"><img src="./img/1x1/copen_1x1.jpg" alt=""><small
+                                        class="meta-label identity">
+                                        Identity
+                                    </small></div>
+                                <div class="card-info">
+                                    <h3>Copenhagen City Logo</h3>
+                                    <p>Giving the happiest city in the world a logo for tourists to remember it by.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-reverse big-card">
+                        <div class="column one-half card-info" data-inview="no">
+                            <h2 class="sectionhead">Featured Project:</h2>
+                            <a href="haven-solus.html">
+                                <h1>Haven Solus Resort</h1>
+                            </a>
+                            <p class="subhead">Haven Solus is a refuge for those seeking serenity from the commotion of
+                                their
+                                day-to-day
                                 lives and careers.</p>
+                            <!-- <a href="kpc.html" class="button-gold">View Project</a> -->
                         </div>
-                    </a>
-                </div>
-                <div class="card" data-inview="no">
-                    <a href="copenhagen-logo.html">
-                        <div class="card-img"><img src="./img/1x1/copen_1x1.jpg" alt=""></div>
-                        <div class="card-info">
-                            <h3>Copenhagen City Logo</h3>
-                            <p>Giving the happiest city in the world a logo for tourists to remember it by.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card-row">
-                <a href="twoladies.html">
-                    <div class="card horizontal" data-inview="no">
-                        <div class="card-img"><img src="./img/2x1/2ladiesbox_2x1.jpg" alt=""></div>
-                        <div class="card-info">
-                            <h3>Two Ladies Kitchen Logo</h3>
-                            <p>A logo for Big Island's timlessly ono confectionary.</p>
+                        <div class="column one-half" data-inview="no">
+                            <small class="meta-label identity">
+                                Identity
+                            </small>
+                            <div class="card-img">
+                                <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_4nqq6e1q.json"
+                                    background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay
+                                    class="card-img"></lottie-player>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="work" id="printed">
-        <div class="container">
-            <div class="row no-margin">
-                <div class="column one-whole text-centered">
-                    <h2 class="sectionhead">Printed Projects</h2>
-                </div>
-            </div>
-            <div class="card-row">
-                <div class="card" data-inview="no">
-                    <a href="triology-bookcovers.html">
-                        <div class="card-img"><img src="./img/1x1/bookcovers_1x1.jpg" alt=""></div>
-                        <div class="card-info">
-                            <h3>This is Love Triology Book Covers</h3>
-                            <p>An unusual book triology for Radiotopia's "This is Love" Podcast.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card" data-inview="no">
-                    <div class="card-img"><img src="./img/1x1/gems_v1.gif" id="card-gems" alt="gem stamps">
-                    </div>
-                    <div class="card-info">
-                        <!-- <div class="card-category">Print</div> -->
-                        <h3>USPS Gemstone Stamps</h3>
-                        <p>A series of postal stamps showing off dazzling gemstones.</p>
-                    </div>
-                </div>
-                <div class="card" data-inview="no">
-                    <a href="honolulu-flag.html">
-                        <div class="card-img"><img src="./img/1x1/honoluluflag_1x1.jpg" alt=""></div>
-                        <div class="card-info">
-                            <h3>Honolulu City Flag</h3>
-                            <p>Representing the island of O&#8216;ahu's Gathering Place&mdash;the city of Honolulu.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card-row">
-                <a href="natura-brochure.html">
-                    <div class="card horizontal" data-inview="no">
-                        <div class="card-img"><img src="./img/natura/naturamockup.jpg" alt=""></div>
-                        <div class="card-info">
-                            <h3>Natura Insects Exhibit Brochure</h3>
-                            <p>The work of Raku Inoue jumps off the page from this museum exhbition brochure.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
     <section id="welcome">
         <div class="container">
             <div class="row">
@@ -261,6 +359,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Scroll JS -->
     <script src="js/scroll.js"></script>
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
