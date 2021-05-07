@@ -5,6 +5,11 @@
     height: auto;
     [data-tabstate="active"] {
       color: white;
+      transition: all .2s ease;
+      &[data-id="featured-tab"] {background-color: $navy;}
+      &[data-id="print-tab"] {background-color: $gold;}
+      &[data-id="digital-tab"] {background-color: $turq;}
+      &[data-id="identity-tab"] {background-color: $rust;}
     }
     [data-contentstate="inactive"] {
       display: none;
@@ -18,11 +23,10 @@
       margin: 1em 0;
       padding: 0;
       li {
-        margin-right: 2em;
+        margin-right: 1.5em;
       }
       button {
-        // background-color: transparent;
-        color: white;
+        background-color: transparent;
         border: none;
         font: inherit;
         font-weight: 600;
@@ -31,10 +35,6 @@
         letter-spacing: .5px;
         cursor: pointer;
         padding: .5em 1em;
-        &[data-id="featured-tab"] {background-color: $navy;}
-        &[data-id="print-tab"] {background-color: $gold;}
-        &[data-id="digital-tab"] {background-color: $turq;}
-        &[data-id="identity-tab"] {background-color: $rust;}
       }
     }
   }

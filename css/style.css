@@ -1843,6 +1843,19 @@ header[data-slidecolor=dark] .site-identity a svg {
 }
 .tab-section [data-tabstate=active] {
   color: white;
+  transition: all 0.2s ease;
+}
+.tab-section [data-tabstate=active][data-id=featured-tab] {
+  background-color: #173753;
+}
+.tab-section [data-tabstate=active][data-id=print-tab] {
+  background-color: #A88F1E;
+}
+.tab-section [data-tabstate=active][data-id=digital-tab] {
+  background-color: #1D7D77;
+}
+.tab-section [data-tabstate=active][data-id=identity-tab] {
+  background-color: #543220;
 }
 .tab-section [data-contentstate=inactive] {
   display: none;
@@ -1857,10 +1870,10 @@ header[data-slidecolor=dark] .site-identity a svg {
   padding: 0;
 }
 .tab-section .tab-buttons li {
-  margin-right: 2em;
+  margin-right: 1.5em;
 }
 .tab-section .tab-buttons button {
-  color: white;
+  background-color: transparent;
   border: none;
   font: inherit;
   font-weight: 600;
@@ -1869,16 +1882,4 @@ header[data-slidecolor=dark] .site-identity a svg {
   letter-spacing: 0.5px;
   cursor: pointer;
   padding: 0.5em 1em;
-}
-.tab-section .tab-buttons button[data-id=featured-tab] {
-  background-color: #173753;
-}
-.tab-section .tab-buttons button[data-id=print-tab] {
-  background-color: #A88F1E;
-}
-.tab-section .tab-buttons button[data-id=digital-tab] {
-  background-color: #1D7D77;
-}
-.tab-section .tab-buttons button[data-id=identity-tab] {
-  background-color: #543220;
 }
