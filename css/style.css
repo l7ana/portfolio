@@ -219,6 +219,27 @@ lottie-player.video-bg {
   left: 12%;
 }
 
+#hs-graphics {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#hs-graphics img {
+  margin: 1em;
+  max-height: 100px;
+}
+
+.img-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+.img-grid .row img {
+  margin: 1em;
+}
+
 .imac-mockup {
   background-image: url(../img/imac.png);
   background-repeat: no-repeat;
@@ -1063,8 +1084,6 @@ a.button-gold {
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0);
   display: inline-block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0.8em 1em 0.7em 1em;
   text-decoration: none;
