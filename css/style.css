@@ -223,11 +223,11 @@ lottie-player.video-bg {
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
 }
 #hs-graphics img {
-  margin: 1em;
-  max-height: 100px;
+  margin: 0.7em 1em;
+  height: 80%;
+  max-height: 150px;
 }
 
 .img-grid .row {
