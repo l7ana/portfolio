@@ -121,6 +121,10 @@ ul.bulleted li::before {
   font-size: 1.5em;
 }
 
+.project-top h1 {
+  font-size: clamp(4.5em, 7vw, 7em);
+}
+
 .work .sectionhead {
   margin: 1%;
 }
@@ -223,11 +227,18 @@ lottie-player.video-bg {
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
+  margin: 1.5em 0;
 }
 #hs-graphics img {
-  margin: 0.7em 1em;
-  height: 80%;
-  max-height: 150px;
+  max-height: 100px;
+  margin: 1em;
+}
+@media (min-width: 768px) {
+  #hs-graphics img {
+    margin: 0.7em 1em;
+    height: 80%;
+    max-height: 150px;
+  }
 }
 
 .img-grid .row {
@@ -264,6 +275,31 @@ lottie-player.video-bg {
   padding-top: 26px;
   width: 847px;
   height: 491px;
+}
+
+.project-top-wrapper {
+  position: absolute;
+  z-index: -10;
+  overflow: hidden;
+  width: 100%;
+  max-width: 960px;
+  right: 0;
+  height: 100vh;
+}
+.project-top-wrapper lottie-player, .project-top-wrapper img {
+  position: absolute;
+}
+
+#hs-project-top {
+  right: 0%;
+  top: auto;
+  bottom: -25%;
+}
+@media (min-width: 768px) {
+  #hs-project-top {
+    right: -10%;
+    top: 15%;
+  }
 }
 
 html,
@@ -798,6 +834,38 @@ footer {
 
 #book-video {
   height: auto;
+}
+
+#hs-brand {
+  background-color: rgba(229, 222, 214, 0.5);
+  color: #6B645D;
+}
+#hs-brand h2, #hs-brand h3 {
+  color: #6B645D;
+}
+#hs-brand h2 {
+  margin-top: 1em;
+}
+
+#hs-core p {
+  font-size: 2em;
+  line-height: 1.3;
+  font-family: "kepler-std-semicondensed-cap", serif;
+  font-style: italic;
+}
+
+#hs-quotes p {
+  hanging-punctuation: first;
+}
+#hs-quotes span.name {
+  font-family: "kepler-std-semicondensed-cap", serif;
+  font-weight: 400;
+  font-feature-settings: "smcp";
+}
+
+#hs-deliverables {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Work Grid */
@@ -1662,6 +1730,29 @@ header[data-slidecolor=dark] .site-identity a svg {
   background-color: #1D7D77;
 }
 #book-swiper .swiper-pagination-bullet {
+  background-color: white;
+}
+
+#hs-swiper {
+  margin-top: 2em;
+}
+#hs-swiper .swiper-button-prev,
+#hs-swiper .swiper-button-next {
+  top: auto;
+  bottom: 13%;
+  left: auto;
+  color: white;
+}
+#hs-swiper .swiper-button-next {
+  left: 93%;
+}
+#hs-swiper .swiper-button-prev {
+  right: 93%;
+}
+#hs-swiper .swiper-pagination {
+  bottom: 12%;
+}
+#hs-swiper .swiper-pagination-bullet {
   background-color: white;
 }
 

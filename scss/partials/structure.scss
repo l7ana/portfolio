@@ -510,3 +510,37 @@ footer {background-color: $navy-2;}
 #book-video {
   height: auto;
 }
+
+// Haven Solus
+#hs-brand {
+  background-color: rgba(#E5DED6, 0.5);
+  color: #6B645D;
+  h2, h3 {color: #6B645D;}
+  h2 {margin-top: 1em;}
+}
+
+#hs-core {
+  p {
+    font-size: 2em;
+    line-height: 1.3;
+    font-family: $type-subhead;
+    font-style:italic;
+  }
+}
+
+#hs-quotes {
+  p {
+    // font-family: $type-subhead;
+    hanging-punctuation: first;
+  }
+  span.name {
+    font-family: $type-subhead;
+    font-weight: 400;
+    font-feature-settings: 'smcp';
+  }
+}
+
+#hs-deliverables {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

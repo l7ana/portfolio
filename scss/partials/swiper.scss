@@ -388,6 +388,22 @@
     .swiper-pagination-bullet {background-color: white;}
   }
 
+  #hs-swiper {
+    margin-top: 2em;
+    .swiper-button-prev,
+    .swiper-button-next
+     {
+      top: auto;
+      bottom: 13%;
+      left: auto;
+      color: white;
+    }
+    .swiper-button-next { left: 93%; }
+    .swiper-button-prev {right: 93%;}
+    .swiper-pagination { bottom: 12%; }
+    .swiper-pagination-bullet {background-color: white;}
+  }
+
   .case-study {
     .swiper-button-prev {
       color: $turq;
