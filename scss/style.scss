@@ -4,12 +4,6 @@ $type-heading:'kepler-std-display', serif;
 $type-subhead: 'kepler-std-semicondensed-cap', serif;
 $type-body: 'hero-new', sans-serif;
 
-$blue: #63cadf;
-$blue-lt: #bbe4ed;
-$links: #6070e6;
-$black-1: #0e283d;
-$black-2: #011627;
-
 $navy: #173753;
 $navy-2: #0C1C2A;
 $navy-3: #4D6B85;
@@ -23,8 +17,15 @@ $white-1:#f1f9ff;
 $grey-1:#D1D7DD;
 $grey-2:#A2AFBA;
 $grey-3: #748798;
+$black-1: #0e283d;
+$black-2: #011627;
 
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+$breakpoint-x-small: 480px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
 
 // Import
 @import 'partials/typography.scss';
@@ -36,9 +37,3 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 @import 'partials/swiper.scss';
 @import 'partials/animations.scss';
 @import 'partials/tabs.scss';
-
-// BREAKPOINT
-$breakpoint-x-small: 480px;
-$breakpoint-small: 768px;
-$breakpoint-medium: 1050px;
-$breakpoint-large: 1250px;
