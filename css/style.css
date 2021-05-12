@@ -241,16 +241,6 @@ lottie-player.video-bg {
   }
 }
 
-.img-grid .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-around;
-}
-.img-grid .row img {
-  margin: 1em;
-}
-
 .imac-mockup {
   background-image: url(../img/imac.png);
   background-repeat: no-repeat;
@@ -900,17 +890,51 @@ p.core {
 }
 
 #shabp-brand {
-  background-color: rgba(229, 222, 214, 0.5);
-  color: #6B645D;
+  background-color: #022118;
+  color: white;
+  padding: 2em 0;
 }
-#shabp-brand h2, #shabp-brand h3 {
-  color: #6B645D;
+#shabp-brand .row {
+  margin: 1em 0;
 }
 #shabp-brand h2 {
-  margin-top: 1em;
+  color: #fd00fb;
+}
+#shabp-brand h3 {
+  color: #00ffbc;
 }
 #shabp-brand .column.one-third h3:nth-child(2) {
   margin-top: 1em;
+}
+#shabp-brand ul.bulleted li::before {
+  color: #fadf09;
+}
+
+#shabp-printed {
+  background-color: #023223;
+  margin-bottom: 0;
+}
+#shabp-printed h2 {
+  color: white;
+  margin-top: 1em;
+}
+#shabp-printed h3 {
+  color: #fd00fb;
+}
+
+#shabp-digital {
+  background-color: #022118;
+  margin-bottom: 0;
+}
+#shabp-digital p {
+  color: white;
+}
+#shabp-digital h2 {
+  color: white;
+  margin-top: 1em;
+}
+#shabp-digital h3 {
+  color: #00ffbc;
 }
 
 /* Work Grid */
@@ -1190,6 +1214,88 @@ p.core {
   align-items: center;
 }
 
+/*Image Grid*/
+@media (min-width: 768px) {
+  .row-grid {
+    grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    margin-bottom: 1.45%;
+    column-gap: 1.45%;
+  }
+  .row-grid img {
+    margin: 0;
+  }
+
+  .row-grid > .column-grid.col-start-1 {
+    grid-column-start: 1;
+  }
+  .row-grid > .column-grid.col-start-2 {
+    grid-column-start: 2;
+  }
+  .row-grid > .column-grid.col-start-3 {
+    grid-column-start: 3;
+  }
+  .row-grid > .column-grid.col-start-4 {
+    grid-column-start: 4;
+  }
+  .row-grid > .column-grid.col-start-5 {
+    grid-column-start: 5;
+  }
+  .row-grid > .column-grid.col-start-6 {
+    grid-column-start: 6;
+  }
+  .row-grid > .column-grid.col-start-7 {
+    grid-column-start: 7;
+  }
+  .row-grid > .column-grid.col-start-8 {
+    grid-column-start: 8;
+  }
+  .row-grid > .column-grid.col-start-9 {
+    grid-column-start: 9;
+  }
+  .row-grid > .column-grid.col-start-10 {
+    grid-column-start: 10;
+  }
+  .row-grid > .column-grid.col-start-11 {
+    grid-column-start: 11;
+  }
+  .row-grid > .column-grid.col-start-12 {
+    grid-column-start: 12;
+  }
+  .row-grid > .column-grid.col-end-2 {
+    grid-column-end: 3;
+  }
+  .row-grid > .column-grid.col-end-3 {
+    grid-column-end: 4;
+  }
+  .row-grid > .column-grid.col-end-4 {
+    grid-column-end: 5;
+  }
+  .row-grid > .column-grid.col-end-5 {
+    grid-column-end: 6;
+  }
+  .row-grid > .column-grid.col-end-6 {
+    grid-column-end: 7;
+  }
+  .row-grid > .column-grid.col-end-7 {
+    grid-column-end: 8;
+  }
+  .row-grid > .column-grid.col-end-8 {
+    grid-column-end: 9;
+  }
+  .row-grid > .column-grid.col-end-9 {
+    grid-column-end: 10;
+  }
+  .row-grid > .column-grid.col-end-10 {
+    grid-column-end: 11;
+  }
+  .row-grid > .column-grid.col-end-11 {
+    grid-column-end: 12;
+  }
+  .row-grid > .column-grid.col-end-12 {
+    grid-column-end: 13;
+  }
+}
 /* Buttons */
 a.button,
 a.button-white,

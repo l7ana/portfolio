@@ -570,11 +570,34 @@ p.core {
 
 // SHABP
 #shabp-brand {
-  background-color: rgba(#E5DED6, 0.5);
-  color: #6B645D;
-  h2, h3 {color: #6B645D;}
-  h2 {margin-top: 1em;}
+  background-color: rgb(2, 33, 24);
+  color: white;
+  padding: 2em 0;
+  .row {margin: 1em 0;}
+  h2 {color: rgb(253,0,251);}
+  h3 {color: rgb(0,255,188);}
   .column.one-third h3:nth-child(2) {
     margin-top: 1em;
   }
+  ul.bulleted li::before {color: rgb(250, 223, 9);}
+}
+
+#shabp-printed {
+  background-color: rgb(2,50,35);
+  margin-bottom: 0;
+  h2 {
+    color: white;
+    margin-top: 1em;
+  }
+  h3 {color: rgb(253,0,251);}
+}
+#shabp-digital {
+  background-color: rgb(2, 33, 24);
+  margin-bottom: 0;
+  p {color: white;}
+  h2 {
+    color: white;
+    margin-top: 1em;
+  }
+  h3 {color: rgb(0,255,188);}
 }

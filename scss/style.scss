@@ -36,3 +36,9 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 @import 'partials/swiper.scss';
 @import 'partials/animations.scss';
 @import 'partials/tabs.scss';
+
+// BREAKPOINT
+$breakpoint-x-small: 480px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
