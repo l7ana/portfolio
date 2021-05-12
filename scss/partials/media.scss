@@ -38,6 +38,10 @@ lottie-player.video-bg {
     z-index: 10;
 }
 
+.site-identity a svg {
+    fill: $turq; color: $turq;
+}
+
 #kpc-ani {
     img {
         height: auto;
@@ -109,9 +113,8 @@ lottie-player.video-bg {
     overflow: hidden;
     width: 100%;
     max-width: 960px;
-    right: 0;
+    right: 0; top: 0;
     height: 100vh;
-    // border: 1px solid red;
     lottie-player, img {
         position: absolute;
     }
@@ -125,5 +128,37 @@ lottie-player.video-bg {
     @media (min-width: 768px) {
         right: -10%;
         top: 15%;
+    }
+}
+
+#kpc-project-top {
+    right: 0%;
+    top: auto;
+    bottom: 7%;
+    @media (min-width: $breakpoint-medium) {
+        right: 10%;
+        top: 45%;
+    }
+}
+
+#copen-project-top {
+    right: 10%;
+    top: 0; bottom: 7%;
+    width: 40vh;
+    @media (min-width: $breakpoint-medium) {
+        right: 5%;
+        top: 0; bottom: 5%;
+        width: 75vh;
+    }
+}
+
+#natura-project-top {
+    right: -25%;
+    top: 45%; bottom: 0;
+    width: 55vh;
+    @media (min-width: $breakpoint-small) {
+        right: -20%;
+        top: 0; bottom: 5%;
+        width: 115vh;
     }
 }

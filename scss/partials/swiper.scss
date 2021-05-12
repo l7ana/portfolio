@@ -155,15 +155,19 @@
 
   // Slider Hero Light/Dark
 
-  header[data-slidecolor="light"] a,
-  header[data-slidecolor="light"] svg,
-  header[data-slidecolor="light"] .site-identity a svg
+  header[data-slidecolor="light"] a
   {color: rgba(0,0,0,1); fill:rgba(0,0,0,1); }
 
-  header[data-slidecolor="dark"] a,
-  header[data-slidecolor="dark"] svg,
-  header[data-slidecolor="dark"] .site-identity a svg
+  header[data-slidecolor="light"] svg,
+  header[data-slidecolor="light"] .site-identity a svg 
+  {color: $turq; fill: $turq;}
+
+  header[data-slidecolor="dark"] a
    {color: rgb(255,255,255); fill: rgb(255,255,255);}
+
+  header[data-slidecolor="dark"] svg,
+  header[data-slidecolor="dark"] .site-identity a svg 
+  {color: $gold; fill: $gold;}
 
   [data-slidecolor="light"] .swiper-button-prev,
   [data-slidecolor="light"] .swiper-button-next, 
@@ -409,14 +413,16 @@
       color: $turq;
       top: auto;
       bottom: 5%;
-      left: auto;
-      right: 15%;
+      left: 15%;
+      right:auto;
+      font-size: 1em;
   }
   .swiper-button-next {
     color: $turq;
     top: auto;
     bottom: 5%;
     left: auto;
-    right: 10%;
+    right: 15%;
+    font-size: 1em;
     }
   }

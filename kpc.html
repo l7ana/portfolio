@@ -74,7 +74,7 @@
         </div>
     </header>
 
-    <section class="project-top kpc" data-inview="no">
+    <section class="project-top" data-inview="no">
         <div class="container">
             <h2 class="sectionhead" data-inview="no">Case Study:</h2>
             <h1 data-inview="no">Kalihi Pet Center Website Redesign</h1>
@@ -87,6 +87,9 @@
                     </svg>
                 </a>
             </div>
+        </div>
+        <div class="project-top-wrapper">
+            <img src="img/kpc/ani/chameleon_small.gif" alt="" id="kpc-project-top">
         </div>
     </section>
 
@@ -165,9 +168,35 @@
     <section class="case-study">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/kpc/4x1/SiteMap.svg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/kpc/4x1/LofiHome.svg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/kpc/4x1/LofiWireframes.svg" alt=""></div>
+                <div class="swiper-slide">
+                    <!-- <img srcset="
+                    ./img/kpc/SiteMap_small.svg 300w,
+                    ./img/kpc/SiteMap_med.svg 768w,
+                    ./img/kpc/4x1/SiteMap.svg 1050w" sizes="(max-width:300px) 300px, 768px"
+                        src="./img/kpc/4x1/SiteMap.svg" alt=""> -->
+                    <picture>
+                        <source media="(max-width:767px)" srcset="./img/kpc/SiteMap_small.svg">
+                        <!-- <source media="(min-width:768px)" srcset="./img/kpc/SiteMap_med.svg"> -->
+                        <source media="(min-width:1050px)" srcset="./img/kpc/4x1/SiteMap.svg">
+                        <img src="./img/kpc/4x1/SiteMap.svg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="./img/kpc/LofiHome_small.svg">
+                        <!-- <source media="(min-width:768px)" srcset="./img/kpc/LofiHome_med.svg"> -->
+                        <source media="(min-width:1050px)" srcset="./img/kpc/4x1/LofiHome.svg">
+                        <img src="./img/kpc/4x1/LofiHome.svg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="./img/kpc/LofiWireframes_small.svg">
+                        <!-- <source media="(min-width:768px)" srcset="./img/kpc/LofiWireframes_med.svg"> -->
+                        <source media="(min-width:1050px)" srcset="./img/kpc/4x1/LofiWireframes.svg">
+                        <img src="./img/kpc/4x1/LofiWireframes.svg" alt="">
+                    </picture>
+                </div>
             </div>
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
@@ -188,43 +217,39 @@
                         patterns, and illustrations.</p>
                 </div>
             </div>
-            <div class="img-row">
-                <div class="row-reverse">
-                    <div class="one-half column" data-inview="no">
-                        <img src="img/kpc/1x1/type.svg" alt="kpc typography">
-                    </div>
-                    <div class="one-half column" data-inview="no">
-                        <h3>A Genial Type Combo</h3>
-                        <h4>Typography</h4>
-                        <p>Aesthet Nova is a display type family. It features rounded serifs, ball terminals and soft
-                            corners. The family is of 5 weights and over 680 characters. I chose this font because it
-                            has
-                            the somewhat nostalgic and familiar nature of a long-time friend.
-                        </p>
-                        <p>Avenir is a geometric sans-serif typeface designed by Adrian Frutiger. Unlike Futura, I find
-                            Avenir’s geometry quieter and welcome-ly. For web use, I substituted Avenir with Gibson.</p>
-                    </div>
+            <div class="row-reverse with-img">
+                <div class="one-half column" data-inview="no">
+                    <img src="img/kpc/1x1/type.svg" alt="kpc typography">
+                </div>
+                <div class="one-half column" data-inview="no">
+                    <h3>A Genial Type Combo</h3>
+                    <h4>Typography</h4>
+                    <p>Aesthet Nova is a display type family. It features rounded serifs, ball terminals and soft
+                        corners. The family is of 5 weights and over 680 characters. I chose this font because it
+                        has
+                        the somewhat nostalgic and familiar nature of a long-time friend.
+                    </p>
+                    <p>Avenir is a geometric sans-serif typeface designed by Adrian Frutiger. Unlike Futura, I find
+                        Avenir’s geometry quieter and welcome-ly. For web use, I substituted Avenir with Gibson.</p>
                 </div>
             </div>
 
-            <div class="img-row">
-                <div class="row">
-                    <div class="one-half column" data-inview="no">
-                        <img src="img/kpc/1x1/colorinspo2.svg" alt="kpc color palette">
-                    </div>
-                    <div class="one-half column" data-inview="no">
-                        <h3>Colors of a Feathered Friend</h3>
-                        <h4>Color Palette</h4>
-                        <p>My pet lovebird Mushu was a customer of Kalihi Pet Center. Her toys, food, wing and nail
-                            trimming, and treats all came from Kalihi Pet Center. The color of her feathers are unlike
-                            most
-                            lovebirds I know of, with combinations of warm and cool colors that are bright and happy.
-                        </p>
-                        <p>Thank you to <a href="https://www.instagram.com/kajuart/?hl=en" target="_blank">Martyna
-                                Szpil</a>
-                            for the
-                            wonderful portrait.</p>
-                    </div>
+            <div class="row with-img">
+                <div class="one-half column" data-inview="no">
+                    <img src="img/kpc/1x1/colorinspo2.svg" alt="kpc color palette">
+                </div>
+                <div class="one-half column" data-inview="no">
+                    <h3>Colors of a Feathered Friend</h3>
+                    <h4>Color Palette</h4>
+                    <p>My pet lovebird Mushu was a customer of Kalihi Pet Center. Her toys, food, wing and nail
+                        trimming, and treats all came from Kalihi Pet Center. The color of her feathers are unlike
+                        most
+                        lovebirds I know of, with combinations of warm and cool colors that are bright and happy.
+                    </p>
+                    <p>Thank you to <a href="https://www.instagram.com/kajuart/?hl=en" target="_blank">Martyna
+                            Szpil</a>
+                        for the
+                        wonderful portrait.</p>
                 </div>
             </div>
     </section>
@@ -268,24 +293,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <section class="case-study demo">
-        <div class="container">
-            <div class="row">
-                <div class="column centered text-centered" data-inview="no">
-                    <h2>HiFi Prototype</h2>
-                    <p class="caption">Scroll Inside</p>
-                </div>
-            </div>
-            <div class="imac-mockup">
-                <div class="imac-container">
-                    <iframe width="880" height="660"
-                        src="https://xd.adobe.com/embed/1a6b9d46-94db-4326-ad5e-9e8d37dcb101-4f38/" frameborder="0"
-                        allowfullscreen class="imac-content"></iframe>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <section class="case-study">
         <img src="./img/kpc/kpcmockup_2x1.jpg" alt="Kalhi Pet Center Website Mockup">
@@ -423,40 +430,6 @@
             scrollbar: {
                 el: '.swiper-scrollbar',
             },
-
-            // on init set light / dark
-            on: {
-                init: function () {
-                    console.log('swiper initialized');
-                    const initialswiper = document.querySelector('.swiper-container');
-                    const initialslide = document.querySelector('.swiper-slide-active');
-                    const initialheader = document.querySelector('.site-header');
-                    if (initialslide.classList.contains('dark')) {
-                        initialswiper.setAttribute('data-slidecolor', 'dark');
-                        initialheader.setAttribute('data-slidecolor', 'dark');
-                    } else {
-                        initialswiper.setAttribute('data-slidecolor', 'light');
-                        initialheader.setAttribute('data-slidecolor', 'light');
-                    }
-                },
-            },
-        });
-
-        const myswiper = document.querySelector('.swiper-container');
-        const myheader = document.querySelector('.site-header');
-
-        swiper.on('transitionEnd', function () {
-            console.log('slide changed');
-            const activeslide = document.querySelector('.swiper-slide-active');
-            if (activeslide.classList.contains('dark')) {
-                console.log('this slide is dark');
-                myswiper.setAttribute('data-slidecolor', 'dark');
-                myheader.setAttribute('data-slidecolor', 'dark');
-            } else {
-                console.log('this slide is light');
-                myswiper.setAttribute('data-slidecolor', 'light');
-                myheader.setAttribute('data-slidecolor', 'light');
-            }
         });
 
     </script>

@@ -30,6 +30,10 @@ h1 {
   hanging-punctuation: first;
 }
 
+section.project-top h1 {
+  font-size: clamp(3em, 7vw, 7em);
+}
+
 h2 {
   font-size: 4em;
   line-height: 1.2em;
@@ -62,6 +66,10 @@ h4 {
   font-size: 2em;
   font-style: italic;
   line-height: 1.5;
+}
+
+section.project-top .subhead {
+  font-size: clamp(1.5em,2vw,2em);
 }
 
 .sectionhead {
@@ -208,6 +216,11 @@ lottie-player.video-bg {
   z-index: 10;
 }
 
+.site-identity a svg {
+  fill: #1D7D77;
+  color: #1D7D77;
+}
+
 #kpc-ani img {
   height: auto;
 }
@@ -274,6 +287,7 @@ lottie-player.video-bg {
   width: 100%;
   max-width: 960px;
   right: 0;
+  top: 0;
   height: 100vh;
 }
 .project-top-wrapper lottie-player, .project-top-wrapper img {
@@ -291,6 +305,48 @@ lottie-player.video-bg {
 #shabp-project-top {
     right: -10%;
     top: 15%;
+  }
+}
+
+#kpc-project-top {
+  right: 0%;
+  top: auto;
+  bottom: 7%;
+}
+@media (min-width: 1050px) {
+  #kpc-project-top {
+    right: 10%;
+    top: 45%;
+  }
+}
+
+#copen-project-top {
+  right: 10%;
+  top: 0;
+  bottom: 7%;
+  width: 40vh;
+}
+@media (min-width: 1050px) {
+  #copen-project-top {
+    right: 5%;
+    top: 0;
+    bottom: 5%;
+    width: 75vh;
+  }
+}
+
+#natura-project-top {
+  right: -25%;
+  top: 45%;
+  bottom: 0;
+  width: 55vh;
+}
+@media (min-width: 768px) {
+  #natura-project-top {
+    right: -20%;
+    top: 0;
+    bottom: 5%;
+    width: 115vh;
   }
 }
 
@@ -315,7 +371,7 @@ body {
 }
 
 section {
-  height: 100vh;
+  height: auto;
 }
 
 /* nav */
@@ -373,16 +429,8 @@ header a {
   transform: scaleX(1);
 }
 
-.site-header.dark svg {
-  color: white;
-}
-.site-header.dark h1, .site-header.dark a, .site-header.dark li {
-  color: white;
-}
-
 #welcome {
   background-color: #173753;
-  height: auto;
   margin: 0 auto;
   padding: 3em 0 1em 0;
 }
@@ -508,7 +556,6 @@ footer {
 
 #more {
   background: #f1f9ff;
-  height: auto;
   padding: 2em 0;
 }
 #more .sectionhead {
@@ -520,7 +567,6 @@ footer {
 
 #other {
   background: rgba(241, 249, 255, 0.2);
-  height: auto;
   padding: 2em 0;
 }
 #other .sectionhead {
@@ -528,7 +574,6 @@ footer {
 }
 
 .cta-link-to {
-  height: auto;
   padding: 4em 0 2.5em 0;
   display: flex;
   justify-content: center;
@@ -588,11 +633,9 @@ footer {
 
 .intro {
   padding: 5em 0;
-  height: auto;
 }
 
 .case-study {
-  height: auto;
   padding-bottom: 5em;
   margin-bottom: 5em;
 }
@@ -610,13 +653,6 @@ footer {
 
 #kpc-intro .row {
   margin-bottom: 15%;
-}
-
-.project-top.kpc {
-  background-image: url("../img/kpc/ani/chameleon_small.gif");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: 90% 73%;
 }
 
 #kpc-to-slider {
@@ -655,13 +691,6 @@ footer {
   background-image: url("../img/cityflag/honolulumap_2.jpg");
   background-size: cover;
   background-position: 70% 0%;
-}
-
-.project-top.copen-logo {
-  background-image: url(../img/copenhagen-logo/modern_lamp.jpg);
-  background-size: 45%;
-  background-repeat: no-repeat;
-  background-position: 115% -100%;
 }
 
 #copenhagen-inspo {
@@ -703,7 +732,6 @@ footer {
 
 #copen-bottom {
   margin-bottom: 0;
-  height: auto;
   padding-bottom: 0;
 }
 #copen-bottom h2 {
@@ -729,14 +757,6 @@ footer {
   background-repeat: no-repeat;
   margin-bottom: 0;
   background-position: 90% 30%;
-}
-
-.project-top.natura {
-  background-image: url(../img/natura/beetle.gif);
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: 130% 50%;
-  overflow-x: hidden;
 }
 
 #natura-bottom {
@@ -806,7 +826,6 @@ footer {
 }
 
 #prime-video {
-  height: auto;
   margin-bottom: 8em;
 }
 
@@ -819,7 +838,6 @@ footer {
 #prime-quote {
   background-image: linear-gradient(rgba(195, 157, 77, 0.08), white);
   width: 100%;
-  height: auto;
   margin: 5em 0;
   display: flex;
   align-items: center;
@@ -1208,9 +1226,8 @@ p.core {
     margin-right: auto;
   }
 }
-.img-row .row,
-.img-row .row-reverse {
-  display: flex;
+.with-img.row,
+.with-img.row-reverse {
   align-items: center;
 }
 
@@ -1345,8 +1362,8 @@ a.button-white:hover {
 }
 
 .button-gold {
-  color: #A88F1E;
-  border: 0 solid;
+  color: white;
+  background-color: #A88F1E;
   box-shadow: inset 0 0 20px rgba(84, 71, 15, 0);
   outline-color: #A88F1E;
 }
@@ -1386,6 +1403,62 @@ a.button-white:hover {
 .button-gold.blink:hover,
 .button-white.blink:hover {
   transform: scale(1.05);
+}
+
+a.kpc-button {
+  cursor: pointer;
+  display: inline-block;
+  width: fit-content;
+  padding: 0.8em 1em 0.7em 1em;
+  text-decoration: none;
+  margin: 1em 1em 1.5em 0;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "kepler-std-semicondensed-cap", serif;
+  text-transform: uppercase;
+  text-shadow: none;
+  color: white;
+  border: 1px solid rgba(255, 110, 109, 0);
+  background-color: #ff6e6d;
+  outline-color: #ff6e6d;
+  outline: 1px solid;
+  outline-offset: 0px;
+}
+
+a.kpc-button:hover {
+  outline-color: rgba(255, 110, 109, 0);
+}
+
+a.shabp-button {
+  cursor: pointer;
+  display: inline-block;
+  width: fit-content;
+  padding: 0.8em 1em 0.7em 1em;
+  text-decoration: none;
+  margin: 1em 1em 1.5em 0;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "kepler-std-semicondensed-cap", serif;
+  text-transform: uppercase;
+  text-shadow: none;
+  color: white;
+  border: 1px solid rgba(0, 230, 168, 0);
+  background-color: #00e6a8;
+  outline-color: #00e6a8;
+  outline: 1px solid;
+  outline-offset: 0px;
+}
+
+a.shabp-button:hover {
+  outline-color: rgba(0, 230, 168, 0);
+}
+
+a.kpc-button:hover,
+a.shabp-button-white:hover,
+a.button-gold:hover {
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  border: 1px solid;
+  outline-offset: 10px;
 }
 
 .arrow-down {
@@ -1609,18 +1682,26 @@ a.button-white:hover {
   border-color: white;
 }
 
-header[data-slidecolor=light] a,
-header[data-slidecolor=light] svg,
-header[data-slidecolor=light] .site-identity a svg {
+header[data-slidecolor=light] a {
   color: black;
   fill: black;
 }
 
-header[data-slidecolor=dark] a,
-header[data-slidecolor=dark] svg,
-header[data-slidecolor=dark] .site-identity a svg {
+header[data-slidecolor=light] svg,
+header[data-slidecolor=light] .site-identity a svg {
+  color: #1D7D77;
+  fill: #1D7D77;
+}
+
+header[data-slidecolor=dark] a {
   color: white;
   fill: white;
+}
+
+header[data-slidecolor=dark] svg,
+header[data-slidecolor=dark] .site-identity a svg {
+  color: #A88F1E;
+  fill: #A88F1E;
 }
 
 [data-slidecolor=light] .swiper-button-prev,
@@ -1911,15 +1992,17 @@ header[data-slidecolor=dark] .site-identity a svg {
   color: #1D7D77;
   top: auto;
   bottom: 5%;
-  left: auto;
-  right: 15%;
+  left: 15%;
+  right: auto;
+  font-size: 1em;
 }
 .case-study .swiper-button-next {
   color: #1D7D77;
   top: auto;
   bottom: 5%;
   left: auto;
-  right: 10%;
+  right: 15%;
+  font-size: 1em;
 }
 
 .card:nth-child(1) {

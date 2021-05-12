@@ -29,6 +29,9 @@ h1 {
   font-variant-ligatures: common-ligatures;
   hanging-punctuation: first;
 }
+section.project-top h1 {
+  font-size: clamp(3em, 7vw, 7em); 
+}
 
 h2 {
     font-size: 4em;
@@ -62,6 +65,9 @@ h2 {
     font-size: 2em;
     font-style: italic;
     line-height: 1.5;
+  }
+  section.project-top .subhead {
+    font-size: clamp(1.5em,2vw,2em);
   }
 
   .sectionhead {

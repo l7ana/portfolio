@@ -18,9 +18,7 @@ body {
   padding: 0;
 }
 
-section {
-  height: 100vh;
-}
+section { height: auto;}
 
 /* nav */
 header {
@@ -80,14 +78,8 @@ header a {
   }
 }
 
-.site-header.dark {
-  svg {color:white}
-  h1, a, li {color: white;}
-}
-
 #welcome {
   background-color: $navy;
-  height: auto;
   margin: 0 auto;
   padding: 3em 0 1em 0;
   .sectionhead {
@@ -210,20 +202,17 @@ footer {background-color: $navy-2;}
 
 #more {
   background:$white-1;
-  height: auto;
   padding: 2em 0;
   .sectionhead {margin-top: 2em;}
   .card-row {margin-bottom: 4em;}
 }
 #other {
   background: rgba($white-1,.2);
-  height: auto;
   padding: 2em 0;
   .sectionhead {margin-top: 2em;}
 }
 
 .cta-link-to {
-  height: auto;
   padding: 4em 0 2.5em 0;
   display: flex;
   justify-content: center;
@@ -279,11 +268,9 @@ footer {background-color: $navy-2;}
 
 .intro {
   padding: 5em 0;
-  height: auto;
 }
 
 .case-study {
-  height: auto;
   padding-bottom: 5em;
   margin-bottom: 5em;
   img {margin-bottom: 2em;}
@@ -295,13 +282,6 @@ footer {background-color: $navy-2;}
 // KPC
 #kpc-intro {
   .row {margin-bottom: 15%;}
-}
-.project-top.kpc {
-  background-image: url('../img/kpc/ani/chameleon_small.gif');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: 90% 73%;
-  // box-shadow:inset 0 0 0 2000px rgba(253, 253, 242, 0.753);
 }
 
 #kpc-to-slider {
@@ -348,13 +328,6 @@ footer {background-color: $navy-2;}
 }
 
 // Copenhagen
-.project-top.copen-logo {
-  background-image: url(../img/copenhagen-logo/modern_lamp.jpg);
-  background-size: 45%;
-  background-repeat: no-repeat;
-  background-position: 115% -100%;
-  // box-shadow: inset 0 0 0 2000px rgba($color: #F5F6F6, $alpha: .4);
-}
 #copenhagen-inspo {
   margin-bottom: 0;
 }
@@ -390,7 +363,6 @@ footer {background-color: $navy-2;}
   h2 {margin-top: 2em;}
   .row {margin-bottom: 2em;}
   margin-bottom: 0;
-  height: auto;
   padding-bottom: 0;
 }
 
@@ -410,17 +382,6 @@ footer {background-color: $navy-2;}
   background-repeat: no-repeat;
   margin-bottom: 0;
   background-position: 90% 30%;
-}
-
-// Natura
-.project-top.natura {
-  background-image: url(../img/natura/beetle.gif);
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: 130% 50%;
-  overflow-x:hidden;
-  // width: 100%;
-  // box-shadow: inset 0 0 0 2000px rgba($color: #F5F6F6, $alpha: .4);
 }
 
 #natura-bottom {
@@ -485,10 +446,7 @@ footer {background-color: $navy-2;}
   background-position: 90% 50%;
   overflow-x: hidden;
 }
-#prime-video {
-  height: auto;
-  margin-bottom: 8em;
-}
+#prime-video {margin-bottom: 8em;}
 
 #to-prime-swiper {
   background-image: linear-gradient(white, #FCFCFC);
@@ -499,7 +457,6 @@ footer {background-color: $navy-2;}
   // background-color: rgba(#c39d4d, .07);
   background-image: linear-gradient(rgba(#c39d4d, .08), white);
   width: 100%;
-  height: auto;
   margin: 5em 0;
   display: flex;
   align-items: center;
