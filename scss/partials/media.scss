@@ -12,7 +12,6 @@ img {
     }
 }
 
-
 .video-bg {
     background-image: none;
 }
@@ -31,7 +30,7 @@ video.video-bg {
     z-index: 10;
 }
 
-lottie-player.video-bg {
+lottie-player.video-bg#shabp-hero {
     object-fit: cover;
     position: absolute;
     top:10%; left:45%;
@@ -77,6 +76,8 @@ lottie-player.video-bg {
         } 
     }
 }
+
+.award lottie-player {margin: 0 auto;}
 
 .imac-mockup {
     background-image: url(../img/imac.png);

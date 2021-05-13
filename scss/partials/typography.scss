@@ -172,3 +172,11 @@ p.pull-quote::before {
   z-index: -1;
   color: rgba($rust,0.2);
 }
+
+.award p {
+  font-size: 2em;
+}
+
+.award.gold strong {color:$gold;}
+.award.silver strong {color:$navy;}
+.award.bronze strong {color:$rust;}

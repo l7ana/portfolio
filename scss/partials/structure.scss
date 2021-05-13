@@ -316,6 +316,12 @@ footer {background-color: $navy-2;}
   }
 }
 
+.row.award {
+  &.gold{background-color: rgba($gold,.1);}
+  &.silver{background-color: rgba($navy-3,.1);}
+  &.bronze{background-color: rgba($rust,.1);}
+}
+
 // City Flag
 .project-top.city-flag {
   background-image: url('../img/cityflag/honolulumap_2.jpg');

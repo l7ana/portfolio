@@ -67,7 +67,7 @@
                     </a>
                 </div>
                 <ul>
-                    <li><a href="work.html">Work</a></li>
+                    <li><a href="work.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -78,11 +78,11 @@
     <section class="swiper-container" id="home-swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="swiper-image kpc">
+                <div class="swiper-image">
                     <div class="swiper-textbox video-bg-top">
                         <h1>your cute local pet shop</h1>
                         <p class="subhead"><strong>Client:</strong> Kalihi Pet Center</p>
-                        <a href="kpc.html" class="kpc-button">See Project</a>
+                        <a href="kpc.html" class="button-kpc">See Project</a>
                     </div>
                     <video autoplay loop muted class="video-bg">
                         <source src="video/kpc_1.mp4" type="video/mp4">
@@ -90,44 +90,49 @@
                 </div>
             </div>
             <div class="swiper-slide dark">
-                <div class="swiper-image haven-solus">
+                <div class="swiper-image">
                     <div class="swiper-textbox video-bg-top">
                         <h1>a resort for the recluse</h1>
                         <p class="subhead"><strong>Client:</strong> Haven Solus</p>
-                        <a href="haven-solus.html" class="button-white">See Project</a>
+                        <a href="haven-solus.html" class="button-havensolus">See Project</a>
                     </div>
                     <video autoplay loop muted class="video-bg">
                         <source src="video/hs_10sec_mini.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
-            <div class="swiper-slide dark">
-                <div class="swiper-image prime">
+            <div class="swiper-slide">
+                <div class="swiper-image">
                     <div class="swiper-textbox video-bg-top">
                         <h1>a habit-busting app</h1>
                         <p class="subhead"><strong>Client:</strong> Prime Mobile App</p>
-                        <a href="prime-app.html" class="button-white">See Project</a>
+                        <a href="prime-app.html" class="button-prime">See Project</a>
                     </div>
                     <video autoplay loop muted class="video-bg">
-                        <source src="video/prime_10sec_med_mini.mp4" type="video/mp4">
+                        <source src="video/prime_10sec_alt.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-image shabp">
+                <div class="swiper-image">
                     <div class="swiper-textbox video-bg-top">
                         <h1>an angry tiny-handed club</h1>
                         <p class="subhead"><strong>Client:</strong> The Small Hands Against Big Phones Club</p>
-                        <a href="shabp.html" class="shabp-button">See Project</a>
+                        <a href="shabp.html" class="button-shabp">See Project</a>
                     </div>
                     <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_asheiixm.json"
                         background="transparent" speed="1" style="width: 90%; height: 90%;" loop autoplay
-                        class="video-bg"></lottie-player>
+                        class="video-bg" id="shabp-hero"></lottie-player>
                 </div>
             </div>
             <div class="swiper-slide dark">
-                <div class="swiper-image podcast-bookcovers">
+                <div class="swiper-image">
                     <div class="swiper-textbox video-bg-top">
+                        <small class="award-label">
+                            <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_4nvqbm44.json"
+                                background="transparent" speed="1" style="width: 65%; height: 65%;" loop autoplay>
+                            </lottie-player>
+                        </small>
                         <h1>an unusual book triology</h1>
                         <p class="subhead"><strong>Client:</strong> Radiotopia's This is Love Podcast</p>
                         <a href="triology-bookcovers.html" class="button-gold">See Project</a>
@@ -344,10 +349,10 @@
             loop: true,
 
             // Autoplay
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 4000,
+            //     disableOnInteraction: false,
+            // },
 
             effect: 'slide',
 
