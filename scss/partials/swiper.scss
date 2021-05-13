@@ -367,6 +367,8 @@
 
   #book-swiper {
     margin: 0;
+    padding: 0;
+    background-image: linear-gradient($white-1, $grey-1);
     .swiper-slide {
       img {height: 120vh; width: auto;}
       text-align: center;

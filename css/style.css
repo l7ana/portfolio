@@ -350,6 +350,29 @@ lottie-player.video-bg {
   }
 }
 
+#triology-project-top {
+  right: 15%;
+  top: 65%;
+  bottom: 0%;
+  width: 35vh;
+}
+@media (min-width: 480px) {
+  #triology-project-top {
+    right: -10%;
+    top: 40%;
+    bottom: 0;
+    width: 60vh;
+  }
+}
+@media (min-width: 1050px) {
+  #triology-project-top {
+    right: -15%;
+    top: 10%;
+    bottom: 0;
+    width: 90vh;
+  }
+}
+
 html,
 body {
   position: relative;
@@ -1933,6 +1956,8 @@ header[data-slidecolor=dark] .site-identity a svg {
 
 #book-swiper {
   margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#f1f9ff, #D1D7DD);
 }
 #book-swiper .swiper-slide {
   text-align: center;

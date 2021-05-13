@@ -162,3 +162,19 @@ lottie-player.video-bg {
         width: 115vh;
     }
 }
+
+#triology-project-top {
+    right: 15%;
+    top: 65%; bottom: 0%;
+    width: 35vh;
+    @media (min-width: $breakpoint-x-small) {
+        right: -10%;
+        top: 40%; bottom: 0;
+        width: 60vh;
+    }
+    @media (min-width: $breakpoint-medium) {
+        right: -15%;
+        top: 10%; bottom: 0;
+        width: 90vh;
+    }
+}
