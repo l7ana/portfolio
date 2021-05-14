@@ -100,11 +100,6 @@
   }
   
  /*FOHR*/
-  .project-top.fohr {
-    background-image: url('../img/fohr/fohr_top_v1.jpg');
-    background-size: cover;
-    background-position: 0% 100%;
-  }
   #fohr-to-slider {
     background-image: linear-gradient(white, rgba(245,168,28, .05));
     margin: 0;
@@ -297,3 +292,9 @@
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
+  /*Kinetic Type*/
+  
+section#kinetic-project-top {
+    background-color: #45C8F5;
+}

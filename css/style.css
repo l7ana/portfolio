@@ -288,29 +288,64 @@ lottie-player.video-bg#shabp-hero {
 .imac-mockup {
   background-image: url(../img/imac.png);
   background-repeat: no-repeat;
-  width: 915px;
-  height: 743px;
+  background-size: cover;
+  width: 255px;
+  height: 204px;
   margin: 0 auto;
 }
 .imac-mockup .imac-container {
-  width: 843px;
-  height: 480px;
+  padding-top: 26px;
+  width: 235px;
+  height: 121px;
   margin: 0 auto;
-  padding-top: 35px;
   overflow: hidden;
   position: relative;
 }
 .imac-mockup .imac-container .imac-content {
   position: absolute;
-  left: -25px;
+  left: 0;
+  top: 6%;
+  bottom: auto;
+  width: 236px;
+  height: 174px;
 }
 
-#fohr-prototype .imac-container {
-  padding-top: 26px;
-  width: 847px;
-  height: 491px;
+@media (min-width: 768px) {
+  .imac-mockup {
+    width: 650px;
+    height: 527px;
+  }
+  .imac-mockup .imac-container {
+    padding-top: 26px;
+    width: 601px;
+    height: 349px;
+  }
+  .imac-mockup .imac-container .imac-content {
+    left: -19px;
+    top: 6%;
+    bottom: auto;
+    width: 620px;
+    height: 455px;
+  }
 }
-
+@media (min-width: 1050px) {
+  .imac-mockup {
+    width: 915px;
+    height: 743px;
+  }
+  .imac-mockup .imac-container {
+    padding-top: 26px;
+    width: 847px;
+    height: 491px;
+  }
+  .imac-mockup .imac-container .imac-content {
+    left: -15px;
+    top: 5%;
+    bottom: auto;
+    width: 880px;
+    height: 625px;
+  }
+}
 .project-top-wrapper {
   position: absolute;
   z-index: -10;
@@ -427,6 +462,59 @@ lottie-player.video-bg#shabp-hero {
   }
 }
 
+#fohr-project-top {
+  right: 7%;
+  top: auto;
+  bottom: -5%;
+  width: 85%;
+}
+@media (min-width: 480px) {
+  #fohr-project-top {
+    bottom: 20%;
+    top: auto;
+    right: -10%;
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  #fohr-project-top {
+    bottom: 7%;
+    top: auto;
+    right: -25%;
+    width: 80%;
+  }
+}
+
+#dory {
+  right: 19%;
+  top: auto;
+  bottom: 14%;
+  width: 55%;
+  animation: swim 1s ease-in-out alternate infinite;
+  transform-origin: center center;
+}
+@media (min-width: 480px) {
+  #dory {
+    bottom: 10%;
+    top: auto;
+    right: 30%;
+    width: 35%;
+  }
+}
+@media (min-width: 768px) {
+  #dory {
+    bottom: 20%;
+    top: auto;
+    right: 2%;
+    width: 45%;
+  }
+}
+
+@keyframes swim {
+  0% {
+    transform: translate(0, 3%) rotate(-2deg);
+  }
+}
 html,
 body {
   position: relative;
@@ -2022,6 +2110,20 @@ header[data-slidecolor=dark] .site-identity a svg {
   padding: 0.5em 1em;
 }
 
+/* SUBPAGE STRUCTURE
+----------------------------
+    Kalihi Pet Center
+    Honolulu City Flag
+    Copenhagen City Logo
+    Friends of Hawai‘i Robotics
+    Two Ladies Kitchen Logo
+    Prime Mobile App
+    "This is Love" Triology Book Covers
+    Haven Solus Resort and Spa
+    Small Hands Against Big Phones
+    USPS Gemstone Stamps
+------------------------------ */
+/*KPC*/
 #kpc-intro .row {
   margin-bottom: 15%;
 }
@@ -2058,26 +2160,14 @@ header[data-slidecolor=dark] .site-identity a svg {
   color: white;
 }
 
-.row.award.gold {
-  background-color: rgba(168, 143, 30, 0.1);
-}
-.row.award.silver {
-  background-color: rgba(77, 107, 133, 0.1);
-}
-.row.award.bronze {
-  background-color: rgba(84, 50, 32, 0.1);
-}
-
-.row.notice {
-  background-color: rgba(29, 125, 119, 0.1);
-}
-
+/*City Flag*/
 .project-top.city-flag {
   background-image: url("../img/cityflag/honolulumap_2.jpg");
   background-size: cover;
   background-position: 70% 0%;
 }
 
+/*Copenhagen*/
 #copenhagen-inspo {
   margin-bottom: 0;
 }
@@ -2126,12 +2216,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   margin-bottom: 2em;
 }
 
-.project-top.fohr {
-  background-image: url("../img/fohr/fohr_top_v1.jpg");
-  background-size: cover;
-  background-position: 0% 100%;
-}
-
+/*FOHR*/
 #fohr-to-slider {
   background-image: linear-gradient(white, rgba(245, 168, 28, 0.05));
   margin: 0;
@@ -2151,6 +2236,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   width: 100%;
 }
 
+/*Two Ladies Kitchen*/
 .project-top.two-ladies {
   background-image: url(../img/2ladies/daifuku_2.png);
   background-size: 30%;
@@ -2202,6 +2288,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   margin-bottom: -18%;
 }
 
+/*Prime*/
 .project-top.prime {
   background-image: url(../img/prime/primelogo.svg);
   background-size: 20%;
@@ -2244,6 +2331,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   margin-top: 2em;
 }
 
+/*Book Covers*/
 #book-rationale {
   margin: 0;
 }
@@ -2259,6 +2347,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   height: auto;
 }
 
+/*Haven Solus*/
 #hs-brand {
   background-color: rgba(229, 222, 214, 0.5);
   color: #6B645D;
@@ -2292,6 +2381,7 @@ p.core {
   padding-bottom: 0;
 }
 
+/*Small Hands Against Big Phones*/
 #shabp-brand {
   background-color: #022118;
   color: white;
@@ -2340,7 +2430,13 @@ p.core {
   color: #00ffbc;
 }
 
+/*Gems*/
 #gems-bottom {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+/*Kinetic Type*/
+section#kinetic-project-top {
+  background-color: #45C8F5;
 }
