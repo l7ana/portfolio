@@ -322,6 +322,8 @@ footer {background-color: $navy-2;}
   &.bronze{background-color: rgba($rust,.1);}
 }
 
+.row.notice {background-color: rgba($turq, .1);}
+
 // City Flag
 .project-top.city-flag {
   background-image: url('../img/cityflag/honolulumap_2.jpg');
