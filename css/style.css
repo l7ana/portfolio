@@ -393,6 +393,29 @@ lottie-player.video-bg#shabp-hero {
   }
 }
 
+#gems-project-top {
+  right: 19%;
+  top: auto;
+  bottom: 14%;
+  width: 55%;
+}
+@media (min-width: 480px) {
+  #gems-project-top {
+    bottom: 10%;
+    top: auto;
+    right: 30%;
+    width: 35%;
+  }
+}
+@media (min-width: 768px) {
+  #gems-project-top {
+    bottom: 20%;
+    top: auto;
+    right: 2%;
+    width: 45%;
+  }
+}
+
 html,
 body {
   position: relative;
@@ -1006,6 +1029,11 @@ p.core {
 }
 #shabp-digital h3 {
   color: #00ffbc;
+}
+
+#gems-bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Work Grid */
@@ -2042,6 +2070,26 @@ header[data-slidecolor=dark] .site-identity a svg {
   bottom: 5%;
   left: auto;
   right: 15%;
+  font-size: 1em;
+}
+
+#gems-swiper .swiper-text {
+  background: white;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+#gems-swiper .swiper-button-prev {
+  top: auto;
+  bottom: 0;
+  left: 5%;
+  right: auto;
+  font-size: 1em;
+}
+#gems-swiper .swiper-button-next {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 5%;
   font-size: 1em;
 }
 

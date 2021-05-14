@@ -179,3 +179,18 @@ lottie-player.video-bg#shabp-hero {
         width: 90vh;
     }
 }
+
+#gems-project-top {
+    right: 19%;
+    top: auto;
+    bottom: 14%;
+    width: 55%;
+    @media (min-width: $breakpoint-x-small) {
+        bottom: 10%; top:auto; right: 30%;
+        width: 35%;
+    }
+    @media (min-width: $breakpoint-small) {
+        bottom: 20%; top:auto; right: 2%;
+        width: 45%;
+    }
+}
