@@ -176,6 +176,17 @@ lottie-player.video-bg#shabp-hero {
     }
 }
 
+#mochi-project-top {
+    right: 10%;
+    top: 63%; bottom: 0;
+    width: 30vh;
+    @media (min-width: $breakpoint-small) {
+        right: 0%;
+        top: 25%; bottom: 0;
+        width: 55vh;
+    }
+}
+
 #natura-project-top {
     right: -25%;
     top: 45%; bottom: 0;

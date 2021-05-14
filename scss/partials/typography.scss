@@ -93,7 +93,7 @@ h2 {
   /*Responsive Type*/
   @media (min-width: $breakpoint-x-small) {
     p {font-size: 1.25em;}
-    ul li, .intro ul li {font-size: 1.25em;}
+    ul li, .intro ul li, .bulleted li {font-size: 1.25em;}
   }
 
 // Unordered Lists

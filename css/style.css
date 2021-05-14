@@ -96,7 +96,7 @@ p.caption {
     font-size: 1.25em;
   }
 
-  ul li, .intro ul li {
+  ul li, .intro ul li, .bulleted li {
     font-size: 1.25em;
   }
 }
@@ -398,6 +398,21 @@ lottie-player.video-bg#shabp-hero {
     top: 0;
     bottom: 5%;
     width: 75vh;
+  }
+}
+
+#mochi-project-top {
+  right: 10%;
+  top: 63%;
+  bottom: 0;
+  width: 30vh;
+}
+@media (min-width: 768px) {
+  #mochi-project-top {
+    right: 0%;
+    top: 25%;
+    bottom: 0;
+    width: 55vh;
   }
 }
 
@@ -2237,14 +2252,6 @@ header[data-slidecolor=dark] .site-identity a svg {
 }
 
 /*Two Ladies Kitchen*/
-.project-top.two-ladies {
-  background-image: url(../img/2ladies/daifuku_2.png);
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: 90% 70%;
-  overflow-x: hidden;
-}
-
 #twoladies-sketch {
   background-image: url(../img/2ladies/twoladies_sketches.jpg);
   background-size: cover;
