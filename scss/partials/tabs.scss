@@ -38,3 +38,46 @@
       }
     }
   }
+
+  /* ACCORDIAN */
+.accordian {
+  margin: 0 0 2em 0;
+  .tab {
+    background-color: white;
+    position: relative;
+    border-bottom: 2px solid $grey-1;
+  }
+  .arrow svg { 
+      position: absolute;
+      display: block;
+      transform: rotate(0);
+      top: 25%;
+      left: auto; right: 1%;
+      transition: all .5s ease-in-out ;
+      cursor: pointer;
+      path {
+        fill: transparent;
+        stroke: $turq;
+      }
+    }
+  &.open .arrow svg {
+      // margin-bottom: 2px;
+      transform: rotate(180deg);
+    }
+}
+
+.collapsible {
+  transition: 1s ease-in-out  all;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 ;
+  border-bottom: 0px solid $grey-1;
+}
+
+.open .collapsible {
+  display: block;
+  opacity: 1;
+  max-height: 1000px;
+  padding: 1em 1em 1em 0em;
+  border-bottom: 2px solid $grey-1;
+}

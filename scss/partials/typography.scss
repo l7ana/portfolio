@@ -190,3 +190,19 @@ p.pull-quote::before {
 .award.gold strong {color:$gold;}
 .award.silver strong {color:$navy;}
 .award.bronze strong {color:$rust;}
+
+/*Resume*/
+.resume.sectionhead {
+  display: inline;
+  font-weight: 700;
+  font-family: $type-body;
+  color: $navy-3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
+.collapsible {
+  ul {margin: 0; padding: 0; list-style: none;}
+  ul li {padding-bottom: 2em;}
+}
