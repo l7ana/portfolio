@@ -100,32 +100,38 @@ header a {
 }
 
 #about {
-  background-color: $navy;
-  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  height: 80vh;
+  // background-color: $white-1;
+  // height: 90vh;
   margin: 0 auto;
   padding: 3em 0 1em 0;
+  h1 {
+    margin: 0 0 .25em 0;
+    line-height: 1.1;
+    font-size: clamp(4em, 7vw, 7em); 
+  }
+  h2 {font-size: clamp(2em, 4vw, 4em); }
+  h3 {font-size: clamp(1.7em, 2.5vw, 2.5em); }
+  .container {width: 100%;}
   .sectionhead {
     color: $navy-3;
     line-height: 0;
-    margin-top: 2.5em;
+    margin-bottom: .5em;
   }
-  h1 {
-    color: white;
-    line-height: .7;
-    font-weight: 100;
-  }
-  h3 {
-    color: white;
-    margin-top: .5em;
-    font-weight: 300;
-  }
-  .button-white {margin-top: 2em;}
-  p {color: white;}
 }
 
+#resume { 
+  padding: 3em 0;
+  background-color: $white-1;
+  // .container {width: 70%;}
+}
 
 /* footer */
-footer {background-color: $navy-2;}
+footer {background-color: $navy;}
 
 .footer-nav {
   display: flex;
@@ -260,11 +266,11 @@ footer {background-color: $navy-2;}
   .container {width: 100%;}
   // .arrow-down {text-align: left;}
 }
-.project-top.swiper-slide {
-  text-align: left;
-  justify-content: start;
-  align-items: start;
-}
+// .project-top.swiper-slide {
+//   text-align: left;
+//   justify-content: start;
+//   align-items: start;
+// }
 
 .intro {
   padding: 5em 0;

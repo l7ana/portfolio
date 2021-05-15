@@ -199,10 +199,49 @@ p.pull-quote::before {
   color: $navy-3;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 2em;
+  font-size: 1.5em;
+  &.education {color: $navy-3;}
+  &.experience {color: $turq;}
+  &.achievements {color: $gold;}
+  &.skills {color: $rust;}
 }
 
 .collapsible {
-  ul {margin: 0; padding: 0; list-style: none;}
-  ul li {padding-bottom: 2em;}
+  ul.entry {
+    margin: 0; padding: 0; 
+    list-style: none;
+    > li {padding-bottom: 2em;}
+  }
+  p.date {
+    font-family: $type-subhead;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $gold;
+  }
+  p.date::after {
+    content:"";
+    width: 65%;
+    margin: 0 0 5px 5px;
+    border-top: 1.5px dotted $gold;
+    height: 1px;
+    display: inline-block;
+  }
+  p.date.short::after {
+    content:"";
+    width: 85%;
+    margin: 0 0 5px 5px;
+    border-top: 1.5px dotted $gold;
+    height: 1px;
+    display: inline-block;
+  }
+  h3 strong {font-style: italic;}
+  h2 {font-size: 3em; margin-bottom: 0;}
+  h3 {font-size: 2.2em;}
+  h4.smallcaps {
+    color: $navy-3;
+    font-family: $type-subhead;
+    letter-spacing: .5px;
+    font-feature-settings: "smcp";
+    margin-top: 1em;
+  }
 }
