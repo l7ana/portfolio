@@ -79,10 +79,16 @@ header a {
 }
 
 #above-work {
-  padding: 5em 0 2em 0;
+  padding: 2em 0 1em 0;
+  // width: 100%;
   background-color: $navy;
   color: white;
-  h2.sectionhead {color: white;}
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  h2.sectionhead {color: white; margin: 0 0 -1em 0;}
+  .container {width: 100%;}
 }
 
 #welcome {
@@ -219,9 +225,11 @@ footer {background-color: $navy;}
   .sectionhead {margin-top: 2em;}
   .card-row {margin-bottom: 4em;}
 }
+
 #other {
-  background: rgba($white-1,.2);
-  padding: 2em 0;
+  background: $white-1;
+  padding: 2em 0 0 0;
+  margin: 0;
   .sectionhead {margin-top: 2em;}
 }
 

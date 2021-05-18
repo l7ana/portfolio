@@ -75,6 +75,7 @@ h2 {
     font-family: $type-body;
     font-weight: 300;
     font-size: 2em;
+    margin: 0;
   }
 
   a { 
@@ -135,7 +136,8 @@ ul.bulleted li::before {
   }
 }
 
-.project-top {
+.project-top,
+.page-top {
   h1 {font-size: clamp(4.5em, 7vw, 7em); }
 }
 
