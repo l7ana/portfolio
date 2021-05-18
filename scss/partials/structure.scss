@@ -78,6 +78,13 @@ header a {
   }
 }
 
+#above-work {
+  padding: 5em 0 2em 0;
+  background-color: $navy;
+  color: white;
+  h2.sectionhead {color: white;}
+}
+
 #welcome {
   background-color: $navy;
   margin: 0 auto;

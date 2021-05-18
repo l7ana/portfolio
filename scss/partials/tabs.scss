@@ -1,7 +1,7 @@
 /*TABS*/
 
 .tab-section {
-    padding: 5em 0;
+    padding: 2em 0 5em 0;
     height: auto;
     [data-tabstate="active"] {
       color: white;
@@ -15,6 +15,12 @@
       display: none;
     }
     [data-contentstate="active"] {
+      display: block;
+    }
+    nav.work-tabs::after {
+      content: '';
+      width: 100%;
+      border-bottom: 2px solid $grey-1;
       display: block;
     }
     .tab-buttons {
