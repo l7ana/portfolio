@@ -75,34 +75,38 @@
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="page-top">
         <div class="container">
-            <h1>Hello! I'm Liana.</h1>
-            <h2> I'm a Graphic Designer, type-enthusiast, occasional
-                illustrator, copywriter, grid-abider <i>and</i> grid-breaker.</h2>
-            <h3>Oh, the duality.</h3>
+            <h2 class="sectionhead">Hello! I'm Liana.</h2>
+            <div class="rotate-hero-text">
+                <h1>
+                    <span class="navy">Graphic <b>Designer</b><br></span>
+                    <span class="gold"><b>Type</b>&nbsp;-Enthusiast <br></span>
+                    <span class="rust">Occasional <b>Illustrator</b> <br></span>
+                    <span class="turq">Part-Time <b>Copywriter</b> <br></span>
+                    <span class="grey"><b>Grid</b>-Abider </span><br>
+                    <span class="turq">Grid-<b>Breaker</b></span>
+                </h1>
+            </div>
+            <h3 class="subhead">Oh, the duality.</h3>
             <p>I see every new challenge as learning opportunity to
                 elevate my abilities as a visual communicator.</p>
-            <!-- <div class="arrow-down">
-                <a href="#resume" class="scroll">
-                    Resume
-                    <svg width="26" height="13">
-                        <path d="M0,0 L13,13 L26,0" />
-                    </svg>
-                </a>
-            </div> -->
         </div>
+
+        <!-- <h2> I'm a Graphic Designer, type-enthusiast, occasional
+                illustrator, copywriter, grid-abider <i>and</i> grid-breaker.</h2> -->
+
     </section>
 
     <section id="resume">
         <div class="container">
-            <div class="row">
-                <div class="column one-whole text-centered">
-                    <h2>Resumé</h2>
-                </div>
-            </div>
-            <div class="row no-margin">
-                <div class="column one-whole">
+            <div class="row-grid">
+                <div class="resume column-grid col-start-1 col-end-9">
+                    <div class="with-img" id="resume-top">
+                        <h2>Resumé</h2>
+                        <a href="LianaYoungResume.pdf" class="button-gold blink">View PDF</a>
+                    </div>
+
                     <div class="accordian">
                         <div class="tab">
                             <h3 class="resume sectionhead education">Education</h3>
@@ -114,7 +118,7 @@
                         </div>
                         <div class="collapsible">
                             <ul class="entry">
-                                <div class="row no-margin">
+                                <div class="row">
                                     <li class="column one-half">
                                         <p class="date">FALL 2018–SPRING 2021</p>
                                         <h2>Kapi‘olani Community College</h2>
@@ -139,11 +143,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="row no-margin">
-                <div class="column one-half">
                     <div class="accordian">
                         <div class="tab">
                             <h3 class="resume sectionhead achievements">Achievements</h3>
@@ -155,76 +155,45 @@
                         </div>
                         <div class="collapsible">
                             <ul class="entry">
-                                <li>
-                                    <p class="date short">2020</p>
-                                    <h2>American Advertising Awards</h2>
-                                    <h3>American Advertising Federation (AAF)</h3>
-                                    <h4 class="smallcaps">National Silver & Pele Gold</h4>
-                                    <p>Collegiate Winner in Publication Design — Cover</p>
-                                </li>
-                                <li>
-                                    <p class="date">FALL 2016–SPRING 2018</p>
-                                    <h2>Honolulu Community College</h2>
-                                    <h3>Communication Arts</h3>
-                                    <h4 class="smallcaps">Academic Achievements:</h4>
-                                    <ul class="bulleted">
-                                        <li>Dean’s List GPA (3.5)</li>
-                                        <li>AIGA Student Vice President</li>
-                                    </ul>
-                                </li>
+                                <div class="row no-margin">
+                                    <div class="column one-whole">
+                                        <p class="date line">2020</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <li class="column one-half">
+                                        <h2>American Advertising Awards</h2>
+                                        <h3>American Advertising Federation (AAF)</h3>
+                                        <h4 class="smallcaps">National Silver & Pele Gold</h4>
+                                        <p>Collegiate Winner in Publication Design</p>
+                                    </li>
+                                    <li class="column one-half">
+                                        <h2>AAF Shining Star Awardee</h2>
+                                        <h3>AAF, Hawai‘i</h3>
+                                    </li>
+                                </div>
+                                <div class="row no-margin">
+                                    <div class="column one-whole">
+                                        <p class="date line">2019</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <li class="column one-half">
+                                        <h2>American Advertising Awards</h2>
+                                        <h3>American Advertising Federation (AAF)</h3>
+                                        <h4 class="smallcaps">Pele Bronze</h4>
+                                        <p>Collegiate Winner in Direct Marketing</p>
+                                    </li>
+                                    <li class="column one-half">
+                                        <h2>Arts & Humanities Achievement
+                                            Awardee</h2>
+                                        <h3>Kapi‘olani Community College</h3>
+                                    </li>
+                                </div>
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="column one-half">
-                    <div class="accordian">
-                        <div class="tab">
-                            <h3 class="resume sectionhead skills">Skills</h3>
-                            <div class="arrow">
-                                <svg width="16" height="8">
-                                    <path d="M0,0 L8,8 L16,0" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="collapsible">
-                            <ul class="entry">
-                                <li>
-                                    <h2>Interface Design</h2>
-                                    <p>The design of user interfaces for
-                                        machines and software, such as
-                                        computers, home appliances,
-                                        mobile devices, and other electronic
-                                        devices, with the focus
-                                        on maximizing usability and the
-                                        user experience.</p>
-                                </li>
-                                <li>
-                                    <h2>Print Design</h2>
-                                    <p>A form of visual communication
-                                        used to convey information to
-                                        an audience through intentional
-                                        aesthetic design printed on a
-                                        tangible surface, designed to be
-                                        printed on paper, as opposed to
-                                        presented on a digital platform.</p>
-                                </li>
-                                <li>
-                                    <h2>Identity Design</h2>
-                                    <p>The manner in which an enterprise
-                                        identifies itself to the
-                                        public. Generally, this includes
-                                        a logo with supporting brand
-                                        elements like color palettes,
-                                        typography, and layouts.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row no-margin">
-                <div class="column one-whole">
                     <div class="accordian">
                         <div class="tab">
                             <h3 class="resume sectionhead experience">Experience</h3>
@@ -243,9 +212,9 @@
                                         <h3>Sae Design Group</h3>
                                     </li>
                                 </div>
-                                <div class="row no-margin">
+                                <div class="row">
                                     <li class="column one-half">
-                                        <h4 class="smallcaps">Responsibilities included:</h4>
+                                        <h4 class="smallcaps">Responsibilities Included:</h4>
                                         <ul class="bulleted">
                                             <li>Generated social media content</li>
                                             <li>Created print collateral including; brochures,
@@ -267,16 +236,134 @@
                                             branding and adherence to clients’ style guides.</p>
                                     </li>
                                 </div>
+
+                                <div class="row no-margin">
+                                    <li class="column one-whole">
+
+                                        <p class="date short">AUG 2019–MAY 2021</p>
+                                        <h2>Lab Monitor</h2>
+                                        <h3>Kapi‘olani Community College <br> <strong>New Media Arts Computer
+                                                Lab</strong></h3>
+                                    </li>
+                                </div>
+                                <div class="row">
+                                    <li class="column one-half">
+                                        <h4 class="smallcaps">Responsibilities Included:</h4>
+                                        <ul class="bulleted">
+                                            <li>Assisted students with lab-related needs</li>
+                                            <li>Tutored students with software and lab
+                                                equipment</li>
+                                            <li>Managed inventory of rental equipment including
+                                                cameras and tablets</li>
+                                            <li>Maintained lab equipment</li>
+                                            <li>Reported to Lab Manager</li>
+                                            <li>Opening and closing duties</li>
+                                        </ul>
+                                    </li>
+                                    <li class="column one-half">
+                                        <h4 class="smallcaps">Role Description:</h4>
+                                        <p>This role required me to be accountable to students
+                                            by being punctual and fulfilling my duties as
+                                            a lab monitor. I practiced diplomacy while serving
+                                            in a position of authority and learned to communicate
+                                            effectively when assisting and tutoring
+                                            students. I helped ensure successful lab operations
+                                            by reporting to my supervisor in a succinct
+                                            and timely manner.
+                                        </p>
+                                    </li>
+                                </div>
+
+                                <div class="row no-margin">
+                                    <li class="column one-whole">
+
+                                        <p class="date short">MAY 2018—AUG 2020</p>
+                                        <h2>Design Intern</h2>
+                                        <h3>Pepperblack Studios</h3>
+                                    </li>
+                                </div>
+                                <div class="row">
+                                    <li class="column one-half">
+                                        <h4 class="smallcaps">Responsibilities Included:</h4>
+                                        <ul class="bulleted">
+                                            <li>Designed branded print collateral including;
+                                                logos, packaging, and ads</li>
+                                            <li>Developed front-end user-interface designs
+                                                including; website and mobile app design</li>
+                                            <li>Assisted with photoshoots and post-shoot
+                                                editing</li>
+                                            <li>Generated social media content</li>
+                                        </ul>
+                                    </li>
+                                    <li class="column one-half">
+                                        <h4 class="smallcaps">Role Description:</h4>
+                                        <p>For this role, I worked closely under the creative
+                                            director and often had to take initiative. I learned
+                                            to work efficiently at a fast pace and listened
+                                            carefully to my supervisor to respond to clients’
+                                            needs. Because I worked on a small team, I also
+                                            had to be adaptable and resourceful.
+                                        </p>
+                                    </li>
+                                </div>
+
+                                <div class="row no-margin">
+                                    <li class="column one-whole">
+
+                                        <p class="date short">AUG 2017–MAY 2018</p>
+                                        <h2>Student Assistant</h2>
+                                        <h3>Honolulu Community College <br> <strong>Design Center</strong></h3>
+                                    </li>
+                                </div>
+                                <div class="row">
+                                    <li class="column one-half">
+                                        <h4 class="smallcaps">Responsibilities Included:</h4>
+                                        <ul class="bulleted">
+                                            <li>Assisted with production of printed media
+                                                including; booklets, banners, posters, laserengravings,
+                                                flyers, business cards, envelopes,
+                                                foam core prints, parking passes, door hangers,
+                                                embroidery, and stickers</li>
+                                            <li>Generated graphic assets to support printed
+                                                media including; logos, banners, and signs</li>
+                                            <li>Accommodated students during production of
+                                                their projects</li>
+                                            <li>Served clients remotely and in-person</li>
+                                        </ul>
+                                    </li>
+                                    <li class="column one-half">
+                                        <h4 class="smallcaps">Role Description:</h4>
+                                        <p>My role involved safe and accurate operation
+                                            of valuable machinery for projects of diverse
+                                            sizes and mediums. I had to be vigilant in
+                                            searching for errors prior-to and during production.
+                                            My knowledge in print-production was
+                                            essential in order to effectively communicate
+                                            the capabilities of the Design Center to best
+                                            suit clients’ and students’ needs. I worked
+                                            independently to deliver projects with minimal
+                                            supervision.
+                                        </p>
+                                    </li>
+                                </div>
+
+
                             </ul>
                         </div>
                     </div>
                 </div>
+                <div class="column-grid col-start-10 col-end-12">
+                    <!-- <h2>Bio</h2> -->
+                    <div class="hello">
+                        <h2>Contact</h2>
+                        <h3>Let's link up!</h3>
+                        <h4><a href="mailto:lianayoung.design@gmail.com">Email Me!</a></h4>
+                        <img src="img/LianaYoung.jpg" alt="Me!">
+                    </div>
+                </div>
             </div>
-
         </div>
-
     </section>
-
 
     <footer>
         <div class="container">

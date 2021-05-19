@@ -58,11 +58,11 @@
     align-items: center;
 }
 
-.accordian {
-    .collapsible {
-    .column.one-whole {margin-left: 1%;}
-    .column.one-half {margin: 0 2% 0 1%;}
-    }
+.accordian .collapsible {
+    .row {margin: 1% 0;}
+    .column.one-half,
+    .column.one-whole
+     {margin: 0 2% 0 2%; }
 }
 
 /*Image Grid*/
@@ -72,8 +72,8 @@
     .row-grid {
         grid-template-columns: repeat(12, 1fr);
         display: grid;
-        margin-bottom: 1.45%;
-        column-gap: 1.45%;
+        margin-bottom: 5%;
+        column-gap: 5%;
         img {margin: 0;}
     }
 
