@@ -715,29 +715,6 @@ header a {
   width: 100%;
 }
 
-#welcome {
-  background-color: #173753;
-  margin: 0 auto;
-  padding: 3em 0 1em 0;
-}
-#welcome .sectionhead {
-  color: #4D6B85;
-  line-height: 0;
-}
-#welcome h1 {
-  color: white;
-  line-height: 0.7;
-  font-weight: 700;
-}
-#welcome h3 {
-  color: white;
-  margin-top: 0.5em;
-  font-weight: 300;
-}
-#welcome .button-white {
-  margin-top: 2em;
-}
-
 #about {
   margin: 0 auto;
   height: 75vh;

@@ -93,27 +93,6 @@ header a {
   .container {width: 100%;}
 }
 
-#welcome {
-  background-color: $navy;
-  margin: 0 auto;
-  padding: 3em 0 1em 0;
-  .sectionhead {
-    color: $navy-3;
-    line-height: 0;
-  }
-  h1 {
-    color: white;
-    line-height: .7;
-    font-weight: 700;
-  }
-  h3 {
-    color: white;
-    margin-top: .5em;
-    font-weight: 300;
-  }
-  .button-white {margin-top: 2em;}
-}
-
 #about {
   margin: 0 auto;
   height: 75vh;
