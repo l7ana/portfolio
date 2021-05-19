@@ -142,7 +142,7 @@ ul.bulleted li::before {
 
 .project-top h1,
 .page-top h1 {
-  font-size: clamp(4.5em, 7vw, 7em);
+  font-size: clamp(3.5em, 7vw, 7em);
 }
 .project-top .subhead,
 .page-top .subhead {
@@ -442,6 +442,20 @@ lottie-player.video-bg#shabp-hero {
 #shabp-project-top {
     right: -10%;
     top: 15%;
+  }
+}
+
+#prime-project-top {
+  right: 2%;
+  top: auto;
+  bottom: -30%;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  #prime-project-top {
+    right: -20%;
+    top: 5%;
+    width: 100%;
   }
 }
 
@@ -2662,14 +2676,6 @@ header[data-slidecolor=dark] .site-identity a svg {
 }
 
 /*Prime*/
-.project-top.prime {
-  background-image: url(../img/prime/primelogo.svg);
-  background-size: 20%;
-  background-repeat: no-repeat;
-  background-position: 90% 50%;
-  overflow-x: hidden;
-}
-
 #prime-video {
   margin-bottom: 8em;
 }
