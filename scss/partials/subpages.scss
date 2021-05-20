@@ -107,19 +107,23 @@
     img {width: 100%;}
     margin: 0 0 5em 0;
   }
+
+  // rgba(48,38,29,.4)
   
 /*Two Ladies Kitchen*/
-  // #twoladies-divider {
-  //   height: auto;
-  //   margin: 0 0 5em 0;
-  // }
-  #twoladies-sketch {
-    h2 {margin-top: 2em;}
-    background-image: url(../img/2ladies/twoladies_sketches.jpg);
-    background-size: cover;
-    max-height: 600px;
-    background-repeat: no-repeat;
+#twoladies-story {
+  background-color: #f5f4f4;
+  color: rgba(48,38,29,1);
+  padding: 4em 0 2em 0;
+  h2 {color: #AA182C;}
+  h3 {color: rgba(48,38,29,1);}
+  ul.bulleted {padding-left: 1.5em;}
+  ul.bulleted li::before {
+    font-family: $type-body;
+    content: "\2665";
+    color: #AA182C;
   }
+}
   #twoladies-sketchdetails {
     margin: 5em 0;
     img {width: 75%;}
@@ -273,10 +277,8 @@
     .column.one-third {min-width: 20em;}
   }
 
-  
-
   /*Kinetic Type*/
   
-section#kinetic-project-top {
+  section#kinetic-project-top {
     background-color: #45C8F5;
-}
+  }

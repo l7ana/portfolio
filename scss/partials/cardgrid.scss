@@ -71,7 +71,6 @@
       }
       h3 {font-size: clamp(1.5em,3vw,2.5em);}
     }
-    
     @media (min-width: $breakpoint-x-small +50px) {
       margin: 0;
       flex-direction: column;
@@ -171,19 +170,27 @@
     font-family: $type-body;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: .5px;
     text-decoration: none;
     position: absolute;
     z-index: 3;
     bottom: 0; left: 0;
-    padding: .7em 1em;
+    padding: .5em .7em;
     &.digital {background-color: $turq;}
     &.printed {background: $gold;}
     &.identity {background: $rust;}
   }
+
   .award-label {
     position:absolute;
     z-index: 3;
     top: 0; right: 0;
+    width: 60px; height: 60px;
+    padding: 0;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    .award-label {width: 100px; height: 100px;}
+    .meta-label {font-size: 14px; padding: .7em 1em;}
   }
