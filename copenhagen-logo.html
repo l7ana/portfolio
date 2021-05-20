@@ -184,11 +184,12 @@
         </div>
     </section>
 
-    <section id="copen-sketches">
+    <section id="copen-sketches" class="case-study">
         <div class="container">
-            <div class="row">
-                <div class="column three-fourths"></div>
-                <div class="column one-fourth" data-inview="no">
+            <div class="row with-img">
+                <div class="column two-thirds" data-inview="no"><img src="img/copenhagen-logo/sketches_4.jpg" alt="">
+                </div>
+                <div class="column one-third" data-inview="no">
                     <h2>Sketches</h2>
                     <p>While sketching, I developed a mark that felt kinetic like the movement of a city and
                         mirrored
@@ -201,12 +202,103 @@
     <section id="copen-bottom" data-inview="no">
         <div class="container">
             <div class="row">
-                <div class="column one-whole text-centered" data-inview="no">
-                    <h2>Final Result</h2>
+                <div class="column one-half" data-inview="no">
+                    <h2>Results</h2>
+                    <p>I feel the results of this project are stunning. I love how the texture of the watercolor
+                        paintings come through and the colors are beautiful.</p>
+                    <p>Additionally, each of my team members contributed to the project in a way that was unique to
+                        them. It was a pleasure to bring their paintings to life within the tiny, wonderful, precious
+                        space of a postage stamp. If you enjoyed this project, please consider visiting my friends'
+                        work.</p>
+                    <p>Thank you to <a href="https://mbagolor.github.io/portfolio_v2/index.html"
+                            target="_blank">Venice</a>
+                        and <a href="" target="_blank">Mony</a></p>
+                </div>
+                <div class="column one-half">
+                    <div class="swiper-container" id="gems-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <img src="./img/usps-stamps/turq_mockup.jpg" alt="">
+                                </div>
+                                <div class="swiper-text">
+                                    <p class="caption">Color</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image"><img src="./img/usps-stamps/amethyst_mockup.jpg" alt="">
+                                    <div class="swiper-text">
+                                        <p class="caption">Black and White</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <img src="img/copenhagen-logo/copenlogo_2ver.svg" alt="final logo">
+    </section>
+
+    <section id="other">
+        <div class="container">
+            <div class="row">
+                <div class="column one-half centered text-centered">
+                    <h2 class="sectionhead">Room for More?</h2>
+                    <p>Here are more projects for you to check out.</p>
+                </div>
+            </div>
+            <div class="card-row">
+                <div class="card" data-inview="no">
+                    <a href="fohr.html">
+                        <div class="card-img"><img src="./img/1x1/kpc-mockup_1x1-2.jpg" alt=""><small
+                                class="meta-label digital">
+                                Digital
+                            </small>
+                            <small class="award-label">
+                                <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_4nvqbm44.json"
+                                    background="transparent" speed="1" style="width: 60%; height: 60%;" loop autoplay>
+                                </lottie-player>
+                            </small>
+                        </div>
+                        <div class="card-info">
+                            <h3>Kalihi Pet Center Website Redesign</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-inview="no">
+                    <a href="shabp.html">
+                        <div class="card-img"><img src="./img/1x1/shabpenamel_1x1.jpg" alt=""><small
+                                class="meta-label identity">
+                                Identity
+                            </small></div>
+                        <div class="card-info">
+                            <h3>Small Hands Against Big Phones</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-inview="no">
+                    <a href="triology-bookcovers.html">
+                        <div class="card-img"><img src="./img/1x1/bookcovers_1x1.jpg" alt="">
+                            <small class="meta-label printed">
+                                Print
+                            </small>
+                            <small class="award-label">
+                                <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_4nvqbm44.json"
+                                    background="transparent" speed="1" style="width: 60%; height: 60%;" loop autoplay>
+                                </lottie-player>
+                            </small>
+                        </div>
+                        <div class="card-info">
+                            <h3>This is Love Triology Book Covers</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -227,9 +319,14 @@
         </div>
     </footer>
 
+    <!-- Scroll JS -->
+    <script src="js/scroll.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Main -->
     <script src="js/script.js"></script>
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -255,43 +352,10 @@
             scrollbar: {
                 el: '.swiper-scrollbar',
             },
-
-            // on init set light / dark
-            on: {
-                init: function () {
-                    console.log('swiper initialized');
-                    const initialswiper = document.querySelector('.swiper-container');
-                    const initialslide = document.querySelector('.swiper-slide-active');
-                    const initialheader = document.querySelector('.site-header');
-                    if (initialslide.classList.contains('dark')) {
-                        initialswiper.setAttribute('data-slidecolor', 'dark');
-                        initialheader.setAttribute('data-slidecolor', 'dark');
-                    } else {
-                        initialswiper.setAttribute('data-slidecolor', 'light');
-                        initialheader.setAttribute('data-slidecolor', 'light');
-                    }
-                },
-            },
-        });
-
-        const myswiper = document.querySelector('.swiper-container');
-        const myheader = document.querySelector('.site-header');
-
-        swiper.on('transitionEnd', function () {
-            console.log('slide changed');
-            const activeslide = document.querySelector('.swiper-slide-active');
-            if (activeslide.classList.contains('dark')) {
-                console.log('this slide is dark');
-                myswiper.setAttribute('data-slidecolor', 'dark');
-                myheader.setAttribute('data-slidecolor', 'dark');
-            } else {
-                console.log('this slide is light');
-                myswiper.setAttribute('data-slidecolor', 'light');
-                myheader.setAttribute('data-slidecolor', 'light');
-            }
         });
 
     </script>
+
     <script>
         let options = {
             rootMargin: "0px 0px -100px 0px"

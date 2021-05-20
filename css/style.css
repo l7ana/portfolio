@@ -2047,6 +2047,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   left: 5%;
   right: auto;
   font-size: 1em;
+  color: #1D7D77;
 }
 #gems-swiper .swiper-button-next {
   top: auto;
@@ -2054,6 +2055,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   left: auto;
   right: 5%;
   font-size: 1em;
+  color: #1D7D77;
 }
 
 .card:nth-child(1) {
@@ -2573,13 +2575,11 @@ header[data-slidecolor=dark] .site-identity a svg {
 }
 
 #copen-sketches {
-  background-image: url(../img/copenhagen-logo/sketches_3.jpg);
-  background-size: 100%;
-  max-height: 600px;
-  background-repeat: no-repeat;
+  background-color: #173753;
+  padding: 5em 0;
 }
-#copen-sketches h2 {
-  margin-top: 3em;
+#copen-sketches h2, #copen-sketches p {
+  color: white;
 }
 
 #copen-quote {
@@ -2603,17 +2603,6 @@ header[data-slidecolor=dark] .site-identity a svg {
 }
 #copen-quote a.button-white {
   margin: 5em 0 0 0.2em;
-}
-
-#copen-bottom {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-#copen-bottom h2 {
-  margin-top: 2em;
-}
-#copen-bottom .row {
-  margin-bottom: 2em;
 }
 
 /*FOHR*/

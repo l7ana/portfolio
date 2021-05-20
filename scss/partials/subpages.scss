@@ -65,12 +65,9 @@
     margin-bottom: 0;
   }
   #copen-sketches {
-    h2 {margin-top: 3em;}
-    background-image: url(../img/copenhagen-logo/sketches_3.jpg);
-    background-size: 100%;
-    // height: 50%;
-    max-height: 600px;
-    background-repeat: no-repeat;
+    background-color: $navy;
+    padding: 5em 0;
+    h2,p {color: white;}
   }
   #copen-quote {
     background-color: $navy;
@@ -91,12 +88,6 @@
       }
     }
     a.button-white {margin: 5em 0 0 .2em;}
-  }
-  #copen-bottom {
-    h2 {margin-top: 2em;}
-    .row {margin-bottom: 2em;}
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
   
  /*FOHR*/
