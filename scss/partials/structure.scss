@@ -137,10 +137,25 @@ footer {
   }
 }
 
+
 .hide-mobile { display: none; visibility: hidden;}
+.hide-small { display: none; visibility: hidden;}
 
 @media (min-width: $breakpoint-x-small) {
   .hide-mobile {display: inline; visibility: visible;}
+  .show-mobile { display: none; visibility: hidden;}
+}
+
+@media (max-width: $breakpoint-x-small) {
+  .show-mobile { display: inline; visibility: visible}
+}
+
+@media (min-width: $breakpoint-small) {
+  .hide-small {display: inline; visibility: visible;}
+  .show-small { display: none; visibility: hidden;}
+}
+@media (max-width: $breakpoint-small) {
+  .show-small { display: inline; visibility: visible}
 }
 
 footer .footer-nav ul {

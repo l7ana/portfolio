@@ -130,22 +130,6 @@
         </div>
     </section>
 
-    <!-- <section id="prime-quote">
-        <div class="container">
-            <div class="row centered">
-                <div class="column two-thirds" data-inview="no">
-                    <div class="quote-box">
-                        <p class="pull-quote">
-                            We first make our habits, and then <span>our habits make us.</span>
-                        </p>
-                        <p class="caption">&ndash;John Dryden</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section id="prime-video">
         <video width="100%" src="video/miro_primeintro_v4.mp4" controls></video>
     </section>
@@ -219,11 +203,23 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="swiper-container" id="prime-swiper">
+    <section class="case-study" id="prime-swiper">
+        <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/prime/styletile.svg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/prime/uielements.svg" alt=""></div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="./img/prime/styletile_small.svg">
+                        <source media="(min-width:1050px)" srcset="./img/prime/styletile.svg">
+                        <img src="./img/prime/styletile.svg" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="./img/prime/uielements_small.svg">
+                        <source media="(min-width:1050px)" srcset="./img/prime/uielements.svg">
+                        <img src="./img/prime/uielements.svg" alt="">
+                    </picture>
+                </div>
             </div>
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
@@ -233,7 +229,7 @@
         </div>
     </section>
 
-    <section class="case-study" id="prime-hifi">
+    <section class="case-study">
         <div class="container">
             <div class="row no-margin">
                 <div class="column one-whole text-centered" data-inview="no">
@@ -241,16 +237,14 @@
                     <p class="caption">Drag Left to Right</p>
                 </div>
             </div>
-        </div>
-        <div class="swiper-container" id="prime-swiper-two">
-            <!-- Side scrolling cards -->
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="swiper-image">
-                        <video src="img/prime/video/menu_demo.mp4" autoplay loop width="100%"></video>
-                    </div>
-                    <div class="swiper-info">
-                        <div class="column one-half" data-inview="no">
+
+            <div class="swiper-container" id="prime-hifi">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-image column one-half">
+                            <video src="img/prime/video/menu_demo.mp4" autoplay loop width="100%"></video>
+                        </div>
+                        <div class="swiper-info column one-half">
                             <h3>Your Menu</h3>
                             <h4>The Main Interface for easy perusing</h4>
                             <ul class="bulleted">
@@ -259,13 +253,11 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide row-reverse">
-                    <div class="swiper-image">
-                        <video src="img/prime/video/enter_demo.mp4" autoplay loop width="100%"></video>
-                    </div>
-                    <div class="swiper-info">
-                        <div class="column one-half" data-inview="no">
+                    <div class="swiper-slide">
+                        <div class="swiper-image column one-half">
+                            <video src="img/prime/video/enter_demo.mp4" autoplay loop width="100%"></video>
+                        </div>
+                        <div class="swiper-info column one-half">
                             <h3>Activity Log</h3>
                             <h4>To keep track of your time and generate improved reccomendations</h4>
                             <ul class="bulleted">
@@ -274,13 +266,11 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-image">
-                        <video src="img/prime/video/add_demo.mp4" autoplay loop width="100%"></video>
-                    </div>
-                    <div class="swiper-info">
-                        <div class="column one-half" data-inview="no">
+                    <div class="swiper-slide">
+                        <div class="swiper-image column one-half">
+                            <video src="img/prime/video/add_demo.mp4" autoplay loop width="100%"></video>
+                        </div>
+                        <div class="swiper-info column one-half">
                             <h3>Menu Item Entry</h3>
                             <h4>To fully customize Your Menu of activities</h4>
                             <ul class="bulleted">
@@ -290,13 +280,11 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide row-reverse">
-                    <div class="swiper-image">
-                        <video src="img/prime/video/notif_demo_2.mp4" autoplay loop width="100%"></video>
-                    </div>
-                    <div class="swiper-info">
-                        <div class="column one-half" data-inview="no">
+                    <div class="swiper-slide row-reverse">
+                        <div class="swiper-image column one-half">
+                            <video src="img/prime/video/notif_demo_2.mp4" autoplay loop width="100%"></video>
+                        </div>
+                        <div class="swiper-info column one-half">
                             <h3>Personalized Notifications</h3>
                             <h4>Suggestions throughout the day to keep you on task</h4>
                             <ul class="bulleted">
@@ -305,13 +293,11 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-image">
-                        <video src="img/prime/video/widget_demo.mp4" autoplay loop width="100%"></video>
-                    </div>
-                    <div class="swiper-info">
-                        <div class="column one-half" data-inview="no">
+                    <div class="swiper-slide">
+                        <div class="swiper-image column one-half">
+                            <video src="img/prime/video/widget_demo.mp4" autoplay loop width="100%"></video>
+                        </div>
+                        <div class="swiper-info column one-half">
                             <h3>Home Screen Widget</h3>
                             <h4>A handy tool that sits right on your homescreen</h4>
                             <ul class="bulleted">
@@ -321,22 +307,32 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-next next-1"></div>
-        </div>
 
-        <div class="container">
-            <div class="row"><a href="https://xd.adobe.com/view/21746f82-6b95-4102-bc3c-2ac459bd6dd7-7427/?fullscreen"
-                    class="button-gold blink">View the Prototype</a></div>
+                <!-- Add Scrollbar -->
+                <div class="swiper-scrollbar"></div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="row">
+                <div class="column one-whole text-centered">
+                    <a href="https://xd.adobe.com/view/21746f82-6b95-4102-bc3c-2ac459bd6dd7-7427/?fullscreen"
+                        class="button-gold blink">View the Prototype</a>
+                </div>
+            </div>
         </div>
     </section>
     <section class="case-study">
         <div class="container">
             <div class="row-reverse">
+                <div class="column one-half" data-inview="no">
+                    <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_fprfno3l.json"
+                        background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay>
+                    </lottie-player>
+                </div>
                 <div class="column one-half" data-inview="no">
                     <h2>In Conclusion</h2>
                     <p>Habits are a topic of interest to me because of my desire to redefine my habits. So when this
@@ -352,11 +348,6 @@
                         <li>Adobe XD Skills</li>
                     </ul>
                     <p>and helped me think with a new perspective on how I spend my own leisure time.</p>
-                </div>
-                <div class="column one-half" data-inview="no">
-                    <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_fprfno3l.json"
-                        background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay>
-                    </lottie-player>
                 </div>
             </div>
         </div>
@@ -391,7 +382,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper1 = new Swiper('#prime-swiper', {
+        const swiper = new Swiper('.swiper-container', {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
@@ -399,7 +390,6 @@
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
-                type: 'bullets',
             },
 
             effect: 'slide',
@@ -409,21 +399,10 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-        });
 
-        var swiper2 = new Swiper('#prime-swiper-two.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-            },
             // And if we need scrollbar
             scrollbar: {
                 el: '.swiper-scrollbar',
-            },
-            // freeMode: true,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
             },
         });
 

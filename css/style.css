@@ -746,8 +746,41 @@ footer .scroll-top {
   visibility: hidden;
 }
 
+.hide-small {
+  display: none;
+  visibility: hidden;
+}
+
 @media (min-width: 480px) {
   .hide-mobile {
+    display: inline;
+    visibility: visible;
+  }
+
+  .show-mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 480px) {
+  .show-mobile {
+    display: inline;
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) {
+  .hide-small {
+    display: inline;
+    visibility: visible;
+  }
+
+  .show-small {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 768px) {
+  .show-small {
     display: inline;
     visibility: visible;
   }
@@ -1839,32 +1872,6 @@ header[data-slidecolor=dark] .site-identity a svg {
   border-color: white;
 }
 
-.swiper-thumbs.swiper-container {
-  margin: 2em 0 0 0;
-}
-.swiper-thumbs.swiper-container .swiper-button-prev {
-  color: white;
-  top: 50%;
-  left: 5%;
-  right: 0;
-  font-size: 1em;
-}
-.swiper-thumbs.swiper-container .swiper-button-next {
-  color: white;
-  top: 50%;
-  left: auto;
-  right: 5%;
-  font-size: 1em;
-}
-@media (min-width: 480px) {
-  .swiper-thumbs.swiper-container .swiper-button-prev {
-    font-size: 2em;
-  }
-  .swiper-thumbs.swiper-container .swiper-button-next {
-    font-size: 2em;
-  }
-}
-
 /* Swiper Buttons */
 .swiper-button-prev {
   color: white;
@@ -1889,15 +1896,18 @@ header[data-slidecolor=dark] .site-identity a svg {
   background-color: #1D7D77;
 }
 
+#prime-swiper .swiper-slide picture {
+  width: 100%;
+}
 #prime-swiper .swiper-button-prev {
   top: auto;
-  bottom: 45%;
+  top: 50%;
   left: auto;
   right: 95%;
 }
 #prime-swiper .swiper-button-next {
   top: auto;
-  bottom: 45%;
+  top: 50%;
   left: 95%;
   right: auto;
 }
@@ -1905,39 +1915,62 @@ header[data-slidecolor=dark] .site-identity a svg {
   bottom: 10%;
 }
 
-#prime-swiper-two {
-  height: 80vh;
-}
-#prime-swiper-two .swiper-slide {
+#prime-hifi .swiper-slide {
   display: flex;
-  flex-direction: row;
+  align-content: flex-start;
   align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
-#prime-swiper-two .swiper-slide .swiper-image {
-  width: 70%;
-  height: auto;
-  overflow: hidden;
+#prime-hifi .swiper-image video {
+  max-height: 400px;
+  height: 100%;
 }
-#prime-swiper-two .swiper-slide .swiper-image video {
-  height: 100vh;
-}
-#prime-swiper-two .swiper-slide .swiper-info {
-  background-color: white;
-  width: 50%;
-}
-#prime-swiper-two .swiper-button-next {
+#prime-hifi .swiper-button-next {
   top: auto;
-  bottom: 45%;
+  bottom: 40%;
   left: 95%;
   right: auto;
-  animation: swiper-next 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards infinite;
-  opacity: 1;
 }
-#prime-swiper-two .swiper-button-next.next-1 {
-  left: 94%;
-  font-size: 1.2em;
-  opacity: 0.7;
-  animation-delay: 0.25s;
+#prime-hifi .swiper-button-prev {
+  top: auto;
+  bottom: 40%;
+  right: 95%;
+  left: auto;
+}
+#prime-hifi .swiper-pagination {
+  bottom: 2%;
+}
+@media (min-width: 768px) {
+  #prime-hifi {
+    max-height: 75vh;
+  }
+  #prime-hifi .swiper-slide {
+    flex-direction: row;
+  }
+  #prime-hifi .swiper-image video {
+    max-height: 500px;
+    height: 100%;
+  }
+  #prime-hifi .swiper-text.column {
+    width: 100%;
+    max-width: none;
+  }
+  #prime-hifi .swiper-button-next {
+    top: auto;
+    bottom: 50%;
+    left: 90%;
+    right: auto;
+  }
+  #prime-hifi .swiper-button-prev {
+    top: auto;
+    bottom: 50%;
+    right: 90%;
+    left: auto;
+  }
+  #prime-hifi .swiper-pagination {
+    bottom: 2%;
+  }
 }
 
 #to-twoladies-swiper {
@@ -2729,30 +2762,6 @@ header[data-slidecolor=dark] .site-identity a svg {
   background-image: linear-gradient(white, #FCFCFC);
   margin: 8em 0 0 0;
   padding: 0;
-}
-
-#prime-quote {
-  background-image: linear-gradient(rgba(195, 157, 77, 0.08), white);
-  width: 100%;
-  margin: 5em 0;
-  display: flex;
-  align-items: center;
-}
-#prime-quote .quote-box p.pull-quote {
-  color: #2d0043;
-  font-size: clamp(1.5em, 4vw, 4em);
-}
-#prime-quote .quote-box .pull-quote::before {
-  color: rgba(195, 157, 77, 0.1);
-  margin-left: -19%;
-  margin-bottom: -15%;
-}
-#prime-quote .quote-box p.caption {
-  margin-top: 4em;
-  color: #902800;
-}
-#prime-quote p {
-  margin-top: 2em;
 }
 
 /*Book Covers*/
