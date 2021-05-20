@@ -277,6 +277,25 @@
     margin: 0;
   }
 
+  #fohr-swiper {
+    .swiper-button-next,
+    .swiper-button-prev {
+      bottom: 2%;
+    }
+    .swiper-button-prev {left:5%;}
+    .swiper-button-next {right:5%;}
+    .swiper-text {bottom: 5%;}
+    @media (min-width:$breakpoint-small) {
+      .swiper-button-next,
+      .swiper-button-prev {
+        bottom: 10%;
+      }
+      .swiper-button-prev {left:10%;}
+      .swiper-button-next {right:10%;}
+      .swiper-text {bottom: 12%;}
+    }
+  }
+
   #natura-swiper {
     padding-bottom: 0; margin-bottom: 0;
     .swiper-text {
@@ -333,17 +352,14 @@
 
   #hs-swiper {
     margin-top: 2em;
+    .swiper-text {margin: 0 auto;}
+    p.caption {color: white;}
     .swiper-button-prev,
     .swiper-button-next
-     {
-      top: auto;
-      bottom: 13%;
-      left: auto;
-      color: white;
-    }
-    .swiper-button-next { left: 93%; }
-    .swiper-button-prev {right: 93%;}
-    .swiper-pagination { bottom: 12%; }
+     {color: white; bottom: 9%;}
+    .swiper-button-next { left: 90%; }
+    .swiper-button-prev {right: 90%;}
+    .swiper-pagination { bottom: 2%; }
     .swiper-pagination-bullet {background-color: white;}
   }
 
