@@ -18,6 +18,7 @@ h2, h3 {
   margin: 0;
   color: #0C1C2A;
   font-variant-ligatures: common-ligatures;
+  hanging-punctuation: first;
 }
 
 h1 {
@@ -1335,6 +1336,7 @@ footer .footer-nav ul li a {
 .with-img.row,
 .with-img.row-reverse {
   align-items: center;
+  margin: 3em 0;
 }
 
 .accordian .collapsible .row {
@@ -1947,19 +1949,19 @@ header[data-slidecolor=dark] .site-identity a svg {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-#natura-swiper .swiper-container {
+#natura-swiper .swiper-text {
+  text-align: center;
   width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
+  position: absolute;
+  bottom: 0.5%;
+  padding: 1% 0 2% 0;
+  background: rgba(23, 55, 83, 0.7);
 }
-#natura-swiper .swiper-wrapper {
-  height: 100%;
-}
-#natura-swiper .swiper-slide img {
-  margin: 0;
+#natura-swiper .caption {
+  color: white;
 }
 #natura-swiper .swiper-pagination {
-  bottom: 7%;
+  bottom: 2%;
 }
 #natura-swiper .swiper-pagination-bullet {
   background-color: white;
@@ -1969,6 +1971,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   bottom: 50%;
   left: auto;
   right: 95%;
+  font-size: 3vh;
   color: white;
 }
 #natura-swiper .swiper-button-next {
@@ -1976,6 +1979,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   bottom: 50%;
   left: 95%;
   right: auto;
+  font-size: 3vh;
   color: white;
 }
 
@@ -2059,12 +2063,15 @@ header[data-slidecolor=dark] .site-identity a svg {
 .with-caption .swiper-text {
   background: white;
   text-align: center;
-  margin-bottom: 0.5em;
+  width: 100%;
+  padding: 0.5em 0;
+  position: absolute;
+  bottom: 0%;
 }
 .with-caption .swiper-button-prev {
   top: auto;
   bottom: 0;
-  left: 5%;
+  left: 0;
   right: auto;
   font-size: 1em;
   color: #1D7D77;
@@ -2073,7 +2080,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   top: auto;
   bottom: 0;
   left: auto;
-  right: 5%;
+  right: 0;
   font-size: 1em;
   color: #1D7D77;
 }
