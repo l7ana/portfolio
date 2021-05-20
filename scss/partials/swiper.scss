@@ -306,26 +306,24 @@
   }
 
   #book-swiper {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    background-image: linear-gradient($white-1, $grey-1);
-    .swiper-slide {
-      img {height: 120vh; width: auto;}
-      text-align: center;
-    }
+    overflow: hidden;
     .swiper-button-prev {
       top: auto;
       bottom: 50%;
       left: auto;
-      right: 93%;
+      right: 95%;
       font-size: 2em;
+      color: white;
     }
     .swiper-button-next {
       top: auto;
       bottom: 50%;
-      left: 93%;
+      left: 95%;
       right: auto;
       font-size: 2em;
+      color: white;
     }
     .swiper-pagination {
       bottom: 7%;
