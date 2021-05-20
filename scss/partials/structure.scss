@@ -137,27 +137,6 @@ footer {
   }
 }
 
-
-.hide-mobile { display: none; visibility: hidden;}
-.hide-small { display: none; visibility: hidden;}
-
-@media (min-width: $breakpoint-x-small) {
-  .hide-mobile {display: inline; visibility: visible;}
-  .show-mobile { display: none; visibility: hidden;}
-}
-
-@media (max-width: $breakpoint-x-small) {
-  .show-mobile { display: inline; visibility: visible}
-}
-
-@media (min-width: $breakpoint-small) {
-  .hide-small {display: inline; visibility: visible;}
-  .show-small { display: none; visibility: hidden;}
-}
-@media (max-width: $breakpoint-small) {
-  .show-small { display: inline; visibility: visible}
-}
-
 footer .footer-nav ul {
   display: flex;
   justify-content: flex-end;
@@ -179,7 +158,6 @@ footer .footer-nav ul {
     }
   }
 }
-
 
 /*Secctions*/
 
@@ -260,9 +238,12 @@ footer .footer-nav ul {
   }
   .hello{
     margin-bottom: 1em;
-    img {margin: 1em;}
+    width: 100%; height: 100%;
+    // background-color: rgba($white-1,1);
+    // padding: 3em;
   }
   .button-gold.blink {margin-right: 0;}
+  .row-grid {column-gap: 5%;}
 }
 
 #other {
@@ -353,3 +334,24 @@ footer .footer-nav ul {
 }
 
 .row.notice {background-color: rgba($turq, .1);}
+
+/*Hide and Cries*/
+.hide-mobile { display: none; visibility: hidden;}
+.hide-small { display: none; visibility: hidden;}
+
+@media (min-width: $breakpoint-x-small) {
+  .hide-mobile {display: inline; visibility: visible;}
+  .show-mobile { display: none; visibility: hidden;}
+}
+
+@media (max-width: $breakpoint-x-small) {
+  .show-mobile { display: inline; visibility: visible}
+}
+
+@media (min-width: $breakpoint-small) {
+  .hide-small {display: inline; visibility: visible;}
+  .show-small { display: none; visibility: hidden;}
+}
+@media (max-width: $breakpoint-small) {
+  .show-small { display: inline; visibility: visible}
+}

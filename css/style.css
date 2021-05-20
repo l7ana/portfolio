@@ -741,50 +741,6 @@ footer .scroll-top {
   }
 }
 
-.hide-mobile {
-  display: none;
-  visibility: hidden;
-}
-
-.hide-small {
-  display: none;
-  visibility: hidden;
-}
-
-@media (min-width: 480px) {
-  .hide-mobile {
-    display: inline;
-    visibility: visible;
-  }
-
-  .show-mobile {
-    display: none;
-    visibility: hidden;
-  }
-}
-@media (max-width: 480px) {
-  .show-mobile {
-    display: inline;
-    visibility: visible;
-  }
-}
-@media (min-width: 768px) {
-  .hide-small {
-    display: inline;
-    visibility: visible;
-  }
-
-  .show-small {
-    display: none;
-    visibility: hidden;
-  }
-}
-@media (max-width: 768px) {
-  .show-small {
-    display: inline;
-    visibility: visible;
-  }
-}
 footer .footer-nav ul {
   display: flex;
   justify-content: flex-end;
@@ -917,12 +873,14 @@ footer .footer-nav ul li a {
 }
 #resume .hello {
   margin-bottom: 1em;
-}
-#resume .hello img {
-  margin: 1em;
+  width: 100%;
+  height: 100%;
 }
 #resume .button-gold.blink {
   margin-right: 0;
+}
+#resume .row-grid {
+  column-gap: 5%;
 }
 
 #other {
@@ -1027,6 +985,51 @@ footer .footer-nav ul li a {
   background-color: rgba(29, 125, 119, 0.1);
 }
 
+/*Hide and Cries*/
+.hide-mobile {
+  display: none;
+  visibility: hidden;
+}
+
+.hide-small {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 480px) {
+  .hide-mobile {
+    display: inline;
+    visibility: visible;
+  }
+
+  .show-mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 480px) {
+  .show-mobile {
+    display: inline;
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) {
+  .hide-small {
+    display: inline;
+    visibility: visible;
+  }
+
+  .show-small {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 768px) {
+  .show-small {
+    display: inline;
+    visibility: visible;
+  }
+}
 /* Work Grid */
 .work {
   background-color: #f1f9ff;
@@ -1941,6 +1944,9 @@ header[data-slidecolor=dark] .site-identity a svg {
 #prime-hifi .swiper-pagination {
   bottom: 2%;
 }
+#prime-hifi h4 {
+  font-size: 1.2em;
+}
 @media (min-width: 768px) {
   #prime-hifi {
     max-height: 75vh;
@@ -1970,6 +1976,16 @@ header[data-slidecolor=dark] .site-identity a svg {
   }
   #prime-hifi .swiper-pagination {
     bottom: 2%;
+  }
+  #prime-hifi h4 {
+    font-size: 1.5em;
+  }
+  #prime-hifi h4, #prime-hifi ul li {
+    max-width: 370px;
+  }
+  #prime-hifi ul.bulleted {
+    margin: 0;
+    padding-left: 5%;
   }
 }
 

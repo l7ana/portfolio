@@ -261,6 +261,7 @@
     .swiper-button-next {top: auto; bottom: 40%; left: 95%; right: auto;}
     .swiper-button-prev {top: auto; bottom: 40%; right: 95%; left: auto;} 
     .swiper-pagination { bottom: 2%; }
+    h4 {font-size: 1.2em;}
 
     @media (min-width:$breakpoint-small) {
       max-height: 75vh;
@@ -270,6 +271,9 @@
       .swiper-button-next {top: auto; bottom: 50%; left: 90%; right: auto;}
       .swiper-button-prev {top: auto; bottom: 50%; right: 90%; left: auto;} 
       .swiper-pagination { bottom: 2%; }
+      h4 {font-size: 1.5em;}
+      h4, ul li {max-width: 370px;}
+      ul.bulleted {margin: 0; padding-left: 5%;}
     }
     
   }
