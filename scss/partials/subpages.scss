@@ -133,25 +133,8 @@
     // background-color: rgba(#30261D, .1);
     padding: 8em 0 5em 0;
   }
-  #twoladies-quote {
-    background-color: $rust;
-    margin-bottom: 8em;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    .quote-box {
-      margin: 0 0 0 11.25%;
-      p.pull-quote {
-        color: white;
-        margin-top: 3em;
-        font-size: clamp(1.5em, 4vw, 4em); 
-      } 
-      .pull-quote::before {
-        color: rgba(white,.2);
-        margin-left: -17%;
-        margin-bottom: -18%;
-      }
-    }
+  #twoladies-bottom {
+    margin-bottom: 0; padding-bottom: 3em;
   }
   
 /*Prime*/

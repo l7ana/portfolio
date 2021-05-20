@@ -295,17 +295,84 @@
             </div>
         </div>
     </section>
-    <section class="case-study">
+
+    <section class="case-study" id="twoladies-bottom">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/2ladies/final_logo_2ladies.svg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/2ladies/logo_details_2ladies.svg" alt=""></div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="./img/2ladies/2ladies-finallogo-small.svg">
+                        <source media="(min-width:1050px)" srcset="./img/2ladies/final_logo_2ladies.svg">
+                        <img src="./img/2ladies/final_logo_2ladies.svg" alt="">
+                    </picture>
+                    <div class="swiper-text">
+                        <p class="caption">Final Logo</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="./img/2ladies/2ladies-details-small.svg">
+                        <source media="(min-width:1050px)" srcset="./img/2ladies/logo_details_2ladies.svg">
+                        <img src="./img/2ladies/logo_details_2ladies.svg" alt="">
+                    </picture>
+                    <div class="swiper-text">
+                        <p class="caption">Logo Details</p>
+                    </div>
+                </div>
             </div>
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="other">
+        <div class="container">
+            <div class="row">
+                <div class="column one-half centered text-centered">
+                    <h2 class="sectionhead">Room for More?</h2>
+                    <p>Here are more projects for you to check out.</p>
+                </div>
+            </div>
+            <div class="card-row">
+                <div class="card" data-inview="no">
+                    <a href="fohr.html">
+                        <div class="card-img"><img src="./img/fohr/fohr_mockup_2.jpg" alt=""><small
+                                class="meta-label digital">
+                                Digital
+                            </small>
+                        </div>
+                        <div class="card-info">
+                            <h3>Friends of Hawai‘i Robotics UI</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-inview="no">
+                    <a href="shabp.html">
+                        <div class="card-img"><img src="./img/1x1/shabpenamel_1x1.jpg" alt=""><small
+                                class="meta-label identity">
+                                Identity
+                            </small></div>
+                        <div class="card-info">
+                            <h3>The Small Hands Against Big Phones Club</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-inview="no">
+                    <a href="usps-stamps.html">
+                        <div class="card-img"><img src="./img/1x1/gems_v1.gif" id="card-gems" alt="USPS Gem Stamps">
+                            <small class="meta-label printed">
+                                Print
+                            </small>
+                        </div>
+                        <div class="card-info">
+                            <h3>USPS Gemstone Stamps</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -330,6 +397,8 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- Scroll JS -->
     <script src="js/scroll.js"></script>

@@ -349,10 +349,17 @@
   }
 
   .case-study {
+    .swiper-text {
+      text-align: center;
+      // border: 1px solid green;
+      width: 100%;
+      position: absolute;
+      bottom: 12%;
+    }
     .swiper-button-prev {
       color: $turq;
       top: auto;
-      bottom: 5%;
+      bottom: 10%;
       left: 15%;
       right:auto;
       font-size: 1em;
@@ -360,7 +367,7 @@
   .swiper-button-next {
     color: $turq;
     top: auto;
-    bottom: 5%;
+    bottom: 10%;
     left: auto;
     right: 15%;
     font-size: 1em;
@@ -379,8 +386,8 @@
       left: 5%; right:auto;
       font-size: 1em;
       color: $turq;
-  }
-  .swiper-button-next {
+    }
+    .swiper-button-next {
     top: auto; bottom: 0;
     left: auto; right: 5%;
     font-size: 1em;
