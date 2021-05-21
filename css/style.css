@@ -467,6 +467,24 @@ lottie-player.video-bg#shabp-hero {
   }
 }
 
+#work-spin {
+  position: absolute;
+  opacity: 0.15;
+  top: 20%;
+  right: -20%;
+  width: 120%;
+  height: 120%;
+}
+@media (min-width: 768px) {
+  #work-spin {
+    width: 170%;
+    height: 170%;
+    right: 10%;
+    top: -50%;
+    opacity: 0.2;
+  }
+}
+
 #hs-project-top,
 #shabp-project-top {
   right: 0%;
