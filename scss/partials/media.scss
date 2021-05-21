@@ -119,6 +119,20 @@ lottie-player.video-bg#shabp-hero {
     }
 }
 
+.page-top-wrapper {
+    position: absolute;
+    // border: 1px solid green;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    max-width: 960px;
+    right: 0; top: 0;
+    height: 100%;
+    lottie-player, img {
+        position: absolute;
+    }
+}
+
 .project-top-wrapper {
     position: absolute;
     z-index: -10;
@@ -129,6 +143,16 @@ lottie-player.video-bg#shabp-hero {
     height: 100vh;
     lottie-player, img {
         position: absolute;
+    }
+}
+
+#spin{
+    opacity: .5;
+    top: 55%;
+    @media (min-width: 768px) {
+        width: 110%; height: 110%;
+        right: -40%; top: 35%;
+        opacity: 1;
     }
 }
 

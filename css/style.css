@@ -407,6 +407,20 @@ lottie-player.video-bg#shabp-hero {
     height: 625px;
   }
 }
+.page-top-wrapper {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  max-width: 960px;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+.page-top-wrapper lottie-player, .page-top-wrapper img {
+  position: absolute;
+}
+
 .project-top-wrapper {
   position: absolute;
   z-index: -10;
@@ -419,6 +433,20 @@ lottie-player.video-bg#shabp-hero {
 }
 .project-top-wrapper lottie-player, .project-top-wrapper img {
   position: absolute;
+}
+
+#spin {
+  opacity: 0.5;
+  top: 55%;
+}
+@media (min-width: 768px) {
+  #spin {
+    width: 110%;
+    height: 110%;
+    right: -40%;
+    top: 35%;
+    opacity: 1;
+  }
 }
 
 #hs-project-top,
@@ -870,11 +898,24 @@ footer .footer-nav ul li a {
 #resume #resume-top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 #resume .hello {
   margin-bottom: 1em;
   width: 100%;
   height: 100%;
+}
+#resume .hello ul {
+  margin: 0;
+  padding: 0;
+}
+#resume .hello ul li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+#resume .hello a {
+  text-decoration: none;
+  color: #173753;
 }
 #resume .button-gold.blink {
   margin-right: 0;
@@ -892,45 +933,12 @@ footer .footer-nav ul li a {
   margin-top: 1em;
 }
 
-.cta-link-to {
-  padding: 4em 0 2.5em 0;
-  display: flex;
-  justify-content: center;
-  background-color: #1D7D77;
-}
-.cta-link-to a {
-  text-decoration: none;
-}
-.cta-link-to h3 {
-  font-size: 5em;
-  font-family: "kepler-std-display", serif;
-  display: relative;
-  color: white;
-}
-.cta-link-to h3:after {
-  display: absolute;
-  font-size: 0.75em;
-  z-index: -1;
-  content: "⟶";
-  opacity: 0;
-  padding-left: 0;
-  transition: all 0.5s ease-in-out;
-  color: currentColor;
-}
-
-.cta-link-to:hover {
-  cursor: pointer;
-}
-.cta-link-to:hover h3:after {
-  opacity: 0.5;
-  padding-left: 0.5em;
-}
-
 .page-top {
   display: flex;
   text-align: left;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 }
 
 .project-top {
@@ -1694,12 +1702,11 @@ a.button-havensolus:hover {
 /* Swiper */
 #home-swiper.swiper-container {
   width: 100%;
-  height: 100%;
+  height: 87%;
   margin: 0;
 }
 #home-swiper .swiper-slide {
   text-align: center;
-  /* background: rgb(175, 175, 175); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1712,6 +1719,71 @@ a.button-havensolus:hover {
   height: 100%;
   text-align: left;
 }
+#home-swiper .swiper-textbox {
+  top: 30%;
+  margin-left: 9.5%;
+  width: 70%;
+  height: 100%;
+  position: relative;
+}
+#home-swiper .swiper-textbox h1 {
+  font-size: clamp(3em, 7vw, 7em);
+  margin: 0;
+  padding: 0;
+}
+#home-swiper .swiper-textbox .sectionhead {
+  margin-top: 0.7em;
+  font-size: clamp(1.5em, 2vw, 2em);
+  line-height: 1;
+}
+#home-swiper .swiper-textbox .award-label {
+  top: 33%;
+  right: 0%;
+  width: 80px;
+  height: 80px;
+}
+#home-swiper #welcome-slide {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 9.5%;
+}
+#home-swiper #welcome-slide lottie-player {
+  width: 95%;
+  height: 95%;
+}
+#home-swiper #welcome-slide .welcome-text {
+  margin: -70% 0 50% 0;
+}
+@media (min-width: 768px) {
+  #home-swiper.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  #home-swiper .swiper-textbox {
+    width: 70%;
+    height: 100%;
+    top: 30%;
+  }
+  #home-swiper .swiper-textbox .award-label {
+    top: 30%;
+    right: -15%;
+    width: 100px;
+    height: 100px;
+  }
+  #home-swiper #welcome-slide {
+    margin-left: 9.5%;
+  }
+  #home-swiper #welcome-slide lottie-player {
+    width: 85%;
+    height: 85%;
+  }
+  #home-swiper #welcome-slide .welcome-text {
+    margin: -15% 0 15% 0;
+  }
+}
+
 #home-swiper .swiper-button-prev {
   font-size: 1.5em;
   top: auto;
@@ -1746,72 +1818,6 @@ a.button-havensolus:hover {
   animation: swiper-next 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards infinite;
   animation-delay: 0.5s;
 }
-#home-swiper #show-me {
-  position: absolute;
-  width: 80%;
-  bottom: 68%;
-  left: 9.5%;
-  z-index: 2;
-}
-#home-swiper #show-me p {
-  font-family: "hero-new", sans-serif;
-  font-size: clamp(1em, 3vw, 2em);
-  font-weight: 300;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
-#home-swiper #show-me p strong {
-  font-family: "kepler-std-semicondensed-cap", serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: clamp(1em, 2.2vw, 2em);
-}
-#home-swiper #show-me p::after {
-  content: "";
-  margin-top: 4vh;
-  height: 6.5vw;
-  width: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  max-height: 2.3em;
-  border-bottom: 2px solid;
-}
-@media (max-width: 388px) {
-  #home-swiper #show-me p::after {
-    border: none;
-  }
-}
-#home-swiper .swiper-textbox {
-  position: relative;
-  top: 34%;
-  margin: 0;
-  left: 9.5%;
-  width: 80%;
-  z-index: 11;
-}
-#home-swiper .swiper-textbox h1 {
-  font-size: clamp(1.5em, 7vw, 7em);
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
-}
-#home-swiper .swiper-textbox .subhead {
-  margin-top: 1em;
-  font-size: clamp(1em,2vw,2em);
-}
-#home-swiper .swiper-textbox .award-label {
-  top: -20%;
-  right: -10%;
-  margin: 1em;
-}
-#home-swiper .dark .swiper-image h1,
-#home-swiper .dark .swiper-image,
-#home-swiper .dark {
-  color: white;
-}
 
 header[data-slidecolor=light] a {
   color: black;
@@ -1837,7 +1843,7 @@ header[data-slidecolor=dark] .site-identity a svg {
 
 [data-slidecolor=light] .swiper-button-prev,
 [data-slidecolor=light] .swiper-button-next,
-[data-slidecolor=light] #show-me,
+[data-slidecolor=light] .swiper-textbox,
 [data-slidecolor=light] .arrow-down a,
 [data-slidecolor=light] .swiper-pagination-fraction {
   color: black;
@@ -1849,7 +1855,7 @@ header[data-slidecolor=dark] .site-identity a svg {
 
 [data-slidecolor=dark] .swiper-button-prev,
 [data-slidecolor=dark] .swiper-button-next,
-[data-slidecolor=dark] #show-me,
+[data-slidecolor=dark] .swiper-textbox,
 [data-slidecolor=dark] .arrow-down a,
 [data-slidecolor=dark] .swiper-pagination-fraction {
   color: white;

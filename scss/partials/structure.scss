@@ -235,12 +235,14 @@ footer .footer-nav ul {
   #resume-top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .hello{
     margin-bottom: 1em;
     width: 100%; height: 100%;
-    // background-color: rgba($white-1,1);
-    // padding: 3em;
+    ul {margin: 0; padding: 0;}
+    ul li {list-style: none; margin-bottom: 1em;}
+    a {text-decoration: none; color: $navy;}
   }
   .button-gold.blink {margin-right: 0;}
   .row-grid {column-gap: 5%;}
@@ -253,43 +255,12 @@ footer .footer-nav ul {
   .sectionhead {margin-top: 1em;}
 }
 
-.cta-link-to {
-  padding: 4em 0 2.5em 0;
-  display: flex;
-  justify-content: center;
-  background-color: $turq;
-  a {text-decoration: none;}
-  h3 {
-    font-size: 5em;
-    font-family: $type-heading;
-    display: relative;
-    color: white;
-  }
-  h3:after {
-    display: absolute;
-    font-size: .75em;
-    z-index: -1;
-    content: '\27F6';
-    opacity: 0;
-    padding-left: 0;
-    transition: all .5s ease-in-out;
-    color: currentColor;
-  }
-}
-
-.cta-link-to:hover {
-  cursor: pointer;
-  h3:after {
-    opacity: .5;
-    padding-left: .5em;
-  }
-}
-
 .page-top {
   display: flex;
   text-align: left;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 }
 
 // Project Pages
@@ -308,11 +279,6 @@ footer .footer-nav ul {
   .container {width: 100%;}
   // .arrow-down {text-align: left;}
 }
-// .project-top.swiper-slide {
-//   text-align: left;
-//   justify-content: start;
-//   align-items: start;
-// }
 
 .intro {
   padding: 5em 0;

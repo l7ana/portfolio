@@ -91,6 +91,11 @@
             <p>I see every new challenge as learning opportunity to
                 elevate my abilities as a visual communicator.</p>
         </div>
+        <div class="page-top-wrapper">
+            <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_ejidujdi.json"
+                background="transparent" speed=".7" loop autoplay id="spin">
+            </lottie-player>
+        </div>
 
         <!-- <h2> I'm a Graphic Designer, type-enthusiast, occasional
                 illustrator, copywriter, grid-abider <i>and</i> grid-breaker.</h2> -->
@@ -354,12 +359,21 @@
                 <div class="column-grid col-start-10 col-end-12">
                     <!-- <h2>Bio</h2> -->
                     <div class="hello">
-                        <!-- <h2>Contact</h2> -->
-                        <h3>Let's link up!</h3>
-                        <hr>
-                        <img src="img/LianaYoung.jpg" alt="Me!">
-
-                        <h4><a href="mailto:lianayoung.design@gmail.com">Email Me!</a></h4>
+                        <ul>
+                            <li>
+                                <h3>Email</h3>
+                                <hr>
+                                <p><a href="mailto:lianayoung.design@gmail.com">lianayoung.design@gmail.com</a></p>
+                            </li>
+                            <li>
+                                <h3>Phone</h3>
+                                <hr>
+                                <p><a href="tel:8083934848">(808)393-4848</a></p>
+                            </li>
+                            <li>
+                                <img src="img/LianaYoung.jpg" alt="Me!">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -384,81 +398,13 @@
         </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Scroll JS -->
     <script src="js/scroll.js"></script>
-    <!-- Accordian JS -->
-    <script src="js/accordion.js"></script>
-    <!-- Main JS -->
-    <script src="js/script.js"></script>
     <!-- Lottie Player -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper1 = new Swiper('#home-swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-            // Autoplay
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-
-            effect: 'slide',
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-
-            // on init set light / dark
-            on: {
-                init: function () {
-                    console.log('swiper initialized');
-                    const initialswiper = document.querySelector('.swiper-container');
-                    const initialslide = document.querySelector('.swiper-slide-active');
-                    const initialheader = document.querySelector('.site-header');
-                    if (initialslide.classList.contains('dark')) {
-                        initialswiper.setAttribute('data-slidecolor', 'dark');
-                        initialheader.setAttribute('data-slidecolor', 'dark');
-                    } else {
-                        initialswiper.setAttribute('data-slidecolor', 'light');
-                        initialheader.setAttribute('data-slidecolor', 'light');
-                    }
-                },
-            },
-        });
-
-        const myswiper = document.querySelector('#home-swiper');
-        const myheader = document.querySelector('.site-header');
-
-        swiper1.on('transitionEnd', function () {
-            console.log('slide changed');
-            const activeslide = document.querySelector('.swiper-slide-active');
-            if (activeslide.classList.contains('dark')) {
-                console.log('this slide is dark');
-                myswiper.setAttribute('data-slidecolor', 'dark');
-                myheader.setAttribute('data-slidecolor', 'dark');
-            } else {
-                console.log('this slide is light');
-                myswiper.setAttribute('data-slidecolor', 'light');
-                myheader.setAttribute('data-slidecolor', 'light');
-            }
-        });
-
-    </script>
-
-    <!-- Work Grid -->
     <script>
         // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
         let options = {
@@ -479,6 +425,7 @@
             myobserver.observe(item);
         });
     </script>
+</body>
 </body>
 
 </html>
