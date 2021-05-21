@@ -2682,10 +2682,6 @@ header[data-slidecolor=dark] .site-identity a svg {
     USPS Gemstone Stamps
 ------------------------------ */
 /*KPC*/
-#kpc-intro .row {
-  margin-bottom: 15%;
-}
-
 #kpc-to-slider {
   background-image: linear-gradient(white, #ebf5f7);
   margin: 7em 0 0 0;
