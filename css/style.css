@@ -1015,6 +1015,7 @@ footer .footer-nav ul li a {
   background: #f1f9ff;
 }
 
+/*Awards*/
 .row.award.gold {
   background-color: rgba(168, 143, 30, 0.1);
 }
@@ -1768,7 +1769,7 @@ a.button-havensolus:hover {
   padding: 0;
 }
 #home-swiper .swiper-textbox .sectionhead {
-  margin-top: 0.7em;
+  margin: 0.5em 0;
   font-size: clamp(1.5em, 2vw, 2em);
   line-height: 1;
 }
@@ -2322,6 +2323,7 @@ header[data-slidecolor=dark] .site-identity a svg {
     transform: translateX(0px) scale(1);
   }
 }
+/*SubPage Projects*/
 .project-top {
   transition: all 0.5s ease;
 }
@@ -2554,6 +2556,7 @@ header[data-slidecolor=dark] .site-identity a svg {
   height: auto;
 }
 .tab-section [data-tabstate=active] {
+  transition: all 1s ease-in-out;
   transition: all 0.2s ease;
 }
 .tab-section [data-tabstate=active][data-id=featured-tab] {

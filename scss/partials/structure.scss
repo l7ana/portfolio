@@ -189,9 +189,7 @@ footer .footer-nav ul {
   }
   h1 {
     line-height: 1;
-    // color: $turq;
     position: absolute;
-    // white-space: nowrap;
     left: 0; top: -0.5em;
     right: auto;
     animation: move 10s;
@@ -292,7 +290,8 @@ footer .footer-nav ul {
 
 .to-white { background-image: linear-gradient(white, $white-1);}
 .white-bg {background: $white-1;}
-  
+
+/*Awards*/
 .row.award {
   &.gold{background-color: rgba($gold,.1);}
   &.silver{background-color: rgba($navy-3,.1);}

@@ -214,8 +214,8 @@
             </div>
         </div>
     </section>
-    <section class="case-study" id="prime-swiper">
-        <div class="swiper-container">
+    <section class="case-study">
+        <div class="swiper-container" id="prime-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <picture>
@@ -451,7 +451,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        const swiper = new Swiper('#prime-swiper', {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
@@ -460,6 +460,20 @@
             pagination: {
                 el: '.swiper-pagination',
             },
+
+            effect: 'slide',
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        var swiper2 = new Swiper('#prime-hifi', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
 
             effect: 'slide',
 
