@@ -2,6 +2,7 @@
 a.button,
 a.button-white,
 a.button-gold,
+a.button-turq,
 a.button-kpc,
 a.button-shabp,
 a.button-havensolus,
@@ -16,7 +17,6 @@ a.button-prime {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: $type-subhead;
-  // font-feature-settings: 'smcp';
   text-transform: uppercase;
   text-shadow: none;
   outline-offset: 0px;
@@ -26,6 +26,7 @@ a.button-prime {
 a.button:hover,
 a.button-white:hover,
 a.button-gold:hover,
+a.button-turq:hover,
 a.button-kpc:hover,
 a.button-shabp:hover,
 a.button-havensolus:hover,
@@ -54,18 +55,17 @@ a.button {
     outline-color: rgba(white,0);
   }
 
-  .button-gold {
+  a.button-gold {
     color: white;
     background-color: $gold;
     box-shadow: inset 0 0 20px rgba($gold-2,0);
     outline-color: $gold;
   } 
-  .button-gold:hover {
+  a.button-gold:hover {
     outline-color: rgba($gold,0);
     border: 1px solid $gold;
   }
-
-  .button-gold.blink {
+  a.button-gold.blink {
     color: white;
     background-color: $gold;
     box-shadow: inset 0 0 20px rgba($gold-2,0);
@@ -76,6 +76,16 @@ a.button {
     transition: transform .5s ease-in-out;
     margin: 2em auto;
   } 
+
+  a.button-turq {
+    color: white;
+    background-color: $turq;
+    outline-color: $turq;
+  } 
+  a.button-turq:hover {
+    outline-color: rgba($turq,0);
+    border: 1px solid $turq;
+  }
 
   a.button-kpc {
     color: white;
@@ -224,3 +234,17 @@ a.button {
       transform: translateY(10px);
     }
   }
+
+  // a.link {
+  //   // font: inherit;
+  //   // font-family: $type-subhead;
+  //   font-weight: 700;
+  //   text-transform: uppercase;
+  //   letter-spacing: .5px;
+  //   font-size: 14px;
+  //   margin-right: 1em;
+  //   color: $grey-2;
+  //   transition: all .5s ease;
+  //   &.turq:hover {color: $turq;}
+  //   &.navy:hover {color: $navy;}
+  // }

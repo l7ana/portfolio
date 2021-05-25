@@ -67,6 +67,12 @@
       outline-color: rgba(white,0);
     }
   }
+  @keyframes blink-gold {
+    from {
+      outline-offset: 0;
+      outline-color: rgba($gold,0);
+    }
+  }
 
 /*Home Swiper Arrows*/
 @keyframes swiper-prev {
