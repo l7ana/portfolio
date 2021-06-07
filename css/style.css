@@ -729,7 +729,7 @@ header {
   margin-left: 0em;
 }
 
-@media (min-width: 460px) {
+@media (min-width: 550px) {
   .site-nav .site-identity a svg {
     width: 225px;
     max-width: 225px;
@@ -1752,7 +1752,7 @@ a.button-havensolus:hover {
 /* Swiper */
 #home-swiper.swiper-container {
   width: 100%;
-  height: 87%;
+  height: 100%;
   margin: 0;
 }
 #home-swiper .swiper-slide {
@@ -1773,7 +1773,7 @@ a.button-havensolus:hover {
   top: 30%;
   margin-left: 9.5%;
   width: 70%;
-  height: 100%;
+  height: 80%;
   position: relative;
 }
 #home-swiper .swiper-textbox h1 {
@@ -1787,10 +1787,19 @@ a.button-havensolus:hover {
   line-height: 1;
 }
 #home-swiper .swiper-textbox .award-label {
-  top: 33%;
-  right: 0%;
+  top: 55%;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+#home-swiper .swiper-textbox .award-label lottie-player {
   width: 80px;
   height: 80px;
+}
+#home-swiper .swiper-textbox .award-label p {
+  padding: 10px;
+  margin-bottom: 3%;
 }
 #home-swiper #welcome-slide {
   overflow: hidden;
@@ -1826,10 +1835,17 @@ a.button-havensolus:hover {
     top: 30%;
   }
   #home-swiper .swiper-textbox .award-label {
-    top: 30%;
-    right: -15%;
-    width: 100px;
-    height: 100px;
+    top: -13%;
+    left: 0%;
+  }
+  #home-swiper .swiper-textbox .award-label lottie-player {
+    width: 70px;
+    height: 70px;
+  }
+  #home-swiper .swiper-textbox .award-label p {
+    display: inline;
+    padding: 0;
+    margin: 0;
   }
   #home-swiper #welcome-slide lottie-player {
     width: 90%;
