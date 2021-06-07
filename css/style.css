@@ -276,6 +276,9 @@ p.pull-quote::before {
 .collapsible h3 {
   font-size: 2.2em;
 }
+.collapsible h4 {
+  margin-top: 0;
+}
 
 img {
   max-width: 100%;
