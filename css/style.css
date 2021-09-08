@@ -1753,6 +1753,11 @@ a.button-havensolus:hover {
   }
 }
 /* Swiper */
+.swiper-container {
+  position: relative;
+  overflow-x: hidden;
+}
+
 #home-swiper.swiper-container {
   width: 100%;
   height: 100%;

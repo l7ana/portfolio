@@ -1,4 +1,9 @@
 /* Swiper */
+.swiper-container {
+  position: relative;
+  overflow-x: hidden;
+}
+
 #home-swiper {
   &.swiper-container {
     width: 100%;
@@ -451,6 +456,7 @@ header[data-slidecolor="dark"] .site-identity a svg {
 
 #hs-swiper {
   margin-top: 2em;
+
   .swiper-text {
     margin: 0 auto;
   }
