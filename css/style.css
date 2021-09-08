@@ -1975,7 +1975,8 @@ header[data-slidecolor=dark] .site-identity a svg {
   right: 12%;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   font-size: 1.5em;
 }
 
@@ -2065,7 +2066,8 @@ header[data-slidecolor=dark] .site-identity a svg {
   #prime-hifi h4 {
     font-size: 1.5em;
   }
-  #prime-hifi h4, #prime-hifi ul li {
+  #prime-hifi h4,
+#prime-hifi ul li {
     max-width: 370px;
   }
   #prime-hifi ul.bulleted {
