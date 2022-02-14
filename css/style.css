@@ -420,7 +420,8 @@ lottie-player.video-bg#shabp-hero {
   top: 0;
   height: 100%;
 }
-.page-top-wrapper lottie-player, .page-top-wrapper img {
+.page-top-wrapper lottie-player,
+.page-top-wrapper img {
   position: absolute;
 }
 
@@ -434,7 +435,8 @@ lottie-player.video-bg#shabp-hero {
   top: 0;
   height: 100vh;
 }
-.project-top-wrapper lottie-player, .project-top-wrapper img {
+.project-top-wrapper lottie-player,
+.project-top-wrapper img {
   position: absolute;
 }
 
@@ -482,8 +484,8 @@ lottie-player.video-bg#shabp-hero {
   #work-spin {
     width: 170%;
     height: 170%;
-    right: 10%;
-    top: -50%;
+    left: -10%;
+    top: 25%;
     opacity: 0.2;
   }
 }
@@ -840,6 +842,10 @@ footer .footer-nav ul li a {
 }
 #above-work .container {
   width: 100%;
+}
+#above-work .page-top-wrapper {
+  border: 1px solid green;
+  max-width: 100%;
 }
 
 #about {
