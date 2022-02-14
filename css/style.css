@@ -1823,10 +1823,12 @@ a.button-havensolus:hover {
 #home-swiper #welcome-slide lottie-player {
   width: 95%;
   height: auto;
+  z-index: -1;
 }
 #home-swiper #welcome-slide .welcome-text {
   max-width: 80vw;
   margin-top: 0;
+  z-index: 1;
 }
 #home-swiper #welcome-slide .welcome-text p {
   font-size: 1.2em;
