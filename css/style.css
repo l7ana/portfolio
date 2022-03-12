@@ -1452,6 +1452,7 @@ footer .footer-nav ul li a {
 	.row-grid {
 		grid-template-columns: repeat(12, 1fr);
 		display: grid;
+		max-width: 2000px;
 		margin-bottom: 5%;
 		column-gap: 2%;
 		justify-items: center;
