@@ -1459,6 +1459,22 @@ footer .footer-nav ul li a {
   }
 }
 
+#alert {
+  margin: 3em auto;
+  padding: 2em;
+  background-color: #543220;
+  text-align: center;
+}
+@media (min-width: 2000px) {
+  #alert {
+    justify-content: center;
+  }
+}
+#alert p {
+  color: white;
+  font-size: 2em;
+}
+
 /*Image Grid*/
 @media (min-width: 768px) {
   .row-grid {
